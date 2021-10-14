@@ -1,0 +1,26 @@
+%containerBig {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 2rem;
+    position: relative;
+}
+
+%wrapSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+%globalContainer{
+    max-width: 69rem;
+    margin: 0 auto;
+}
+
+// color
+
+$light: #fff;
+$active:  #cf000f;

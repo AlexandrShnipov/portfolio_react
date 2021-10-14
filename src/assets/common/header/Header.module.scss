@@ -1,0 +1,66 @@
+@import '../../styles//sass/abstracts/variables.scss';
+
+.header {
+    background-color: #161616;
+}
+
+.container {
+    @extend %containerBig;
+}
+
+.wrap {
+    @extend %wrapSection;
+}
+
+.globalContainer {
+    @extend %globalContainer;
+}
+
+.logo {
+    position: absolute;
+
+    &Text {
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+        color: $light
+    }
+
+    &Doted {
+        color: $active;
+    }
+}
+
+.nav {
+    &Items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &Item+&Item {
+        margin-left: 1rem;
+    }
+
+    &Link {
+        padding: 0.625rem 1rem;
+        color: $light;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $active;
+        }
+    }
+}
+
+.linkTypeTel {
+    position: absolute;
+    padding: 0.625rem 1rem;
+    right: 0;
+    display: block;
+    color: $light;
+}
+
+.active {
+    color: $active;
+}
