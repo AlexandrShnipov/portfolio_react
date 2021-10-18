@@ -1,7 +1,9 @@
 @import '../../styles//sass/abstracts/variables.scss';
 
 .header {
-    background-color: #161616;
+    // background-color: #161616;
+    position: fixed;
+    width: 95.7%;
 }
 
 .container {
