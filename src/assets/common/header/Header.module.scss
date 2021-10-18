@@ -33,14 +33,15 @@
 
 .nav {
     &Items {
+        max-width: 90%;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    &Item+&Item {
-        margin-left: 1rem;
-    }
+    // &Item+&Item {
+    //     margin-left: 1rem;
+    // }
 
     &Link {
         padding: 0.625rem 1rem;

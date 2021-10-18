@@ -1,0 +1,104 @@
+@import '../../../../assets/styles/sass/abstracts/variables.scss';
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+
+    &Container {
+        padding-top: 10rem;
+    }
+
+    .globalContainer {
+        @extend %globalContainer;
+    }
+
+    &Content {
+        // color: $light;
+        display: flex;
+    }
+}
+
+.experience {
+    width: 29rem;
+    padding: 4.375rem 4.6875rem 3.125rem 3.125rem;
+    text-align: right;
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-right: none;
+    margin-right: 6rem;
+
+    &Years {
+        font-family: Poppins, sans-serif;
+        font-size: 12.5rem;
+        font-weight: 500;
+        line-height: 1.1;
+        margin-right: .75rem;
+        margin-bottom: 5rem;
+
+        &Square {
+            display: inline-block;
+            background-color: $active;
+            width: 1rem;
+            height: 1rem;
+            margin-left: -1.5rem;
+        }
+    }
+
+    &Text {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.5;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 8rem;
+            height: 1px;
+            left: 1.5rem;
+            bottom: 0;
+            background-color: $light;
+        }
+    }
+}
+
+.bestBlock {
+    width: 47%;
+
+    &Title {
+        font-size: 3.125rem;
+        line-height: 1.35;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+
+    &Text {
+        max-width: 25rem;
+        line-height: 1.9;
+        opacity: .6;
+        margin-bottom: 4rem;
+    }
+
+    &Item {
+        margin-bottom: 4rem;
+    }
+
+    &ItemContent {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        border-bottom: .5rem solid $light;
+        border-radius: .45rem;
+    }
+
+    &ItemText{
+        text-transform: uppercase;
+    }
+
+    &ItemLine {
+        height: .5rem;
+        background-color: $active;
+        margin-top: -.5rem;
+        border-radius: .45rem;
+    }
+
+}

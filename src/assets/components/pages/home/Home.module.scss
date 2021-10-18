@@ -1,0 +1,84 @@
+@import '../../../../assets/styles/sass/abstracts/variables.scss';
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+
+     &Container {
+        padding-top: 10rem;
+    }
+
+    .globalContainer {
+        @extend %globalContainer;
+    }  
+
+    &Content {
+        .nameProfession {
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            font-size: 7.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+
+            &Square{
+                display: inline-block;
+               background-color: $active;
+                width: 1rem;
+                height: 1rem;
+                margin-left: -1.5rem;
+            }
+        }
+
+        &Text {
+            max-width: 23rem;
+            line-height: 1.9;
+            opacity: .6;
+        }
+    }
+}
+
+.popup {
+    margin-bottom: 6rem;
+
+    // &Button {
+    //     width: 6rem;
+    //     height: 6rem;
+    //     border: 2px solid #fff;
+    //     border-radius: 50%;
+    //     position: relative;
+    //     cursor: pointer;
+
+    //     &::before {
+    //         position: absolute;
+    //         content: '';
+    //         top: calc(50% - 20px);
+    //         left: calc(50% - 6px);
+    //         width: 0px;
+    //         border: 20px solid #fff;
+    //         border-color: transparent transparent transparent #fff;
+    //     }
+    // }
+
+    // &Link {
+    //     width: 100%;
+    //     height: 100%;
+    //     border-radius: 50%;
+    // }
+}
+
+// ! fancy
+
+.FancyVideo {
+    & span {
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 2px solid #fff;
+        left: 3rem;
+        top: 0;
+        margin: 0;
+    }
+}
