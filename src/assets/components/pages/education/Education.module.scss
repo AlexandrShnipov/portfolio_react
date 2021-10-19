@@ -1,0 +1,92 @@
+@import '../../../../assets/styles/sass/abstracts/variables.scss';
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+
+    &Container {
+        padding-top: 17rem;
+    }
+
+    .globalContainer {
+        @extend %globalContainer;
+    }
+
+    &Head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+
+    }
+
+    &Title {
+       @extend %title;
+    }
+
+    &Link {
+        font-size: .75rem;
+        line-height: 3.8;
+        font-weight: 500;
+        letter-spacing: .055em;
+        padding: 0 2.8rem;
+        background-color: $active;
+        text-transform: uppercase;
+    }
+}
+
+.slider {
+    &Items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Item {
+        display: flex;
+        justify-content: space-between;
+        padding: 3.125rem 0;
+
+        &:nth-of-type(-n+2) {
+            border-bottom: 1px solid rgba(255, 255, 255, .6);
+        }
+    }
+
+    &ItemImgBox {
+        width: 5rem;
+        height: 5rem;
+        opacity: .6;
+    }
+
+    &ItemImg {
+        object-fit: cover;
+    }
+
+    &ItemImgCircle{
+        border-radius: 50%;
+    }
+
+    &ItemYearsBlock {
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+        
+        .years{
+            @extend %textSection; 
+        }
+
+        .title{
+            font-family: 'Lato' , sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            letter-spacing: .055em;
+            font-weight: 500;
+        }
+
+    }
+
+    &ItemText {
+        @extend %textSection;
+        max-width: 22rem;
+        letter-spacing: .055em;
+    }
+}

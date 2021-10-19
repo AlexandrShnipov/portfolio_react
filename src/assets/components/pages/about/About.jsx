@@ -21,20 +21,38 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>Web design</p>
-                                        <p className={s.bestBlockItemNum}>70%</p>
+                                        <p className={s.bestBlockItemText}>HTML, CSS, GULP</p>
+                                        <p className={s.bestBlockItemNum}>90%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "70%" }}></div>
+                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "90%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>Figma</p>
+                                        <p className={s.bestBlockItemText}>BAM</p>
+                                        <p className={s.bestBlockItemNum}>90%</p>
+                                    </div>
+                                    <div className={s.bestBlockItemContentBorder}></div>
+                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "90%" }}></div>
+                                </li>
+
+                                <li className={s.bestBlockItem}>
+                                    <div className={s.bestBlockItemContent}>
+                                        <p className={s.bestBlockItemText}>SCSS</p>
                                         <p className={s.bestBlockItemNum}>85%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
                                     <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "85%" }}></div>
+                                </li>                                
+                         
+                                <li className={s.bestBlockItem}>
+                                    <div className={s.bestBlockItemContent}>
+                                        <p className={s.bestBlockItemText}>React, JS</p>
+                                        <p className={s.bestBlockItemNum}>75%</p>
+                                    </div>
+                                    <div className={s.bestBlockItemContentBorder}></div>
+                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "75%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>

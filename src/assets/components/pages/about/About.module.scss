@@ -66,21 +66,18 @@
     width: 47%;
 
     &Title {
-        font-size: 3.125rem;
-        line-height: 1.35;
-        font-weight: 500;
-        margin-bottom: 3rem;
+        @extend %title;
+        margin-bottom: 2rem;
     }
 
     &Text {
+        @extend %textSection;
         max-width: 25rem;
-        line-height: 1.9;
-        opacity: .6;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 
     &Item {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 
     &ItemContent {

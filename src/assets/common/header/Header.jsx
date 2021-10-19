@@ -31,11 +31,14 @@ const Header = () => {
                                     <Link className={s.navLink} to='/'>Education</Link>
                                 </li>
                                 <li className={s.navItem}>
-                                    <Link className={s.navLink} to='/'>Testimonials</Link>
+                                    <Link className={s.navLink} to='/'>Department</Link>
                                 </li>
                                 <li className={s.navItem}>
-                                    <Link className={s.navLink} to='/'>Partners</Link>
+                                    <Link className={s.navLink} to='/'>Testimonials</Link>
                                 </li>
+                                {/* <li className={s.navItem}>
+                                    <Link className={s.navLink} to='/'>Partners</Link>
+                                </li> */}
                                 <li className={s.navItem}>
                                     <Link className={s.navLink} to='/'>Blog</Link>
                                 </li>

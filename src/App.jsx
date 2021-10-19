@@ -3,6 +3,7 @@ import s from './App.module.scss';
 import Header from '../src/assets/common/header/Header';
 import Home from '../src/assets/components/pages/home/Home';
 import About from '../src/assets/components/pages/about/About';
+import Education from '../src/assets/components/pages/education/Education';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
    <Header/>
    <Home/>
    <About/>
+   <Education/>
     </div>
   );
 }
