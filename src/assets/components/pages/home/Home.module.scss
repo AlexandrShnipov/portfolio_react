@@ -32,10 +32,9 @@
         }
 
         &Text {
+            @extend %textSection;
             max-width: 23rem;
-            line-height: 1.9;
-            opacity: .6;
-        }
+                   }
     }
 }
 
