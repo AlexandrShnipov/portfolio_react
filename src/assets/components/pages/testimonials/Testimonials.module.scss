@@ -1,0 +1,62 @@
+@import '../../../../assets/styles/sass/abstracts/variables.scss';
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+
+    &Container {
+        padding-top: 7.5rem;
+    }
+
+    .globalContainer {
+        @extend %globalContainer;
+    }
+
+    &Content {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+    .sectionTitleBox {
+        max-width: 47%;
+
+     &SvgImg{
+         height: 4.7rem;
+         color: $active
+     }   
+    
+    &Title {
+        font-family: "Lato", sans-serif;
+        font-size: 3.125rem;
+        line-height: 1.35;
+        font-weight: 500;
+        letter-spacing: .055rem;
+        padding-top: 13.5rem;
+    }
+}
+
+.slider {
+    max-width: 37%;
+    padding-top: 14rem;
+
+    &ItemText {
+        @extend %textSection;
+        margin-bottom: 4.4rem;
+
+    }
+
+    &ItemName {
+        color: $light;
+        opacity: 1;
+        font-size: 1.2rem;
+        letter-spacing: .055em;
+        margin-bottom: 0.6rem;
+    }
+
+    &ItemCompany {
+        @extend %textSection;
+    }
+}

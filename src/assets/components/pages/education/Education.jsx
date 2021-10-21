@@ -4,13 +4,17 @@ import itIncubator from '../../../images/education/it-incubator.png';
 import customs from '../../../images/education/customs.png';
 import vstu from '../../../images/education/vstu.png';
 import vgavm from '../../../images/education/vgavm.png';
+import bg from '../../../images/background/education.png';
 
 
 const Education = () => {
 
     return (
         <section className={s.section}>
-            <div className={s.sectionKontainer}>
+            {/* <div className={s. backgroundBox}>
+                <img className={s.backgroundImg} src={bg} alt="background" />
+            </div> */}
+            <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
                         <div className={s.sectionHead}>

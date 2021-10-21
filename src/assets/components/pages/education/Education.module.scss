@@ -3,6 +3,28 @@
 .section {
     min-height: 100vh;
     width: 100%;
+    position: relative;
+
+    // .backgroundBox {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     overflow: hidden;
+    //     width: 100%;
+    //     height: 100%;
+    //     pointer-events: none;
+    // }
+
+    // .backgroundImg {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0; 
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //     transition: transform 5s,-webkit-transform 5s;
+    //     transform: scale(1.1);
+    // }
 
     &Container {
         padding-top: 17rem;
@@ -21,7 +43,7 @@
     }
 
     &Title {
-       @extend %title;
+        @extend %title;
     }
 
     &Link {
@@ -31,10 +53,10 @@
         letter-spacing: .055em;
         padding: 0 2.8rem;
         background-color: $active;
-        border:1px solid $active;
+        border: 1px solid $active;
         text-transform: uppercase;
 
-        &:hover{
+        &:hover {
             border: 1px solid $light;
             background-color: transparent;
         }
@@ -67,7 +89,7 @@
         object-fit: cover;
     }
 
-    &ItemImgCircle{
+    &ItemImgCircle {
         border-radius: 50%;
     }
 
@@ -75,14 +97,14 @@
         display: flex;
         flex-direction: column;
         width: 24rem;
-        
-        .years{
+
+        .years {
             @extend %textSection;
-            margin-bottom: 0.3rem; 
+            margin-bottom: 0.3rem;
         }
 
-        .title{
-            font-family: 'Lato' , sans-serif;
+        .title {
+            font-family: 'Lato', sans-serif;
             font-size: 1.2rem;
             line-height: 1.2;
             letter-spacing: .055em;
