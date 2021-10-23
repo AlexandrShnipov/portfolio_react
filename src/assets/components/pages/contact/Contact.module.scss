@@ -3,8 +3,29 @@
 .section {
     min-height: 100vh;
     width: 100%;
+    position: relative;
 
-      &Container {
+    &BgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // pointer-events: none;
+    }
+
+    &BgImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    &Container {
         padding-top: 8rem;
         position: relative;
     }

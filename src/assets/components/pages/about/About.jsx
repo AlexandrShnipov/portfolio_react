@@ -1,8 +1,56 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import s from './About.module.scss';
 
 const About = () => {
+    const [animation, setAnimation] = useState(false);
+    const [count, setCount] = useState(0);
+    const experienceRef = useRef();
+    console.log(count)
+    const handleCount = () => {
+            setCount(state => state + 1)
+        }
+    
+    const windowHeignt = window.innerHeight;
+    let countUp = setInterval(() => {
+        //    handleCount()
+    }, 3)
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        }
+    }, [])
+
+    useEffect(() => {
+        if (animation) {
+            if (count < 90) {
+                countUp = setInterval(() => {
+                    setCount(state => state + 1)
+                }, 20)
+            }
+        }
+        return () => {
+            clearInterval(countUp)
+        }
+    }, [count, animation])
+
+    const handleScroll = () => {
+        console.log(experienceRef.current.getBoundingClientRect())
+        console.log(windowHeignt);
+        const rect = experienceRef.current.getBoundingClientRect();
+        const topEdge = rect.top > -rect.height && rect.top < windowHeignt;
+        if (topEdge) {
+            setAnimation(() => true)
+        } else {
+            setAnimation(() => false)
+            setCount(0)
+        }
+    }
+    const experienceStyle = animation ? `${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}` : s.bestBlockItemLine;
+
+
 
     return (
         <section className={s.section}>
@@ -17,15 +65,15 @@ const About = () => {
                             <h3 className={s.bestBlockTitle}>Great Experience</h3>
                             <p className={s.bestBlockText}>Fill appear won't may make moveth signs. Fourth. Good own. Green you're moveth us, lesser.</p>
 
-                            <div className={s.bestBlockItems}>
+                            <div ref={experienceRef} className={s.bestBlockItems}>
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
                                         <p className={s.bestBlockItemText}>HTML, CSS, GULP</p>
-                                        <p className={s.bestBlockItemNum}>90%</p>
+                                        <p className={s.bestBlockItemNum}>{`${count}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "90%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "90%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>
@@ -34,7 +82,7 @@ const About = () => {
                                         <p className={s.bestBlockItemNum}>90%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "90%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "90%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>
@@ -43,16 +91,16 @@ const About = () => {
                                         <p className={s.bestBlockItemNum}>85%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "85%" }}></div>
-                                </li>                                
-                         
+                                    <div className={experienceStyle} style={{ width: "85%" }}></div>
+                                </li>
+
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
                                         <p className={s.bestBlockItemText}>React, JS</p>
                                         <p className={s.bestBlockItemNum}>75%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "75%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "75%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>
@@ -61,7 +109,7 @@ const About = () => {
                                         <p className={s.bestBlockItemNum} >90%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={`${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}`} style={{ width: "90%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "90%" }}></div>
                                 </li>
                             </div>
 

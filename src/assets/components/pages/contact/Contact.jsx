@@ -1,10 +1,15 @@
 import React from "react";
 import s from './Contact.module.scss';
+import contact from '../../../images/background/contact.jpg';
+
 
 const Contact = () => {
 
     return (
         <section className={s.section}>
+                <div className={s.sectionBgBox}>
+                <img className={s.sectionBgImg} src={contact} alt="images background" data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="100" />
+            </div>
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>

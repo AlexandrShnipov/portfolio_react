@@ -5,6 +5,31 @@
     width: 100%;
     position: relative;
 
+    &BgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // pointer-events: none;
+    }
+
+    &BgImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        // will-change: transform;
+        // transition: transform 3s;
+        // transform: scale(1.15);
+
+        // &.active {
+        //     transform: scale(1);
+        // }
+    }
 
     &Container {
         padding-top: 7.5rem;
@@ -20,14 +45,15 @@
     }
 }
 
-    .sectionTitleBox {
-        max-width: 47%;
+.sectionTitleBox {
+    max-width: 47%;
 
-     &SvgImg{
-         height: 4.7rem;
-         color: $active
-     }   
-    
+    &SvgImg {
+        height: 4.7rem;
+        color: $active;
+
+    }
+
     &Title {
         font-family: "Lato", sans-serif;
         font-size: 3.125rem;
@@ -52,6 +78,7 @@
         color: $light;
         opacity: 1;
         font-size: 1.2rem;
+        font-weight: 500;
         letter-spacing: .055em;
         margin-bottom: 0.6rem;
     }
@@ -60,3 +87,14 @@
         @extend %textSection;
     }
 }
+
+// [data-aos="scale"] {
+//     transform: scale(1.15);
+//     transition-property: transform;
+//   }
+  
+//   [data-aos="scale"].aos-animate {
+//     transform: scale(1);
+//   }
+
+ 
