@@ -4,9 +4,9 @@ import s from './About.module.scss';
 
 const About = () => {
     const [animation, setAnimation] = useState(false);
-    const [count, setCount] = useState(0);
+    const [count90, setCount] = useState(0);
     const experienceRef = useRef();
-    console.log(count)
+    console.log(count90)
     const handleCount = () => {
             setCount(state => state + 1)
         }
@@ -25,7 +25,7 @@ const About = () => {
 
     useEffect(() => {
         if (animation) {
-            if (count < 90) {
+            if (count90 < 90) {
                 countUp = setInterval(() => {
                     setCount(state => state + 1)
                 }, 20)
@@ -34,7 +34,7 @@ const About = () => {
         return () => {
             clearInterval(countUp)
         }
-    }, [count, animation])
+    }, [count90, animation])
 
     const handleScroll = () => {
         console.log(experienceRef.current.getBoundingClientRect())
@@ -69,8 +69,8 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>HTML, CSS, GULP</p>
-                                        <p className={s.bestBlockItemNum}>{`${count}%`}</p>
+                                        <p className={s.bestBlockItemText}>HTML, CSS, BEM</p>
+                                        <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
                                     <div className={experienceStyle} style={{ width: "90%" }}></div>
@@ -78,8 +78,8 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>BAM</p>
-                                        <p className={s.bestBlockItemNum}>90%</p>
+                                        <p className={s.bestBlockItemText}>GULP</p>
+                                        <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
                                     <div className={experienceStyle} style={{ width: "90%" }}></div>
