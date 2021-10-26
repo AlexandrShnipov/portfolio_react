@@ -8,6 +8,7 @@ import Projects from '../src/assets/components/pages/projects/Projects';
 import Education from '../src/assets/components/pages/education/Education';
 import Testimonials from '../src/assets/components/pages/testimonials/Testimonials';
 import Contact from '../src/assets/components/pages/contact/Contact';
+import Carusel from './assets/common/carusel/Carusel';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
@@ -34,6 +35,7 @@ function App() {
       <Education />
       <Testimonials />
       <Contact />
+      {/* <Carusel/> */}
     </div>
   );
 }
