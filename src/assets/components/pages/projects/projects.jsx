@@ -1,11 +1,6 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 import s from './Projects.module.scss';
-// import thrivetalk from '../../../images/projects/thrivetalk.png';
-// import desire from '../../../images/projects/desire.png';
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-import Carusel from '../../../common/carusel/Carusel';
+import CaruselProjects from '../../../common/caruselProjects/CaruselProjects';
 
 const Projects = () => {
 
@@ -15,7 +10,7 @@ const Projects = () => {
                 <div className={s.globalContainer}>
 
                     <h3 className={s.sectionTitle}>Projects</h3>
-                  <Carusel/>
+                    <CaruselProjects />
                 </div>
             </div>
         </section>
