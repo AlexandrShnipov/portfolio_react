@@ -39,9 +39,9 @@ const Header = () => {
                                 {/* <li className={s.navItem}>
                                     <Link className={s.navLink} to='/'>Partners</Link>
                                 </li> */}
-                                <li className={s.navItem}>
+                                {/* <li className={s.navItem}>
                                     <Link className={s.navLink} to='/'>Blog</Link>
-                                </li>
+                                </li> */}
                                 <li className={s.navItem}>
                                     <Link className={s.navLink} to='/'>Contact</Link>
                                 </li>

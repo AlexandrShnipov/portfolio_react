@@ -1,6 +1,7 @@
 // import 'react-fancybox/lib/fancybox.css'
 import { Link } from 'react-router-dom';
 import s from './Home.module.scss';
+import home from '../../../images/background/home2.jpg'
 
 import FancyVideo from 'react-videojs-fancybox';
 
@@ -8,6 +9,9 @@ const Home = () => {
 
     return (
         <section className={s.section}>
+            <div className={s.sectionBgBox}>
+                <img className={s.sectionBgImg} src={home} alt="images background" />
+            </div>
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.popup}>
@@ -18,14 +22,14 @@ const Home = () => {
 
                         {/* ! fancy */}
 
-                        <div  className={s.FancyVideo}>
-        <FancyVideo
-          source='https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
-          id={"sintel"}
-         />
-      </div>
+                        <div className={s.FancyVideo}>
+                            <FancyVideo
+                                source='https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4'
+                                id={"sintel"}
+                            />
+                        </div>
                     </div>
-                    <div className={s.sectionContent}>
+                    <div className={s.sectionContent} data-aos="fade-up" data-aos-delay="100">
                         <span className={s.nameProfession}>
                             Front end developer
                         </span>
