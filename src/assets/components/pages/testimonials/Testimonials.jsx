@@ -1,9 +1,11 @@
 import React, { Component, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import styled, { keyframes } from 'styled-components';
 // import { fadeInDown } from 'react-animations';
 // import Fade from 'react-reveal/Fade';
 import s from './Testimonials.module.scss';
 import testimonials from '../../../images/background/testimonials.jpg';
+import CaruselTestimonials from '../../../common/carusels/caruselTestimonials/CaruselTestimonials';
 
 // const FadeInDoun = styled.div`animation: 2s ${keyframes`${fadeInDown}`}`;
 
@@ -69,19 +71,9 @@ const Testimonials = () => {
                                 Creative & dedicated is things that gilber studio brings for your business.
                             </h3>
                         </div>
-                        <div className={s.slider}>
-                            <div className={s.sliderItems}>
-
-
-                                <div className={s.sliderItem} data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000"
-                                >
-                                    <p className={s.sliderItemText}>"Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."</p>
-                                    <p className={s.sliderItemName}>Ramsay Bolton</p>
-                                    <p className={s.sliderItemCompany}>Apple Inc</p>
-                                </div>
-
-                            </div>
-
+                        <div className={s.sliderWrap}>
+                            <Link className={s.linkAdded} to="/">add testimonial</Link>
+                            <CaruselTestimonials />
                         </div>
                     </div>
                 </div>

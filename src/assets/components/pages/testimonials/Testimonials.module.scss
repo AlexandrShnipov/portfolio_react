@@ -64,37 +64,24 @@
     }
 }
 
-.slider {
+.sliderWrap {
     max-width: 37%;
-    padding-top: 14rem;
-
-    &ItemText {
-        @extend %textSection;
-        margin-bottom: 4.4rem;
-
-    }
-
-    &ItemName {
-        color: $light;
-        opacity: 1;
-        font-size: 1.2rem;
-        font-weight: 500;
-        letter-spacing: .055em;
-        margin-bottom: 0.6rem;
-    }
-
-    &ItemCompany {
-        @extend %textSection;
-    }
+    padding-top: 2rem;
 }
 
-// [data-aos="scale"] {
-//     transform: scale(1.15);
-//     transition-property: transform;
-//   }
-  
-//   [data-aos="scale"].aos-animate {
-//     transform: scale(1);
-//   }
+.linkAdded {
+    font-size: .75rem;
+    line-height: 3.8;
+    font-weight: 500;
+    letter-spacing: .055em;
+    padding: 0 2.8rem;
+    background-color: $active;
+    border: 1px solid $active;
+    text-transform: uppercase;
+    margin-bottom: 9rem;
 
- 
+    &:hover {
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+}

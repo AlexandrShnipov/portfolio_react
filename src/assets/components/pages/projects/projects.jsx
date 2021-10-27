@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Projects.module.scss';
-import CaruselProjects from '../../../common/caruselProjects/CaruselProjects';
+import CaruselProjects from '../../../common/carusels/caruselProjects/CaruselProjects';
 
 const Projects = () => {
 
