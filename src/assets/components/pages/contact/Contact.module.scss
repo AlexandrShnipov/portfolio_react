@@ -72,6 +72,12 @@
     @extend %textSection;
 }
 
+.tel:hover,
+.email:hover {
+    color: $active;
+    opacity: 1;
+}
+
 .formBlock {
     width: 47%;
     display: flex;

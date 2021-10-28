@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className={s.footer}>
             <div className={s.container}>
                 <a className={s.footerLink} href="/">
-                    <span className={s.footerText}>&copy; Alexandr. 2021</span>
+                    <span className={s.footerCopyright}>&copy; Alexandr. 2021</span>
                 </a>
                 <a className={s.linkUp} href="/">
                 <FontAwesomeIcon icon={ faAngleDoubleUp }/>
