@@ -24,7 +24,7 @@ export default function SimpleSlider() {
             <div className={s.slider}>
                 {/* 1 */}
 
-                <div className={s.sliderItems}>
+                <div className={s.sliderItems} data-aos="fade-up" data-aos-delay="50">
                     <div className={s.sliderItem}>
                         <div className={s.sliderItemImgBox}>
                             <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={itIncubator} alt="itIncubator" />
@@ -47,16 +47,8 @@ export default function SimpleSlider() {
                         <p className={s.sliderItemText}>Retraining in the specialty of customs. Qualification - customs specialist.</p>
                     </div>
 
-                    <div className={s.sliderItem}>
-                        <div className={s.sliderItemImgBox}>
-                            <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={vstu} alt="vstu" />
-                        </div>
-                        <div className={s.sliderItemYearsBlock}>
-                            <p className={s.years}>2007 - 2008</p>
-                            <p className={s.title}>Vitebsk State University of Technology</p>
-                        </div>
-                        <p className={s.sliderItemText}>Faculty of advanced training and retraining of personnel. Qualification - manager-economist.</p>
-                    </div>
+                    {/* 2 */}
+
                 </div>
             </div>
             <div className={s.sliderItems}>
@@ -69,6 +61,17 @@ export default function SimpleSlider() {
                         <p className={s.title}>Vitebsk State Academy of Veterinary Medicine</p>
                     </div>
                     <p className={s.sliderItemText}>Higher education in veterinary medicine. Qualification - veterinarian.</p>
+                </div>
+
+                <div className={s.sliderItem}>
+                    <div className={s.sliderItemImgBox}>
+                        <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={vstu} alt="vstu" />
+                    </div>
+                    <div className={s.sliderItemYearsBlock}>
+                        <p className={s.years}>2007 - 2008</p>
+                        <p className={s.title}>Vitebsk State University of Technology</p>
+                    </div>
+                    <p className={s.sliderItemText}>Faculty of advanced training and retraining of personnel. Qualification - manager-economist.</p>
                 </div>
 
             </div>

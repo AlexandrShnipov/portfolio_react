@@ -13,11 +13,17 @@
         font-size: 1rem;
         color: $light;
         opacity: .5;
+
+        &:hover{
+            color: $active;
+            opacity: 1;
+        }
     }
 }
 
 .container {
     @extend %containerBig;
+    position: relative;
 
 }
 
@@ -25,3 +31,15 @@
     @extend %wrapSection;
     font-size: 1rem;
 }
+
+.linkUp {
+    position: absolute;
+    font-size: 2rem;
+    right: 1%;
+    padding: 1rem;
+
+    &:hover {
+        color: $active;
+    }
+}
+

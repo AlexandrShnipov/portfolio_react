@@ -69,7 +69,7 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>HTML, CSS, BEM, Grid, Bootstrap, Git</p>
+                                        <p className={s.bestBlockItemText}>html / css / scss / bem </p>
                                         <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
@@ -78,35 +78,36 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>GULP</p>
+                                        <p className={s.bestBlockItemText}>gulp</p>
                                         <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
                                     <div className={experienceStyle} style={{ width: "90%" }}></div>
                                 </li>
 
+                                
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>SCSS</p>
-                                        <p className={s.bestBlockItemNum}>85%</p>
+                                        <p className={s.bestBlockItemText}>basics of js, and react </p>
+                                        <p className={s.bestBlockItemNum}>80%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "85%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "80%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>JS, React, TSX</p>
-                                        <p className={s.bestBlockItemNum}>60%</p>
+                                        <p className={s.bestBlockItemText}>bootstrap</p>
+                                        <p className={s.bestBlockItemNum}>75%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "60%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "75%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>Wordpress</p>
-                                        <p className={s.bestBlockItemNum} >90%</p>
+                                        <p className={s.bestBlockItemText}>git</p>
+                                        <p className={s.bestBlockItemNum} >{`${count90}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
                                     <div className={experienceStyle} style={{ width: "90%" }}></div>

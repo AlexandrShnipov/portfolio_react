@@ -24,7 +24,7 @@ a,
 button,
 span {
     color: $light;
-    transition: all .5s;
+    transition: all .5s linear;
 }
 
 a {
