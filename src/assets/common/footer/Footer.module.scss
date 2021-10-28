@@ -1,0 +1,27 @@
+@import '../../styles//sass/abstracts/variables.scss';
+
+.footer {
+    background-color: rgba(22, 22, 22, .5);
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+
+    &Text {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        color: $light;
+        opacity: .5;
+    }
+}
+
+.container {
+    @extend %containerBig;
+
+}
+
+.wrap {
+    @extend %wrapSection;
+    font-size: 1rem;
+}

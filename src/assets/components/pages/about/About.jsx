@@ -69,7 +69,7 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>HTML, CSS, BEM</p>
+                                        <p className={s.bestBlockItemText}>HTML, CSS, BEM, Grid, Bootstrap, Git</p>
                                         <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
@@ -96,11 +96,11 @@ const About = () => {
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>React, JS</p>
-                                        <p className={s.bestBlockItemNum}>75%</p>
+                                        <p className={s.bestBlockItemText}>JS, React, TSX</p>
+                                        <p className={s.bestBlockItemNum}>60%</p>
                                     </div>
                                     <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "75%" }}></div>
+                                    <div className={experienceStyle} style={{ width: "60%" }}></div>
                                 </li>
 
                                 <li className={s.bestBlockItem}>

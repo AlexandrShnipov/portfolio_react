@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className={s.header}>
             <div className={s.container}>
-               <div className={s.wrap}>
+                <div className={s.wrap}>
                     <div className={s.logo}>
                         <Link className={s.logoLink} to='/'>
                             <h3 className={s.logoText}>
@@ -15,7 +15,8 @@ const Header = () => {
                             </h3>
                         </Link>
                     </div>
-                    <div className={s.globalContainer}>
+
+                   <div className={s.NavWrap}>
                         <nav className={s.nav}>
                             <ul className={s.navItems}>
                                 <li className={s.navItem}>
@@ -37,19 +38,21 @@ const Header = () => {
                                     <Link className={s.navLink} to='/'>Testimonials</Link>
                                 </li>
                                 {/* <li className={s.navItem}>
-                                    <Link className={s.navLink} to='/'>Partners</Link>
-                                </li> */}
+                                        <Link className={s.navLink} to='/'>Partners</Link>
+                                    </li> */}
                                 {/* <li className={s.navItem}>
-                                    <Link className={s.navLink} to='/'>Blog</Link>
-                                </li> */}
+                                        <Link className={s.navLink} to='/'>Blog</Link>
+                                    </li> */}
                                 <li className={s.navItem}>
                                     <Link className={s.navLink} to='/'>Contact</Link>
                                 </li>
                             </ul>
                         </nav>
+                   </div>
+                    <div className={s.LinkWrap}>
+                        <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
                     </div>
-                    <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
-               </div>
+                </div>
             </div>
         </header>
     )

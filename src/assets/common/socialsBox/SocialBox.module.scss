@@ -1,0 +1,54 @@
+@import '../../styles/sass/abstracts/variables.scss';
+
+.linksWrap {
+    position: fixed;
+    left: .5rem;
+    height: 100vh;
+    color: $light;
+    z-index: 20;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 12%;
+        width: 1px;
+        height: 25%;
+        background-color: $light;
+        opacity: .4;
+        margin-bottom: 3rem;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 6.5%;
+        width: 1px;
+        height: 25%;
+        background-color: $light;
+        opacity: .4;
+        margin-bottom: 3rem;
+    }
+}
+
+.link {
+    padding: 1rem;
+    font-size: 1.4rem;
+
+    &:hover {
+        color: $active;
+    }
+}
+
+.link+.link {
+    margin-top: 1rem;
+}
