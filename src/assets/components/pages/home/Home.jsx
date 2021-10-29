@@ -29,7 +29,9 @@ const Home = () => {
                             />
                         </div>
                     </div>
-                    <div className={s.sectionContent} data-aos="fade-up" data-aos-delay="100">
+                    <div className={s.sectionContent}
+                        data-aos="fade-up"
+                        data-aos-delay="100">
                         <span className={s.nameProfession}>
                             Front end developer
                         </span>

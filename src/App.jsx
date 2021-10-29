@@ -6,7 +6,7 @@ import Home from '../src/assets/components/pages/home/Home';
 import About from '../src/assets/components/pages/about/About';
 import Projects from '../src/assets/components/pages/projects/Projects';
 import Education from '../src/assets/components/pages/education/Education';
-import Department from '../src/assets/components/pages/department/Department';
+import Experiense from '../src/assets/components/pages/experiense/Experiense';
 import Testimonials from '../src/assets/components/pages/testimonials/Testimonials';
 import Contact from '../src/assets/components/pages/contact/Contact';
 import Footer from '../src/assets/common/footer/Footer'
@@ -36,7 +36,7 @@ function App() {
       <About />
       <Projects />
       <Education />
-      <Department/>
+      <Experiense/>
       <Testimonials />
       <Contact />
       <Footer />

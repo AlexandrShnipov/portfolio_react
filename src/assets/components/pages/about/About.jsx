@@ -55,7 +55,10 @@ const About = () => {
 
     return (
         <section className={s.section}>
-            <div className={s.sectionBgBox} data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="100">
+            <div className={s.sectionBgBox}
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+                data-aos-delay="100">
                 <img className={s.sectionBgImg} src={about} alt="background" />
             </div>
             <div className={s.sectionContainer}>
@@ -69,7 +72,9 @@ const About = () => {
                             <h3 className={s.bestBlockTitle}>Great Experience</h3>
                             <p className={s.bestBlockText}>Fill appear won't may make moveth signs. Fourth. Good own. Green you're moveth us, lesser.</p>
 
-                            <div ref={experienceRef} className={s.bestBlockItems}>
+                            <div ref={experienceRef} className={s.bestBlockItems}
+                             data-aos="fade-up"
+                             data-aos-delay="50">
 
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>

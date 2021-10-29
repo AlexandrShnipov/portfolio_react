@@ -22,7 +22,10 @@ export default class Fade extends Component {
 
                     <div className={s.sliderItems}>
                         {/* 1 */}
-                        <div className={s.sliderItem} data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000"
+                        <div className={s.sliderItem}
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                            data-aos-duration="2000"
                         >
                             <p className={s.sliderItemText}>"Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."</p>
                             <p className={s.sliderItemName}>Ramsay Bolton</p>

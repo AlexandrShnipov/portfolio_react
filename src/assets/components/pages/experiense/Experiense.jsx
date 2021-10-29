@@ -1,40 +1,44 @@
 import React from "react";
-import s from './Department.module.scss';
-import department from '../../../images/background/department.jpg'
+import s from './Experiense.module.scss';
+import experiense from '../../../images/background/experiense.jpg'
 
 
 const Department = () => {
 
-    return(
+    return (
         <section className={s.section}>
-            <div className={s. sectionBgBox} data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="100">
-            <img className={s.sectionBgImg} src={department} alt="background" />
-        </div>
+            <div className={s.sectionBgBox}
+                data-aos="zoom-out"
+                data-aos-duration="3000"
+                data-aos-delay="100">
+                <img className={s.sectionBgImg} src={experiense} alt="background" />
+            </div>
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
                         <div className={s.sectionTitle}>
-                            <h3 className={s.sectionTitle}>Department</h3>
+                            <h3 className={s.sectionTitle}>Experiense</h3>
                         </div>
                         <div className={s.sectionItems} data-aos="fade-up" data-aos-delay="50">
+
                             <div className={s.sectionItem}>
                                 <p className={s.function}>
-                                From inspector to deputy head of the customs clearance and control department
+                                    Head of the Department of Customs
                                 </p>
                                 <p className={s.placeOfWork}>
-                                     Vitebsk customs
+                                    State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus
                                 </p>
                                 <p className={s.years}>
-                                    2004 - 2016
+                                    2019 - 2021
                                 </p>
                             </div>
 
                             <div className={s.sectionItem}>
                                 <p className={s.function}>
-                                Head of Risk Analysis and Management Department
+                                    Head of Risk Analysis and Management Department
                                 </p>
-                                <p className={s.placeOfWork }>
-                                  Vitebsk customs
+                                <p className={s.placeOfWork}>
+                                    Vitebsk customs
                                 </p>
                                 <p className={s.years}>
                                     2016 - 2019
@@ -43,13 +47,13 @@ const Department = () => {
 
                             <div className={s.sectionItem}>
                                 <p className={s.function}>
-                                  Head of the Department of Customs
+                                    From inspector to deputy head of the customs clearance and control department
                                 </p>
                                 <p className={s.placeOfWork}>
-                                State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus
+                                    Vitebsk customs
                                 </p>
                                 <p className={s.years}>
-                                    2019 - 2021
+                                    2004 - 2016
                                 </p>
                             </div>
                         </div>

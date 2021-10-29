@@ -49,7 +49,7 @@ export default function SimpleSlider() {
                                 <p className={s.sliderItemContentStack}>
                                     Stack:
                                 </p>
-                                <span>HTML, CSS, TypeScript, teamwork with front-end developers</span>
+                                <span>HTML, CSS, Figma, TypeScript, teamwork with front-end developers</span>
                             </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ export default function SimpleSlider() {
                                 <p className={s.sliderItemContentStack}>
                                     Stack:
                                 </p>
-                                <span>HTML, CSS, SCSS, JS, Gulp
+                                <span>HTML, CSS, SCSS, JS, Gulp, Figma
                                 </span>
                             </div>
                         </div>
@@ -111,7 +111,7 @@ export default function SimpleSlider() {
                                 <p className={s.sliderItemContentStack}>
                                     Stack:
                                 </p>
-                                <span>HTML, CSS, SCSS, JS, Gulp</span>
+                                <span>HTML, CSS, SCSS, JS, Gulp, Figma</span>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ export default function SimpleSlider() {
                                 <p className={s.sliderItemContentStack}>
                                     Stack:
                                 </p>
-                                <span>HTML, CSS, Bootstrap
+                                <span>HTML, CSS, Bootstrap, Figma
                                 </span>
                             </div>
                         </div>
@@ -167,13 +167,13 @@ export default function SimpleSlider() {
                         </div>
                         <div className={s.sliderItemContent}>
                             <h3 className={s.sliderItemContentTitle}>
-                                Desire
+                            Smoothie
                             </h3>
                             <div className={s.sliderItemContentText}>
                                 <p className={s.sliderItemContentStack}>
                                     Stack:
                                 </p>
-                                <span>HTML, CSS, LESS, JS</span>
+                                <span>HTML, CSS, LESS, JS, Fotoshop</span>
                             </div>
                         </div>
                     </div>
@@ -201,7 +201,7 @@ export default function SimpleSlider() {
                                 <p className={s.sliderItemContentStack}>
                                     Stack:
                                 </p>
-                                <span>HTML, CSS, JS</span>
+                                <span>HTML, CSS, JS, Figma</span>
                             </div>
                         </div>
                     </div>

@@ -24,7 +24,9 @@ export default function SimpleSlider() {
             <div className={s.slider}>
                 {/* 1 */}
 
-                <div className={s.sliderItems} data-aos="fade-up" data-aos-delay="50">
+                <div className={s.sliderItems}
+                    data-aos="fade-up"
+                    data-aos-delay="50">
                     <div className={s.sliderItem}>
                         <div className={s.sliderItemImgBox}>
                             <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={itIncubator} alt="itIncubator" />
@@ -50,7 +52,9 @@ export default function SimpleSlider() {
             </div>
 
             {/* 2 */}
-            <div className={s.sliderItems} data-aos="fade-up" data-aos-delay="50">
+            <div className={s.sliderItems}
+                data-aos="fade-up"
+                data-aos-delay="50">
                 <div className={s.sliderItem}>
                     <div className={s.sliderItemImgBox}>
                         <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={vstu} alt="vstu" />
