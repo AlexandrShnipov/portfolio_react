@@ -1,0 +1,79 @@
+@import '../../../../assets/styles/sass/abstracts/variables.scss';
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &BgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        // pointer-events: none;
+    }
+
+    &BgImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    &Container {
+        padding-top: 10rem;
+        position: relative;
+          }
+
+    .globalContainer {
+        @extend %globalContainer;
+    }
+
+    &Title {
+        @extend %title;
+        margin-bottom: 3rem;
+    }
+
+    &Items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &Item {
+        @extend %textSection;
+        display: flex;
+        justify-content: space-between;
+        // margin-bottom: 3rem;
+        // padding: 3rem 0;
+        border-bottom: 1px solid rgba($light, .6);
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+
+.function {
+        flex-basis: 20%;
+    flex-grow: 1;
+    padding: 1.5rem;
+    border-right: 1px solid rgba($light, .6);
+}
+
+.placeOfWork {
+    flex-basis: 20%;
+    flex-grow: 1;
+    padding: 1.5rem;
+    border-right: 1px solid rgba($light, .6);
+}
+
+.years {
+    flex-basis: 20%;
+    padding: 1.5rem;
+}

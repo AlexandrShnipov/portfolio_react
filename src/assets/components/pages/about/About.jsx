@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import about from '../../../images/background/about.jpg';
 
 import s from './About.module.scss';
 
@@ -8,9 +9,9 @@ const About = () => {
     const experienceRef = useRef();
     console.log(count90)
     const handleCount = () => {
-            setCount(state => state + 1)
-        }
-    
+        setCount(state => state + 1)
+    }
+
     const windowHeignt = window.innerHeight;
     let countUp = setInterval(() => {
         //    handleCount()
@@ -54,6 +55,9 @@ const About = () => {
 
     return (
         <section className={s.section}>
+            <div className={s.sectionBgBox} data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="100">
+                <img className={s.sectionBgImg} src={about} alt="background" />
+            </div>
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
@@ -85,7 +89,7 @@ const About = () => {
                                     <div className={experienceStyle} style={{ width: "90%" }}></div>
                                 </li>
 
-                                
+
                                 <li className={s.bestBlockItem}>
                                     <div className={s.bestBlockItemContent}>
                                         <p className={s.bestBlockItemText}>basics of js, and react </p>

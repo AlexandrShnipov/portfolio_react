@@ -1,7 +1,7 @@
 // import 'react-fancybox/lib/fancybox.css'
 import { Link } from 'react-router-dom';
 import s from './Home.module.scss';
-import home from '../../../images/background/home2.jpg'
+import home from '../../../images/background/home.jpg'
 
 import FancyVideo from 'react-videojs-fancybox';
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import s from './Education.module.scss';
-import bg from '../../../images/background/education.png';
+import education from '../../../images/background/education.jpg'
 import CaruselEducation from '../../../common/carusels/caruselEducation/CaruselEducation';
 
 
@@ -8,9 +8,9 @@ const Education = () => {
 
     return (
         <section className={s.section}>
-            {/* <div className={s. backgroundBox}>
-                <img className={s.backgroundImg} src={bg} alt="background" />
-            </div> */}
+               <div className={s.sectionBgBox} data-aos="zoom-out" data-aos-duration="3000" data-aos-delay="100">
+                <img className={s.sectionBgImg} src={education} alt="background" />
+            </div>
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
@@ -18,7 +18,7 @@ const Education = () => {
                             <h3 className={s.sectionTitle}>Education</h3>
                             <Link className={s.sectionLink} to="/">Download resume</Link>
                         </div>
-                      <CaruselEducation/>
+                        <CaruselEducation />
                     </div>
                 </div>
             </div>

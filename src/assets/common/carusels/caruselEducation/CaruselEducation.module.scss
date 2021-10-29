@@ -9,7 +9,7 @@
     &Item {
         display: flex;
         justify-content: space-between;
-        padding: 3.125rem 0;
+        padding: 3rem 0;
 
         &:nth-of-type(odd) {
             border-bottom: 1px solid rgba(255, 255, 255, .6);
