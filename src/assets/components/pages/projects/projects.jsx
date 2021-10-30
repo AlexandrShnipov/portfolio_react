@@ -6,7 +6,7 @@ import CaruselProjects from '../../../common/carusels/caruselProjects/CaruselPro
 const Projects = () => {
 
     return (
-        <section className={s.section}>
+        <section className={s.section} id="Projects">
             <div className={s.sectionBgBox}
                 data-aos="zoom-out"
                 data-aos-duration="3000"

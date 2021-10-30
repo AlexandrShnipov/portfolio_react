@@ -8,7 +8,7 @@ import FancyVideo from 'react-videojs-fancybox';
 const Home = () => {
 
     return (
-        <section className={s.section}>
+        <section className={s.section} id="Home">
             <div className={s.sectionBgBox}>
                 <img className={s.sectionBgImg} src={home} alt="images background" />
             </div>

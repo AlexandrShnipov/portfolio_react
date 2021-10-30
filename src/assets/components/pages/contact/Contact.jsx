@@ -6,7 +6,7 @@ import contact from '../../../images/background/contact.jpg';
 const Contact = () => {
 
     return (
-        <section className={s.section}>
+        <section className={s.section} id="Contact">
             <div className={s.sectionBgBox}>
                 <img className={s.sectionBgImg} src={contact} alt="images background"
                     data-aos="zoom-out"

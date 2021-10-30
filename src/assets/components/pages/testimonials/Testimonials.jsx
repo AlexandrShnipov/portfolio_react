@@ -56,7 +56,7 @@ const Testimonials = () => {
 
 
     return (
-        <section className={s.section}>
+        <section className={s.section} id="Testimonials">
             <div className={s.sectionBgBox}>
                 <img className={s.sectionBgImg} src={testimonials} alt="images background"
                     data-aos="zoom-out"

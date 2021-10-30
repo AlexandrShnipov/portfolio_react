@@ -170,7 +170,7 @@ export default function SimpleSlider() {
                             Smoothie
                             </h3>
                             <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentStack}>
+                                <p className={s.sliderItemContentTextTitle}>
                                     Stack:
                                 </p>
                                 <span>HTML, CSS, LESS, JS, Fotoshop</span>

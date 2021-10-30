@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import about from '../../../images/background/about.jpg';
-
 import s from './About.module.scss';
+
 
 const About = () => {
     const [animation, setAnimation] = useState(false);
@@ -54,7 +54,7 @@ const About = () => {
 
 
     return (
-        <section className={s.section}>
+        <section className={s.section} id="About">
             <div className={s.sectionBgBox}
                 data-aos="zoom-out"
                 data-aos-duration="3000"

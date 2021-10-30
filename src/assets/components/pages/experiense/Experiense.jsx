@@ -6,7 +6,7 @@ import experiense from '../../../images/background/experiense.jpg'
 const Department = () => {
 
     return (
-        <section className={s.section}>
+        <section className={s.section} id="Experiense">
             <div className={s.sectionBgBox}
                 data-aos="zoom-out"
                 data-aos-duration="3000"

@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
+import React from 'react';
 import s from './Footer.module.scss';
+import { Link, animateScroll as scroll } from "react-scroll";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,12 +12,23 @@ const Footer = () => {
     return (
         <footer className={s.footer}>
             <div className={s.container}>
-                <a className={s.footerLink} href="/">
+                <Link className={s.footerLink}
+                    to="Home"
+                    spy={true}
+                    smooth={true}
+                    // offset={-70}
+                    duration={500}>
                     <span className={s.footerCopyright}>&copy; Alexandr. 2021</span>
-                </a>
-                <a className={s.linkUp} href="/">
-                <FontAwesomeIcon icon={ faAngleDoubleUp }/>
-                </a>
+                </Link>
+
+                <Link className={s.linkUp}
+                    to="Home"
+                    spy={true}
+                    smooth={true}
+                    // offset={-70}
+                    duration={500}>
+                    <FontAwesomeIcon icon={faAngleDoubleUp} />
+                </Link>
             </div>
         </footer>
     )
