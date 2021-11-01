@@ -32,18 +32,18 @@ export default function SimpleSlider() {
                             <div className={s.imgBoxSquare}>
                                 <img className={s.imgBoxImg} src={cards} alt="Cards" />
                                 <div className={s.imgBoxLinks}>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} to="/">
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://matumba125.github.io/learningApp">
                                         view project
-                                    </Link>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} to="/">
+                                    </a>
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/Matumba125/learningApp.git">
                                         open sourse code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className={s.sliderItemContent}>
                             <h3 className={s.sliderItemContentTitle}>
-                            Learning cards
+                                Learning cards
                             </h3>
                             <div className={s.sliderItemContentText}>
                                 <p className={s.sliderItemContentStack}>
@@ -60,12 +60,12 @@ export default function SimpleSlider() {
                             <div className={s.imgBoxSquare}>
                                 <img className={s.imgBoxImg} src={desire} alt="Desire" />
                                 <div className={s.imgBoxLinks}>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} to="/">
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="/">
                                         view project
-                                    </Link>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} to="/">
+                                    </a>
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/desire-gulp.git">
                                         open sourse code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -94,18 +94,18 @@ export default function SimpleSlider() {
                             <div className={s.imgBoxSquare}>
                                 <img className={s.imgBoxImg} src={thrivetalk} alt="Thrivetalk" />
                                 <div className={s.imgBoxLinks}>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} to="/">
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/Travetalk_NEW">
                                         view project
-                                    </Link>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} to="/">
+                                    </a>
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/Travetalk_NEW.git">
                                         open sourse code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className={s.sliderItemContent}>
                             <h3 className={s.sliderItemContentTitle}>
-                            Thrivetalk
+                                Thrivetalk
                             </h3>
                             <div className={s.sliderItemContentText}>
                                 <p className={s.sliderItemContentStack}>
@@ -122,18 +122,18 @@ export default function SimpleSlider() {
                             <div className={s.imgBoxSquare}>
                                 <img className={s.imgBoxImg} src={claenAndSimple} alt="ClaenAndSimple" />
                                 <div className={s.imgBoxLinks}>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} to="/">
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/clean_and_simple_website">
                                         view project
-                                    </Link>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} to="/">
+                                    </a>
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/clean_and_simple_website.git">
                                         open sourse code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className={s.sliderItemContent}>
                             <h3 className={s.sliderItemContentTitle}>
-                            Claen and simple
+                                Claen and simple
                             </h3>
                             <div className={s.sliderItemContentText}>
                                 <p className={s.sliderItemContentStack}>
@@ -156,18 +156,18 @@ export default function SimpleSlider() {
                             <div className={s.imgBoxSquare}>
                                 <img className={s.imgBoxImg} src={smoothie} alt="Smoothie" />
                                 <div className={s.imgBoxLinks}>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} to="/">
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/smoothie">
                                         view project
-                                    </Link>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} to="/">
+                                    </a>
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/smoothie.git">
                                         open sourse code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <div className={s.sliderItemContent}>
                             <h3 className={s.sliderItemContentTitle}>
-                            Smoothie
+                                Smoothie
                             </h3>
                             <div className={s.sliderItemContentText}>
                                 <p className={s.sliderItemContentTextTitle}>
@@ -184,12 +184,12 @@ export default function SimpleSlider() {
                             <div className={s.imgBoxSquare}>
                                 <img className={s.imgBoxImg} src={delivery} alt="Delivery" />
                                 <div className={s.imgBoxLinks}>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} to="/">
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href=" https://alexandrshnipov.github.io/Delivery-Food-New">
                                         view project
-                                    </Link>
-                                    <Link className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} to="/">
+                                    </a>
+                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/Delivery-Food-New.git">
                                         open sourse code
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
