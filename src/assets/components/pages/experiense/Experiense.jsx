@@ -1,6 +1,7 @@
 import React from "react";
 import s from './Experiense.module.scss';
 import experiense from '../../../images/background/experiense.jpg'
+import ExperienseItem from '../../../common/experienseItem/ExperienseItem';
 
 
 const Department = () => {
@@ -16,46 +17,29 @@ const Department = () => {
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
-                        <div className={s.sectionTitle}>
-                            <h3 className={s.sectionTitle}>Experiense</h3>
-                        </div>
+
+                        <h3 className={s.sectionTitle}>Experiense</h3>
+
                         <div className={s.sectionItems} data-aos="fade-up" data-aos-delay="50">
 
-                            <div className={s.sectionItem}>
-                                <p className={s.function}>
-                                    Head of the Department of Customs
-                                </p>
-                                <p className={s.placeOfWork}>
-                                    State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus
-                                </p>
-                                <p className={s.years}>
-                                    2019 - 2021
-                                </p>
-                            </div>
+                            <ExperienseItem 
+                                function='Head of the Department of Customs'
+                                institution='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
+                                years='2019 - 2021'
+                            />
 
-                            <div className={s.sectionItem}>
-                                <p className={s.function}>
-                                    Head of Risk Analysis and Management Department
-                                </p>
-                                <p className={s.placeOfWork}>
-                                    Vitebsk customs
-                                </p>
-                                <p className={s.years}>
-                                    2016 - 2019
-                                </p>
-                            </div>
+                            <ExperienseItem
+                                function='Head of Risk Analysis and Management Department'
+                                institution='Vitebsk customs'
+                                years='2016 - 2019'
+                            />
 
-                            <div className={s.sectionItem}>
-                                <p className={s.function}>
-                                    From inspector to deputy head of the customs clearance and control department
-                                </p>
-                                <p className={s.placeOfWork}>
-                                    Vitebsk customs
-                                </p>
-                                <p className={s.years}>
-                                    2004 - 2016
-                                </p>
-                            </div>
+                            <ExperienseItem
+                                function=' From inspector to deputy head of the customs clearance and control department'
+                                institution='Vitebsk customs'
+                                years=' 2004 - 2016'
+                            />
+
                         </div>
                     </div>
                 </div>

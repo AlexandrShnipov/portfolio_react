@@ -1,0 +1,33 @@
+@import '../../styles//sass/abstracts/variables.scss';
+
+.sectionItem {
+    @extend %textSection;
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: 3rem;
+    // padding: 3rem 0;
+    border-bottom: 1px solid rgba($light, .6);
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+
+    .function {
+        flex-basis: 20%;
+        flex-grow: 1;
+        padding: 1.5rem;
+        border-right: 1px solid rgba($light, .6);
+    }
+
+    .institution {
+        flex-basis: 20%;
+        flex-grow: 1;
+        padding: 1.5rem;
+        border-right: 1px solid rgba($light, .6);
+    }
+
+    .years {
+        flex-basis: 20%;
+        padding: 1.5rem;
+    }
+}
