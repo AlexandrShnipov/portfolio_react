@@ -9,6 +9,7 @@ import itIncubator from '../../../images/education/it-incubator.png';
 import customs from '../../../images/education/customs.png';
 import vstu from '../../../images/education/vstu.png';
 import vgavm from '../../../images/education/vgavm.png';
+import CaruselEducationItem from './caruselEducationItem/CaruselEducationItem';
 
 export default function SimpleSlider() {
     var settings = {
@@ -27,27 +28,20 @@ export default function SimpleSlider() {
                 <div className={s.sliderItems}
                     data-aos="fade-up"
                     data-aos-delay="50">
-                    <div className={s.sliderItem}>
-                        <div className={s.sliderItemImgBox}>
-                            <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={itIncubator} alt="itIncubator" />
-                        </div>
-                        <div className={s.sliderItemYearsBlock}>
-                            <p className={s.years}>2021</p>
-                            <p className={s.title}>It-Incubator</p>
-                        </div>
-                        <p className={s.sliderItemText}>Which firmament dominion first rule and tree. The seas he i were cattle Under living. It may beast every forth place.</p>
-                    </div>
 
-                    <div className={s.sliderItem}>
-                        <div className={s.sliderItemImgBox}>
-                            <img className={s.sliderItemImg} src={customs} alt="customs" />
-                        </div>
-                        <div className={s.sliderItemYearsBlock}>
-                            <p className={s.years}>2018 - 2019</p>
-                            <p className={s.title}>State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus</p>
-                        </div>
-                        <p className={s.sliderItemText}>Retraining in the specialty of customs. Qualification - customs specialist.</p>
-                    </div>
+                    <CaruselEducationItem
+                        img={itIncubator}
+                        years='2021'
+                        title='It-Incubator'
+                        text='Which firmament dominion first rule and tree. The seas he i were cattle Under living. It may beast every forth place.'
+                    />
+
+                    <CaruselEducationItem
+                        img={customs}
+                        years='2018 - 2019'
+                        title='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
+                        text='Retraining in the specialty of customs. Qualification - customs specialist.'
+                    />
                 </div>
             </div>
 
@@ -55,27 +49,20 @@ export default function SimpleSlider() {
             <div className={s.sliderItems}
                 data-aos="fade-up"
                 data-aos-delay="50">
-                <div className={s.sliderItem}>
-                    <div className={s.sliderItemImgBox}>
-                        <img className={`${s.sliderItemImg} ${s.sliderItemImgCircle}`} src={vstu} alt="vstu" />
-                    </div>
-                    <div className={s.sliderItemYearsBlock}>
-                        <p className={s.years}>2007 - 2008</p>
-                        <p className={s.title}>Vitebsk State University of Technology</p>
-                    </div>
-                    <p className={s.sliderItemText}>Faculty of advanced training and retraining of personnel. Qualification - manager-economist.</p>
-                </div>
 
-                <div className={s.sliderItem}>
-                    <div className={s.sliderItemImgBox}>
-                        <img className={s.sliderItemImg} src={vgavm} alt="vgavm" />
-                    </div>
-                    <div className={s.sliderItemYearsBlock}>
-                        <p className={s.years}>1993 - 1998</p>
-                        <p className={s.title}>Vitebsk State Academy of Veterinary Medicine</p>
-                    </div>
-                    <p className={s.sliderItemText}>Higher education in veterinary medicine. Qualification - veterinarian.</p>
-                </div>
+                <CaruselEducationItem
+                    img={vstu}
+                    years='2007 - 2008'
+                    title='Vitebsk State University of Technology'
+                    text='Faculty of advanced training and retraining of personnel. Qualification - manager-economist.'
+                />
+
+                <CaruselEducationItem
+                    img={vgavm}
+                    years='1993 - 1998'
+                    title='Vitebsk State Academy of Veterinary Medicine'
+                    text='Higher education in veterinary medicine. Qualification - veterinarian.'
+                />
 
             </div>
             {/* <div>

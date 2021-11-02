@@ -1,0 +1,50 @@
+@import '../../../../styles/sass/abstracts/variables.scss';
+
+.sliderItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    &:nth-of-type(odd) {
+        border-bottom: 1px solid rgba(255, 255, 255, .6);
+    }
+
+    &ImgBox {
+        width: 5rem;
+        height: 5rem;
+        opacity: .6;
+    }
+
+    &Img {
+        object-fit: cover;
+    }
+
+    // &ItemImgCircle {
+    //     border-radius: 50%;
+    // }
+
+    &YearsBlock {
+        display: flex;
+        flex-direction: column;
+        width: 24rem;
+    }
+
+    .years {
+        @extend %textSection;
+        margin-bottom: 0.3rem;
+    }
+
+    .title {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        letter-spacing: .055em;
+        font-weight: 500;
+    }
+
+    &Text {
+        @extend %textSection;
+        max-width: 22rem;
+        letter-spacing: .055em;
+    }
+}
