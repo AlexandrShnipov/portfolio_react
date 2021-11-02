@@ -11,6 +11,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import s from './CaruselProjects.module.scss';
 import styles from './CaruselProjects.scss';
+import LinkColor from '../../linkColor/LinkColor';
+import CaruselProgectsItem from '../caruselProjects/caruselProgectsItem/CaruselProgectsItem';
 
 export default function SimpleSlider() {
     var settings = {
@@ -24,187 +26,127 @@ export default function SimpleSlider() {
     return (
         <Slider {...settings} className={"sliderWrap"} dotsClass={"dots"}>
             <div className={s.slider}>
+
                 {/* 1 */}
                 <div className={s.sliderItems}>
+
                     {/* 1.1 */}
-                    <div className={s.sliderItem}>
-                        <div className={s.imgBox}>
-                            <div className={s.imgBoxSquare}>
-                                <img className={s.imgBoxImg} src={cards} alt="Cards" />
-                                <div className={s.imgBoxLinks}>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://matumba125.github.io/learningApp" target="_blank">
-                                        view project
-                                    </a>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/Matumba125/learningApp.git" target="_blank">
-                                        open sourse code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.sliderItemContent}>
-                            <h3 className={s.sliderItemContentTitle}>
-                                Learning cards
-                            </h3>
-                            <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentStack}>
-                                    Stack:
-                                </p>
-                                <span>HTML, CSS, Figma, TypeScript, teamwork with front-end developers</span>
-                            </div>
-                        </div>
-                    </div>
+                    <CaruselProgectsItem
+                        img={cards}
+                        title='Learning cards'
+                        stack='HTML, CSS, Figma, TypeScript, teamwork with front-end developers'
+                    >
+                        <LinkColor
+                            href={'https://matumba125.github.io/learningApp'}
+                            text='view project'
+                        />
+                        <LinkColor
+                            style={{ marginLeft: '1rem' }}
+                            href={'https://github.com/Matumba125/learningApp.git'}
+                            text='open sourse code'
+                        />
+                    </CaruselProgectsItem>
 
                     {/* 1.2 */}
-                    <div className={s.sliderItem}>
-                        <div className={s.imgBox}>
-                            <div className={s.imgBoxSquare}>
-                                <img className={s.imgBoxImg} src={desire} alt="Desire" />
-                                <div className={s.imgBoxLinks}>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/desire-gulp" target="_blank">
-                                        view project
-                                    </a>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/desire-gulp.git" target="_blank">
-                                        open sourse code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.sliderItemContent}>
-                            <h3 className={s.sliderItemContentTitle}>
-                                Thrivetalk
-                            </h3>
-                            <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentStack}>
-                                    Stack:
-                                </p>
-                                <span>HTML, CSS, SCSS, JS, Gulp, Figma
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <CaruselProgectsItem
+                        img={desire}
+                        title='Desire'
+                        stack='HTML, CSS, SCSS, JS, Gulp, Figma'
+                    >
+                        <LinkColor
+                            href={'https://alexandrshnipov.github.io/desire-gulp'}
+                            text='view project'
+                        />
+                        <LinkColor
+                            style={{ marginLeft: '1rem' }}
+                            href={'https://github.com/AlexandrShnipov/desire-gulp.git'}
+                            text='open sourse code'
+                        />
+                    </CaruselProgectsItem>
+
                 </div>
             </div>
 
             {/* 2 */}
             <div className={s.slider}>
                 <div className={s.sliderItems}>
+
                     {/* 2.1 */}
-                    <div className={s.sliderItem}>
-                        <div className={s.imgBox}>
-                            <div className={s.imgBoxSquare}>
-                                <img className={s.imgBoxImg} src={thrivetalk} alt="Thrivetalk" />
-                                <div className={s.imgBoxLinks}>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/Travetalk_NEW" target="_blank">
-                                        view project
-                                    </a>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/Travetalk_NEW.git" target="_blank">
-                                        open sourse code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.sliderItemContent}>
-                            <h3 className={s.sliderItemContentTitle}>
-                                Thrivetalk
-                            </h3>
-                            <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentStack}>
-                                    Stack:
-                                </p>
-                                <span>HTML, CSS, SCSS, JS, Gulp, Figma</span>
-                            </div>
-                        </div>
-                    </div>
+                    <CaruselProgectsItem
+                        img={thrivetalk}
+                        title='Thrivetalk'
+                        stack='HTML, CSS, SCSS, JS, Gulp, Figma'
+                    >
+                        <LinkColor
+                            href={'https://alexandrshnipov.github.io/Travetalk_NEW'}
+                            text='view project'
+                        />
+                        <LinkColor
+                            style={{ marginLeft: '1rem' }}
+                            href={'https://github.com/AlexandrShnipov/Travetalk_NEW.git'}
+                            text='open sourse code'
+                        />
+                    </CaruselProgectsItem>
 
                     {/* 2.2 */}
-                    <div className={s.sliderItem}>
-                        <div className={s.imgBox}>
-                            <div className={s.imgBoxSquare}>
-                                <img className={s.imgBoxImg} src={claenAndSimple} alt="ClaenAndSimple" />
-                                <div className={s.imgBoxLinks}>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/clean_and_simple_website" target="_blank">
-                                        view project
-                                    </a>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/clean_and_simple_website.git" target="_blank">
-                                        open sourse code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.sliderItemContent}>
-                            <h3 className={s.sliderItemContentTitle}>
-                                Claen and simple
-                            </h3>
-                            <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentStack}>
-                                    Stack:
-                                </p>
-                                <span>HTML, CSS, Bootstrap, Figma
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <CaruselProgectsItem
+                        img={claenAndSimple}
+                        title='ClaenAndSimple'
+                        stack='HTML, CSS, Bootstrap, Figma'
+                    >
+                        <LinkColor
+                            href={'https://alexandrshnipov.github.io/clean_and_simple_website'}
+                            text='view project'
+                        />
+                        <LinkColor
+                            style={{ marginLeft: '1rem' }}
+                            href={'https://github.com/AlexandrShnipov/clean_and_simple_website.git'}
+                            text='open sourse code'
+                        />
+                    </CaruselProgectsItem>
+
                 </div>
             </div>
 
             {/* 3 */}
             <div className={s.slider}>
                 <div className={s.sliderItems}>
+
                     {/* 3.1 */}
-                    <div className={s.sliderItem}>
-                        <div className={s.imgBox}>
-                            <div className={s.imgBoxSquare}>
-                                <img className={s.imgBoxImg} src={smoothie} alt="Smoothie" />
-                                <div className={s.imgBoxLinks}>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href="https://alexandrshnipov.github.io/smoothie" target="_blank">
-                                        view project
-                                    </a>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/smoothie.git" target="_blank">
-                                        open sourse code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.sliderItemContent}>
-                            <h3 className={s.sliderItemContentTitle}>
-                                Smoothie
-                            </h3>
-                            <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentTextTitle}>
-                                    Stack:
-                                </p>
-                                <span>HTML, CSS, LESS, JS, Fotoshop</span>
-                            </div>
-                        </div>
-                    </div>
+                    <CaruselProgectsItem
+                        img={smoothie}
+                        title='Smoothie'
+                        stack='HTML, CSS, LESS, JS, Fotoshop'
+                    >
+                        <LinkColor
+                            href={'https://alexandrshnipov.github.io/smoothie'}
+                            text='view project'
+                        />
+
+                        <LinkColor
+                            style={{ marginLeft: '1rem' }}
+                            href={'https://github.com/AlexandrShnipov/smoothie.git'}
+                            text='open sourse code'
+                        />
+                    </CaruselProgectsItem>
 
                     {/* 3.2 */}
-                    <div className={s.sliderItem}>
-                        <div className={s.imgBox}>
-                            <div className={s.imgBoxSquare}>
-                                <img className={s.imgBoxImg} src={delivery} alt="Delivery" />
-                                <div className={s.imgBoxLinks}>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkView}`} href=" https://alexandrshnipov.github.io/Delivery-Food-New" target="_blank">
-                                        view project
-                                    </a>
-                                    <a className={`${s.imgBoxLink} ${s.imgBoxLinkCode}`} href="https://github.com/AlexandrShnipov/Delivery-Food-New.git" target="_blank">
-                                        open sourse code
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={s.sliderItemContent}>
-                            <h3 className={s.sliderItemContentTitle}>
-                                Delivery food
-                            </h3>
-                            <div className={s.sliderItemContentText}>
-                                <p className={s.sliderItemContentStack}>
-                                    Stack:
-                                </p>
-                                <span>HTML, CSS, JS, Figma</span>
-                            </div>
-                        </div>
-                    </div>
+                    <CaruselProgectsItem
+                        img={delivery}
+                        title='Delivery'
+                        stack='HTML, CSS, JS, Figma'
+                    >
+                        <LinkColor
+                            href={'https://alexandrshnipov.github.io/Delivery-Food-New'}
+                            text='view project'
+                        />
+                        <LinkColor
+                            style={{ marginLeft: '1rem' }}
+                            href={'https://github.com/AlexandrShnipov/Delivery-Food-New.git'}
+                            text='open sourse code'
+                        />
+                    </CaruselProgectsItem>
+
                 </div>
             </div>
             {/* <div>

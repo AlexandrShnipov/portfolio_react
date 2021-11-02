@@ -1,0 +1,18 @@
+@import '../../styles/sass/abstracts/variables.scss';
+
+.imgBoxLink {
+    font-size: .75rem;
+    line-height: 3.8;
+    font-weight: 500;
+    letter-spacing: .055em;
+    padding: 0 2.8rem;
+    background-color: $active;
+    border: 1px solid $active;
+    text-transform: uppercase;
+
+
+    &:hover {
+        border: 1px solid $light;
+        background-color: $dark;
+    }
+}
