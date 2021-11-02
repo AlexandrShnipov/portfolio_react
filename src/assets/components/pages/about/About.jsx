@@ -69,7 +69,7 @@ const About = () => {
                             <h3 className={s.experienceText}>Years <br /> Experience <br /> Working</h3>
                         </div>
                         <div className={s.bestBlock}>
-                            <h3 className={s.bestBlockTitle}>Great Experience</h3>
+                            <h3 className={s.bestBlockTitle}>Great Skills</h3>
                             <p className={s.bestBlockText}>Fill appear won't may make moveth signs. Fourth. Good own. Green you're moveth us, lesser.</p>
 
                             <div ref={experienceRef} className={s.bestBlockItems}
