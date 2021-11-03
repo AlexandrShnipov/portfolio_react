@@ -1,8 +1,8 @@
-@import '../../../../assets/styles/sass/abstracts/variables.scss';
+@import '../../../../styles/sass/abstracts/variables.scss';
 
-.slider {
+.sliderItem {
 
-        &ItemText {
+    &Testimonial {
         @extend %textSection;
         margin-bottom: 3rem;
         max-height: 8rem;
@@ -10,7 +10,7 @@
 
     }
 
-    &ItemName {
+    &Name {
         color: $light;
         opacity: 1;
         font-size: 1.2rem;
@@ -19,9 +19,7 @@
         margin-bottom: 0.6rem;
     }
 
-    &ItemCompany {
+    &Company {
         @extend %textSection;
     }
 }
-
-

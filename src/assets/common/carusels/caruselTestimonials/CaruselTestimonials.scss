@@ -19,7 +19,7 @@
         opacity: 1;
     }
 
-    &:active{
+    &:active {
         opacity: .5;
     }
 
@@ -62,7 +62,7 @@
         opacity: 1;
     }
 
-    &:active{
+    &:active {
         opacity: .5;
     }
 
@@ -70,7 +70,6 @@
         position: absolute;
         content: ' ' !important;
         right: 30%;
-        
         width: 1.2rem;
         height: 1px;
         background-color: $light;

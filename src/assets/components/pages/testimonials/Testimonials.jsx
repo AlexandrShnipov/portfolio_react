@@ -75,7 +75,7 @@ const Testimonials = () => {
                             </h3>
                         </div>
                         <div className={s.sliderWrap}>
-                            <Link className={s.linkAdded} to="/">add testimonial</Link>
+                            <Link className={s.link} to="/">add testimonial</Link>
                             <CaruselTestimonials />
                         </div>
                     </div>

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import s from './CaruselTestimonials.module.scss';
 import styles from './CaruselTestimonials.scss';
+import CaruselTestimonialsItem from './caruselTestimonialsItem/CaruselTestimonialsItem'
 
 
 export default class Fade extends Component {
@@ -20,27 +21,23 @@ export default class Fade extends Component {
             <Slider {...settings} className={"sliderTestimonials"} dotsClass={"dots"}>
                 <div className={s.slider}>
 
-                    <div className={s.sliderItems}>
-                        {/* 1 */}
-                        <div className={s.sliderItem}
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                            data-aos-duration="2000"
-                        >
-                            <p className={s.sliderItemText}>"Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."</p>
-                            <p className={s.sliderItemName}>Ramsay Bolton</p>
-                            <p className={s.sliderItemCompany}>Apple Inc</p>
-                        </div>
+                    {/* 1 */}
 
-                    </div>
+                    <CaruselTestimonialsItem
+                        testimonial="Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."
+                        name='Ramsay Bolton'
+                        company='Apple Inc'
+                    />
                 </div>
 
                 {/* 2 */}
-                <div className={s.sliderItem} data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">
-                    <p className={s.sliderItemText}>"Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let.Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let.Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."</p>
-                    <p className={s.sliderItemName}>Ivan Ivanov</p>
-                    <p className={s.sliderItemCompany}>Space X</p>
-                </div>
+
+                <CaruselTestimonialsItem
+                    testimonial="Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let.Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let.Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."
+                    name='Ivan Ivanov'
+                    company='Space X'
+                />
+
                 {/* <div>
                 <h3>3</h3>
             </div> */}
