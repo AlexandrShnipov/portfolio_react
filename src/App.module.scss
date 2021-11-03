@@ -1,6 +1,17 @@
 @import '../src/assets/styles/sass/abstracts/variables.scss';
 @import '../src/assets/fonts/fonts.css';
 
+::-webkit-scrollbar {
+    width: .5rem;
+    background-color: $dark;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: $active;
+    border-radius: 1rem;
+}
+
 .App {
     min-height: 100vh;
     width: 100%;

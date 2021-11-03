@@ -2,6 +2,8 @@ import React from 'react';
 import s from './Header.module.scss';
 import { Link, animateScroll as scroll } from "react-scroll";
 import HeaderLink from "../../common/header/headerLink/HeaderLink";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
@@ -79,7 +81,10 @@ const Header = () => {
                     <div className={s.LinkWrap}>
                         <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
                     </div>
-
+                    
+                   <button class={s.buttonMenu} type='button'>
+                        <FontAwesomeIcon className={s.buttonMenuIсon} icon={faBars} />
+                   </button>
                 </div>
             </div>
         </header >

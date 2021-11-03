@@ -18,7 +18,7 @@ const Footer = () => {
                     smooth={true}
                     // offset={-70}
                     duration={500}>
-                    <span className={s.footerCopyright}>&copy; Alexandr Shnipov. 2021</span>
+                    <span className={s.footerCopyright}>&copy; Alexandr. 2021</span>
                 </Link>
 
                 <Link className={s.linkUp}
