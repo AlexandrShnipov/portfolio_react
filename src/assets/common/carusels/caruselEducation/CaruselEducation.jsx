@@ -32,14 +32,14 @@ export default function SimpleSlider() {
                     <CaruselEducationItem
                         img={itIncubator}
                         years='2021'
-                        title='It-Incubator'
-                        text='Which firmament dominion first rule and tree. The seas he i were cattle Under living. It may beast every forth place.'
+                        institution='It-Incubator'
+                        text='HTML, SCSS, BEM, preprocessors, layout using REACT, basics Java Skript, Bootstrap, the use of libraries in the layout of sites mobile first, layout of e-mail letters, WordPress, Git Hub, Figma, Fotoshop, layout of educational projects, creating an application in a team with front-end developers '
                     />
 
                     <CaruselEducationItem
                         img={customs}
                         years='2018 - 2019'
-                        title='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
+                        institution='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
                         text='Retraining in the specialty of customs. Qualification - customs specialist.'
                     />
                 </div>
@@ -53,14 +53,14 @@ export default function SimpleSlider() {
                 <CaruselEducationItem
                     img={vstu}
                     years='2007 - 2008'
-                    title='Vitebsk State University of Technology'
+                    institution='Vitebsk State University of Technology'
                     text='Faculty of advanced training and retraining of personnel. Qualification - manager-economist.'
                 />
 
                 <CaruselEducationItem
                     img={vgavm}
                     years='1993 - 1998'
-                    title='Vitebsk State Academy of Veterinary Medicine'
+                    institution='Vitebsk State Academy of Veterinary Medicine'
                     text='Higher education in veterinary medicine. Qualification - veterinarian.'
                 />
 

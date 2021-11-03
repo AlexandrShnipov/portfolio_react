@@ -2,11 +2,11 @@
 
 
 
-    .sliderItem {
-        display: grid;
-        grid-auto-flow: row;
-        grid-template: auto 1fr / 1fr;
-    }
+.sliderItem {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr / 1fr;
+}
 
 
 .imgBox {
@@ -74,6 +74,7 @@
 }
 
 .sliderItemContent {
+    font-weight: 600;
     background-color: $dark;
     border-left: 2px solid rgba($light, .4);
     border-bottom: 2px solid rgba($light, .4);
@@ -83,25 +84,23 @@
     padding: 1rem;
 
     &Title,
-    &TextTitle {
-        font-size: 1rem;
+    &Stack {
+        @extend %textSection;
         text-transform: uppercase;
-        margin-bottom: 0.5rem;
-        letter-spacing: .055em;
-        opacity: .6;
+        margin-bottom: .2rem;
     }
 
     &Text {
         display: flex;
-    }
-
-    &Title {
-        margin-bottom: 1rem;
+        text-transform: uppercase;
     }
 
     &Text span {
         display: block;
+        line-height: 1.8;
+        letter-spacing: .055em;
         text-transform: initial;
-        margin-left: .2rem;
+        opacity: .9;
+        margin-left: .5rem;
     }
 }
