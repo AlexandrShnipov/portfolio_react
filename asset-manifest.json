@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.c42aec5b.chunk.css",
-    "main.js": "/portfolio_react/static/js/main.0e34b441.chunk.js",
-    "main.js.map": "/portfolio_react/static/js/main.0e34b441.chunk.js.map",
+    "main.css": "/portfolio_react/static/css/main.1076e4b4.chunk.css",
+    "main.js": "/portfolio_react/static/js/main.ace369c2.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.ace369c2.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.5ae12aa4.js",
     "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.5ae12aa4.js.map",
     "static/css/2.ab965b1f.chunk.css": "/portfolio_react/static/css/2.ab965b1f.chunk.css",
-    "static/js/2.86c06ece.chunk.js": "/portfolio_react/static/js/2.86c06ece.chunk.js",
-    "static/js/2.86c06ece.chunk.js.map": "/portfolio_react/static/js/2.86c06ece.chunk.js.map",
+    "static/js/2.d75f8780.chunk.js": "/portfolio_react/static/js/2.d75f8780.chunk.js",
+    "static/js/2.d75f8780.chunk.js.map": "/portfolio_react/static/js/2.d75f8780.chunk.js.map",
     "static/js/3.a97dd991.chunk.js": "/portfolio_react/static/js/3.a97dd991.chunk.js",
     "static/js/3.a97dd991.chunk.js.map": "/portfolio_react/static/js/3.a97dd991.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
     "static/css/2.ab965b1f.chunk.css.map": "/portfolio_react/static/css/2.ab965b1f.chunk.css.map",
-    "static/css/main.c42aec5b.chunk.css.map": "/portfolio_react/static/css/main.c42aec5b.chunk.css.map",
-    "static/js/2.86c06ece.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.86c06ece.chunk.js.LICENSE.txt",
+    "static/css/main.1076e4b4.chunk.css.map": "/portfolio_react/static/css/main.1076e4b4.chunk.css.map",
+    "static/js/2.d75f8780.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.d75f8780.chunk.js.LICENSE.txt",
     "static/media/about.075413cc.jpg": "/portfolio_react/static/media/about.075413cc.jpg",
     "static/media/App.module.scss": "/portfolio_react/static/media/bg-app.04e9efb0.jpg",
     "static/media/cards.a3a5af46.png": "/portfolio_react/static/media/cards.a3a5af46.png",
@@ -37,8 +37,8 @@
   "entrypoints": [
     "static/js/runtime-main.5ae12aa4.js",
     "static/css/2.ab965b1f.chunk.css",
-    "static/js/2.86c06ece.chunk.js",
-    "static/css/main.c42aec5b.chunk.css",
-    "static/js/main.0e34b441.chunk.js"
+    "static/js/2.d75f8780.chunk.js",
+    "static/css/main.1076e4b4.chunk.css",
+    "static/js/main.ace369c2.chunk.js"
   ]
 }
