@@ -1,0 +1,82 @@
+@import '../../../../styles/sass/abstracts/variables.scss';
+
+.navWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonClossed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    padding: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+
+    &:hover {
+        color: $active;
+        transform: rotate(180deg);
+    }
+
+    &:active {
+        opacity: .6;
+    }
+}
+
+
+.nav {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: .055em;
+    height: 100%;
+    overflow-y: auto;
+    margin-bottom: 6rem;
+}
+
+//   social
+
+.linksWrap {
+    color: $light;
+    z-index: 20;
+    margin-bottom: 3rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.link {
+    padding: 1rem;
+    font-size: 1.6rem;
+
+    &+.link {
+        margin-left: 2rem;
+    }
+
+    &:hover {
+        color: $active;
+    }
+}
+
+.footer {
+
+    &>span {
+        display: block;
+        text-transform: uppercase;
+    }
+
+    &CopyrightTop {
+        display: block;
+        margin-bottom: .5rem;
+    }
+}

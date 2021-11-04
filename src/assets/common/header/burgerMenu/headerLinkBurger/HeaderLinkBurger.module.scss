@@ -1,11 +1,12 @@
 @import '../../../../styles/sass//abstracts/variables.scss';
 
-.navItem + .navItem{
-    margin-left: 1rem;
+.navItem{
+    margin-bottom: 1rem;
+    width: 100%;
 }
 
 .navLink {
-    padding: 0.625rem 1rem;
+    padding: 0.6rem 1rem;
     color: $light;
     text-transform: uppercase;
     cursor: pointer;

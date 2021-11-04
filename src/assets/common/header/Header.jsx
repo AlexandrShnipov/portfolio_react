@@ -4,6 +4,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import HeaderLink from "../../common/header/headerLink/HeaderLink";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import NavBurger from './burgerMenu/navBurger/NavBurger'
 
 const Header = () => {
 
@@ -73,18 +74,22 @@ const Header = () => {
                                     to="Contact"
                                     text="Contact"
                                 />
-
                             </ul>
                         </nav>
+                    </div>
 
-                        <div className={s.linkWrap}>
-                            <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
-                        </div>
+                    <div className={s.linkWrap}>
+                        <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
                     </div>
 
                 </div>
 
-                <button class={s.buttonMenu} type='button'>
+
+                <div className={s.navBurgerWrap}>
+                    <NavBurger />
+                </div>
+
+                <button class={s.buttonMenuBurger} type='button'>
                     <FontAwesomeIcon className={s.buttonMenuIсon} icon={faBars} />
                 </button>
             </div>

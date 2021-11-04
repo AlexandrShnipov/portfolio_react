@@ -1,6 +1,7 @@
 import React from 'react';
-import s from './HeaderLink.module.scss';
 import { Link, animateScroll as scroll } from "react-scroll";
+import s from './HeaderLink.module.scss';
+
 
 const HeaderLink = (props) => {
 

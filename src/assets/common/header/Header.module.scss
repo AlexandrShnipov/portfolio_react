@@ -5,23 +5,23 @@
     position: fixed;
     z-index: 20;
     width: 100%;
-    max-width: 100%;
-}
+  }
 
 .container {
-    @extend %containerBig;
+    padding: 2rem 2rem;
+
 }
 
 .wrap {
-    @extend %wrapSection;
-    width: 100%;
-    max-width: 120rem;
+    display: flex;
 }
 
 .logo {
-
+    position: absolute;
+ 
     &Link {
         cursor: pointer;
+    
 
         &:hover {
             opacity: .5;
@@ -41,12 +41,21 @@
     }
 }
 
+.nav{
+    max-width: 90%;
+}
+
 .NavWrap {
-    display: flex;
+    @extend %globalContainer;
+    padding-left: 2rem;
+   
+    @media (max-width: 1500px) {
+        display: none;
+    }
 }
 
 .nav {
-
+    
     &Items {
         display: flex;
         justify-content: space-between;
@@ -54,8 +63,10 @@
     }
 }
 
-.linkWrap{
-    margin-left: 5rem;
+.linkWrap {
+    position: absolute;
+    right: 2rem;
+    margin-left: auto;
 }
 
 .linkTypeTel {
@@ -68,9 +79,13 @@
     }
 }
 
-.buttonMenu {
-    display: flex;
+// burger menu
+
+.buttonMenuBurger {
     display: none;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     width: 2rem;
     height: 2rem;
     background-color: transparent;
@@ -84,5 +99,23 @@
 
     &:active {
         opacity: .6;
+    }
+}
+
+// burger
+
+.navBurgerWrap {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 32rem;
+    background-color: $dark;
+    padding: 3rem 3rem;
+    z-index: 2;
+
+    @media (max-width: 1500px) {
+        display: block;
     }
 }

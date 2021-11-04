@@ -1,4 +1,4 @@
-import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 import s from './HeaderLinkBurger.module.scss';
 
 const HeaderLinkBurger = (props) => {
