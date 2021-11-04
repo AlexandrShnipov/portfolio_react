@@ -9,7 +9,7 @@
     bottom: 0;
     z-index: 1;
 
-    &Link{
+    &Link {
         cursor: pointer;
     }
 
@@ -19,7 +19,7 @@
         color: $light;
         opacity: .5;
 
-        &:hover{
+        &:hover {
             color: $active;
             opacity: 1;
         }
@@ -28,8 +28,6 @@
 
 .container {
     padding: 2rem 2rem;
-    position: relative;
-
 }
 
 .wrap {
@@ -40,7 +38,8 @@
 .linkUp {
     position: fixed;
     font-size: 2rem;
-    right: 1%;
+    right: 1rem;
+    bottom: 1rem;
     padding: 1rem;
     opacity: .6;
 
@@ -49,4 +48,3 @@
         opacity: 1;
     }
 }
-

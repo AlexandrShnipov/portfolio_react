@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './Header.module.scss';
 import { Link, animateScroll as scroll } from "react-scroll";
 import HeaderLink from "../../common/header/headerLink/HeaderLink";
@@ -8,11 +8,14 @@ import NavBurger from './burgerMenu/navBurger/NavBurger'
 
 const Header = () => {
 
+    const [menuActive, setMenuActive] = useState(false)
+
     return (
         <header className={s.header}>
             <div className={s.container}>
                 <div className={s.wrap}>
                     <div className={s.logo}>
+
 
                         <Link className={s.logoLink}
                             to="Home"
@@ -84,12 +87,12 @@ const Header = () => {
 
                 </div>
 
-
-                <div className={s.navBurgerWrap}>
-                    <NavBurger />
-                </div>
-
-                <button class={s.buttonMenuBurger} type='button'>
+                {/* burger menu */}
+               
+                    <NavBurger active={menuActive} setActive={setMenuActive}/>
+                
+                {/* button burger */}
+                <button class={s.buttonMenuBurger} type='button' onClick={() => setMenuActive(true)}>
                     <FontAwesomeIcon className={s.buttonMenuIсon} icon={faBars} />
                 </button>
             </div>

@@ -1,5 +1,26 @@
 @import '../../../../styles/sass/abstracts/variables.scss';
 
+.navBurgerWrap {
+    display: none;
+    position: fixed;
+    right: -40rem;
+    top: 0;
+    height: 100vh;
+    width: 31rem;
+    background-color: $dark;
+    padding: 2rem 3rem;
+    z-index: 2;
+    transition: all .5s linear;
+
+    @media (max-width: 1500px) {
+        display: block;
+    }
+
+    &.active {
+        right: 0;
+    }
+}
+
 .navWrap {
     display: flex;
     flex-direction: column;
@@ -9,7 +30,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
     width: 2rem;
     height: 2rem;
     background-color: transparent;
@@ -18,10 +38,11 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-left: auto;
+    margin-top: -1rem;
+    margin-right: -1rem;
 
     &:hover {
         color: $active;
-        transform: rotate(180deg);
     }
 
     &:active {
@@ -38,6 +59,7 @@
     height: 100%;
     overflow-y: auto;
     margin-bottom: 6rem;
+    height: 100%;
 }
 
 //   social
@@ -69,6 +91,7 @@
 }
 
 .footer {
+    padding-left: 1rem;
 
     &>span {
         display: block;
