@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, Component } from 'react';
 import config from 'react-reveal/globals';
 import s from './App.module.scss';
 import Header from '../src/assets/common/header/Header';
@@ -14,10 +14,10 @@ import SocialBox from '../src/assets/common/socialsBox/SocialBox';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 config({ ssrFadeout: true });
 
-
-function App() {
+const App = () => {
 
   useEffect(() => {
     AOS.init({

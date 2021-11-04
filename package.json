@@ -26,6 +26,7 @@
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
+    "react-scroll-progress-bar": "^1.1.13",
     "react-slick": "^0.28.1",
     "react-videojs-fancybox": "0.0.7",
     "slick-carousel": "^1.8.1",

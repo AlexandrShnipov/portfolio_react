@@ -76,17 +76,19 @@ const Header = () => {
 
                             </ul>
                         </nav>
+
+                        <div className={s.linkWrap}>
+                            <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
+                        </div>
                     </div>
 
-                    <div className={s.LinkWrap}>
-                        <a className={s.linkTypeTel} type='tel' href='tel:+375297179741'>+375 (29) 717-97-41</a>
-                    </div>
-                    
-                   <button class={s.buttonMenu} type='button'>
-                        <FontAwesomeIcon className={s.buttonMenuIсon} icon={faBars} />
-                   </button>
                 </div>
+
+                <button class={s.buttonMenu} type='button'>
+                    <FontAwesomeIcon className={s.buttonMenuIсon} icon={faBars} />
+                </button>
             </div>
+
         </header >
     )
 }

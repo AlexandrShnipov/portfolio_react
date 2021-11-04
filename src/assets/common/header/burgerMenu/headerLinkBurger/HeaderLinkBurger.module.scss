@@ -1,0 +1,20 @@
+@import '../../../../styles/sass//abstracts/variables.scss';
+
+.navItem + .navItem{
+    margin-left: 1rem;
+}
+
+.navLink {
+    padding: 0.625rem 1rem;
+    color: $light;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        color: $active;
+    }
+  }
+
+.active {
+    color: $active;
+}
