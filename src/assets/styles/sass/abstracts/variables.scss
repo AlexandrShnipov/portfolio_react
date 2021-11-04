@@ -9,7 +9,7 @@
 }
 
 %globalContainer {
-    width: 69rem;
+    max-width: 69rem;
     margin: 0 auto;
     padding-left: 3rem;
     position: relative;
@@ -22,10 +22,14 @@
 }
 
 %title {
-    font-size: 3.125rem;
+    font-size: 3rem;
     line-height: 1.35;
     font-weight: 500;
     letter-spacing: .055em;
+
+    @media (max-width:350px) {
+        font-size: 2.3rem;
+    }
 }
 
 // color

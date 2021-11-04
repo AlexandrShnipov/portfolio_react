@@ -27,6 +27,11 @@
 
     &Container {
         padding-top: 10rem;
+
+        @media (max-width:1200px) {
+            padding-top: 8rem;
+        }
+
     }
 
     .globalContainer {
@@ -37,16 +42,49 @@
         // color: $light;
         display: flex;
         justify-content: space-between;
+
+        @media (max-width:1200px) {
+            flex-direction: column;
+            margin-left: 7%;
+        }
     }
 }
 
 .experience {
     width: 42%;
-    padding: 4.375rem 4.6875rem 3.125rem 3.125rem;
+    padding: 4rem 4rem 3rem 3rem;
     text-align: right;
     border: 1px solid rgba(255, 255, 255, .4);
     border-right: none;
     margin-right: 6rem;
+
+    @media (max-width:1200px) {
+        margin-right: 0;
+        width: 50%;
+        padding: 3rem 3rem 2rem 2rem;
+        margin-bottom: 2rem;
+    }
+
+    @media (max-width:870px) {
+        width: 60%;
+    }
+
+    @media (max-width:660px) {
+        width: 70%;
+    }
+
+    @media (max-width:490px) {
+        width: 85%;
+    }
+
+    @media (max-width:490px) {
+        width: 95%;
+    }
+
+    @media (max-width:310px) {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+
 
     &Years {
         font-family: Poppins, sans-serif;
@@ -56,12 +94,30 @@
         margin-right: .75rem;
         margin-bottom: 5rem;
 
+        @media (max-width:1200px) {
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width:600px) {
+            font-size: 10rem;
+        }
+
+        @media (max-width:380px) {
+            text-align: start;
+        }
+
+        @media (max-width:350px) {
+            font-size: 8rem;
+        }
+
         &Square {
             display: inline-block;
             background-color: $active;
             width: 1rem;
             height: 1rem;
             margin-left: -1.5rem;
+
+
         }
     }
 
@@ -71,6 +127,12 @@
         line-height: 1.5;
         position: relative;
 
+        @media (max-width:380px) {
+
+            font-size: 1.1rem;
+        }
+
+
         &::before {
             position: absolute;
             content: '';
@@ -79,6 +141,10 @@
             left: 1.5rem;
             bottom: 0;
             background-color: $light;
+
+            @media (max-width:380px) {
+                width: 5rem;
+            }
         }
     }
 }
@@ -86,9 +152,34 @@
 .bestBlock {
     width: 47%;
 
+    @media (max-width:1200px) {
+        width: 50%;
+    }
+
+    @media (max-width:870px) {
+        width: 60%;
+    }
+
+    @media (max-width:660px) {
+        width: 70%;
+    }
+
+    @media (max-width:490px) {
+        width: 85%;
+    }
+
+    @media (max-width:490px) {
+        width: 95%;
+    }
+
+
     &Title {
         @extend %title;
         margin-bottom: 3rem;
+
+        @media (max-width:450px) {
+            margin-bottom: 2rem;
+        }
     }
 
     &Text {
