@@ -33,6 +33,10 @@
 
     &Container {
         padding-top: 10rem;
+
+        @media (max-width:1200px) {
+            padding-top: 8rem;
+        }
     }
 
     .globalContainer {
@@ -42,31 +46,63 @@
     &Content {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width:1200px) {
+            flex-direction: column;
+        }
     }
 }
 
 .sectionTitleBox {
     max-width: 47%;
 
+    @media (max-width:1200px) {
+        max-width: 95%;
+    }
+
+    @media (max-width:750px) {
+        max-width: 100%;
+    }
+
     &SvgImg {
         height: 4.7rem;
         color: $active;
 
+        @media (max-width:1200px) {
+            height: 3rem;
+        }
     }
 
     &Title {
+        @extend %title;
         font-family: "Lato", sans-serif;
-        font-size: 3.125rem;
-        line-height: 1.35;
-        font-weight: 500;
-        letter-spacing: .055rem;
         padding-top: 10rem;
+
+        @media (max-width:1200px) {
+            padding-top: 3rem;
+        }
     }
 }
 
 .sliderWrap {
     max-width: 40%;
     padding-top: 2rem;
+
+    @media (max-width:1200px) {
+        max-width: 55%;
+    }
+
+    @media (max-width:800px) {
+        max-width: 70%;
+    }
+
+    @media (max-width:500px) {
+        max-width: 90%;
+    }
+
+    @media (max-width:450px) {
+        max-width: 95%;
+    }
 }
 
 .link {
@@ -83,5 +119,9 @@
     &:hover {
         border: 1px solid #fff;
         background-color: transparent;
+    }
+
+    @media (max-width:1200px) {
+        margin-bottom: 3rem;
     }
 }
