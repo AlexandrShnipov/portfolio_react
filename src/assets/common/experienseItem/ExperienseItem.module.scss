@@ -12,18 +12,16 @@
         border-bottom: none;
     }
 
-    .function {
-        flex-basis: 20%;
-        flex-grow: 1;
-        padding: 1.5rem;
-        border-right: 1px solid rgba($light, .6);
-    }
-
+    .function,
     .institution {
         flex-basis: 20%;
         flex-grow: 1;
         padding: 1.5rem;
         border-right: 1px solid rgba($light, .6);
+
+        @media (max-width: 800px) {
+            padding: .5rem; 
+        }
     }
 
     .years {

@@ -29,6 +29,11 @@
     &Container {
         padding-top: 10rem;
         position: relative;
+        overflow-x: auto;
+
+        @media (max-width:1200px) {
+            padding-top: 8rem;
+        }
     }
 
     .globalContainer {
@@ -38,11 +43,14 @@
     &Title {
         @extend %title;
         margin-bottom: 3rem;
+
+        @media (max-width:1200px) {
+           margin-bottom: 2rem;
+        }
     }
 
     &Items {
-        display: flex;
-        flex-direction: column;
+        overflow-x: visible;
+        min-width: 30rem;
     }
 }
-

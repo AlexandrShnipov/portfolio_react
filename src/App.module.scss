@@ -6,6 +6,9 @@
     background-color: $dark;
 }
 
+::-webkit-scrollbar:horizontal {
+    height: .2rem;
+}
 
 ::-webkit-scrollbar-thumb {
     background-color: $active;

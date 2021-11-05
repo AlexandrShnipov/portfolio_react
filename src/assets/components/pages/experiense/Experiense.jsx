@@ -20,9 +20,10 @@ const Department = () => {
 
                         <h3 className={s.sectionTitle}>Experiense</h3>
 
+
                         <div className={s.sectionItems} data-aos="fade-up" data-aos-delay="50">
 
-                            <ExperienseItem 
+                            <ExperienseItem
                                 function='Head of the Department of Customs'
                                 institution='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
                                 years='2019 - 2021'
@@ -42,6 +43,7 @@ const Department = () => {
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
