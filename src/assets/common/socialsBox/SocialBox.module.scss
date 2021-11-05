@@ -6,6 +6,10 @@
     height: 100vh;
     color: $light;
     z-index: 20;
+
+    @media (max-width:600px) {
+        display: none;
+    }
 }
 
 .links {
