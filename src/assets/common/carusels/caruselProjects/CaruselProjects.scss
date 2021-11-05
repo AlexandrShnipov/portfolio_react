@@ -37,15 +37,19 @@
 }
 
 
-.slick-prev {
+.sliderWrap>.slick-prev {
     // border: 1px solid #fff;
     width: 3rem;
     height: 3rem;
-    left: -3rem;
+    left: -5%;
     top: calc(50% - 1.5rem);
 
     &:hover {
         opacity: .5;
+    }
+
+    @media (max-width:1150px) {
+        display: none !important;
     }
 
     &::before {
@@ -72,12 +76,16 @@
     }
 }
 
-.slick-next {
+.sliderWrap>.slick-next {
     // border: 1px solid #fff;
     width: 3rem;
     height: 3rem;
-    right: -3rem;
+    right: -5%;
     top: calc(50% - 1.5rem);
+
+    @media (max-width:1150px) {
+        display: none !important;
+    }
 
     &:hover {
         opacity: .5;

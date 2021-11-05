@@ -17,6 +17,11 @@
         padding-left: 10%;
         padding-right: 1%;
     }
+
+    @media (max-width: 767px) {
+        padding-left: 2%;
+       
+    }
 }
 
 %textSection {

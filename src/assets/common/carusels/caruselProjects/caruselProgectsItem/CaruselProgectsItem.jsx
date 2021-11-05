@@ -27,6 +27,7 @@ const CaruselProgectsItem = (props) => {
                     <span>{props.stack}</span>
                 </div>
             </div>
+            
         </div>
 
     )
