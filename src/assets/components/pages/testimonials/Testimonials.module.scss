@@ -41,6 +41,10 @@
         @media (max-width:500px) {
             padding-top: 7rem;
         }
+
+        @media (max-width:500px) {
+            padding-top: 6rem;
+        }
     }
 
     .globalContainer {
@@ -79,6 +83,10 @@
         @media (max-width:600px) {
             height: 2rem;
         }
+
+        @media (max-width:600px) {
+            height: 1.5rem;
+        }
     }
 
     &Title {
@@ -93,6 +101,11 @@
         @media (max-width:767px) {
             font-size: 1.5rem;
             padding-top: 2rem;
+        } 
+
+        @media (max-width:400px) {
+            font-size: 1.2rem;
+            padding-top: 1.5rem;
         } 
     }
 }
@@ -136,5 +149,9 @@
 
     @media (max-width:1200px) {
         margin-bottom: 3rem;
+    }
+
+    @media (max-width:1200px) {
+        margin-bottom: 2rem;
     }
 }

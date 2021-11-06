@@ -21,6 +21,10 @@
         top: 135%;
     }
 
+    @media (max-width:400px) {
+        top: 122%;
+    }
+
     &:hover {
         background-color: $active;
         box-shadow: inset 0 0 0 1px $active;
@@ -75,6 +79,7 @@
 
     @media (max-width:400px) {
         right: 60%;
+        top:122%
            }
 
     &:hover {
