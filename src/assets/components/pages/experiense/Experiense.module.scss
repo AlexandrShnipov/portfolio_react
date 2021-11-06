@@ -30,6 +30,7 @@
         padding-top: 10rem;
         position: relative;
         overflow-x: auto;
+        overflow-y: clip;
 
         @media (max-width:1200px) {
             padding-top: 8rem;
@@ -53,7 +54,7 @@
     }
 
     &Items {
-        overflow-x: visible;
+        overflow-x: auto;
         min-width: 30rem;
     }
 }
