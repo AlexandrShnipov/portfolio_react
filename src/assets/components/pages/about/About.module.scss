@@ -31,8 +31,13 @@
         @media (max-width:1200px) {
             padding-top: 8rem;
         }
-        @media (max-width:500px) {
-            padding-top: 7rem;
+
+        @media (max-width:600px) {
+            padding-top: 6rem;
+        }
+
+        @media (max-width:400px) {
+            padding-top: 4rem;
         }
 
     }
