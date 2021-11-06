@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.5cc1419a.chunk.css",
+    "main.css": "/portfolio_react/static/css/main.2c05ccf7.chunk.css",
     "main.js": "/portfolio_react/static/js/main.adca2d2a.chunk.js",
     "main.js.map": "/portfolio_react/static/js/main.adca2d2a.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.5ae12aa4.js",
@@ -12,7 +12,7 @@
     "static/js/3.a97dd991.chunk.js.map": "/portfolio_react/static/js/3.a97dd991.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
     "static/css/2.ab965b1f.chunk.css.map": "/portfolio_react/static/css/2.ab965b1f.chunk.css.map",
-    "static/css/main.5cc1419a.chunk.css.map": "/portfolio_react/static/css/main.5cc1419a.chunk.css.map",
+    "static/css/main.2c05ccf7.chunk.css.map": "/portfolio_react/static/css/main.2c05ccf7.chunk.css.map",
     "static/js/2.d75f8780.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.d75f8780.chunk.js.LICENSE.txt",
     "static/media/about.075413cc.jpg": "/portfolio_react/static/media/about.075413cc.jpg",
     "static/media/App.module.scss": "/portfolio_react/static/media/bg-app.04e9efb0.jpg",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.5ae12aa4.js",
     "static/css/2.ab965b1f.chunk.css",
     "static/js/2.d75f8780.chunk.js",
-    "static/css/main.5cc1419a.chunk.css",
+    "static/css/main.2c05ccf7.chunk.css",
     "static/js/main.adca2d2a.chunk.js"
   ]
 }
