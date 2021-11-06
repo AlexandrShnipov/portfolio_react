@@ -28,7 +28,12 @@
 
 .container {
     padding: 2rem 2rem;
-}
+
+    @media (max-width: 400px) {
+        padding: .5rem 2rem;
+    }
+        
+    }
 
 .wrap {
     @extend %wrapSection;
