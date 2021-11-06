@@ -46,11 +46,12 @@
     margin-top: -1rem;
     margin-right: -1rem;
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: $active;
     }
 
-    &:active {
+        &:active {
         opacity: .6;
     }
 }
@@ -65,6 +66,10 @@
     margin-bottom: 3rem;
     max-height: 22rem;
     overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: .2rem;
+    }
 }
 
 //   social
