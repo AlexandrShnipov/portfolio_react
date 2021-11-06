@@ -11,7 +11,10 @@ const HeaderLinkBurger = (props) => {
                     to={props.to}
                     spy={true}
                     smooth={true}
-                    duration={500}>{props.text}
+                    duration={500}
+                    onClick={props.onClose}
+                     >{props.text}
+                   
                 </Link>
             </li>
     
