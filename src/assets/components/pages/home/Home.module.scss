@@ -38,10 +38,14 @@
     }
 
     &Container {
-        padding-top: 30rem;
+        padding-top: 25rem;
 
         @media (min-width: 768px) {
             padding-top: 17rem;
+        }
+
+        @media (max-height: 600px) {
+            padding-top: 21rem;
         }
     }
 
