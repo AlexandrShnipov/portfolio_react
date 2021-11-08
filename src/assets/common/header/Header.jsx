@@ -92,7 +92,7 @@ const Header = () => {
                     <NavBurger active={menuActive} setActive={setMenuActive}/>
                 
                 {/* button burger */}
-                <button class={s.buttonMenuBurger} type='button' onClick={() => setMenuActive(true)}>
+                <button class={s.buttonMenuBurger} type='button' aria-label='open menu' onClick={() => setMenuActive(true)}>
                     <FontAwesomeIcon className={s.buttonMenuIсon} icon={faBars} />
                 </button>
             </div>

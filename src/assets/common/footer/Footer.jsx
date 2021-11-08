@@ -22,6 +22,7 @@ const Footer = () => {
                 </Link>
 
                 <Link className={s.linkUp}
+                    aria-label='to go up'
                     to="Home"
                     spy={true}
                     smooth={true}

@@ -166,9 +166,14 @@
             font-size: 1.1rem;
         }
 
-        .textColor {
+        &Link {
+            display: inline-block;
             color: $active;
             font-weight: 900;
+
+            &:hover{
+                opacity: .6;
+            }
         }
     }
 }

@@ -33,7 +33,7 @@ const NavBurger = (props) => {
 	return (
 		<div className={props.active ? `${s.navBurgerWrap} ${s.active}` : s.navBurgerWrap}>
 			<div className={s.navWrap}>
-				<button className={s.buttonClossed} onClick={onCloseMenu}>
+				<button className={s.buttonClossed} aria-label='close menu' onClick={onCloseMenu}>
 					<FontAwesomeIcon icon={faTimes} className={s.buttonClossedIcon} />
 				</button>
 

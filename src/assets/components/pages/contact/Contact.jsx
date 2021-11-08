@@ -26,10 +26,14 @@ const Contact = () => {
                             <a className={s.email} href="mailto:SShnipov@gmail.com">SShnipov@gmail.com</a>
                         </div>
                         <div className={s.formBlock}
-                          data-aos="fade-up"
-                          data-aos-duration="1500"
-                          data-aos-delay="100">                          
-                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation <span className={s.textColor}>chat with me.</span> </h4>
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                            data-aos-delay="100">
+                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation  
+                                <a className={s.formBlockTextLink} href="mailto:SShnipov@gmail.com">
+                                     chat with me.
+                                </a>
+                            </h4>
                             <form className={s.form} action="/">
                                 <input className={`${s.inputName} ${s.formItem}`} type="text" placeholder="Your Name" title="Please enter your name" required />
                                 <input className={`${s.inputEmail} ${s.formItem}`} type="email" placeholder="Your Email" title="Please enter email" required />
