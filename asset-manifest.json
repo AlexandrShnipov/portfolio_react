@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.2ef20653.chunk.css",
-    "main.js": "/portfolio_react/static/js/main.64579b98.chunk.js",
-    "main.js.map": "/portfolio_react/static/js/main.64579b98.chunk.js.map",
+    "main.css": "/portfolio_react/static/css/main.9357555a.chunk.css",
+    "main.js": "/portfolio_react/static/js/main.61d2c63a.chunk.js",
+    "main.js.map": "/portfolio_react/static/js/main.61d2c63a.chunk.js.map",
     "runtime-main.js": "/portfolio_react/static/js/runtime-main.5ae12aa4.js",
     "runtime-main.js.map": "/portfolio_react/static/js/runtime-main.5ae12aa4.js.map",
     "static/css/2.ab965b1f.chunk.css": "/portfolio_react/static/css/2.ab965b1f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.a97dd991.chunk.js.map": "/portfolio_react/static/js/3.a97dd991.chunk.js.map",
     "index.html": "/portfolio_react/index.html",
     "static/css/2.ab965b1f.chunk.css.map": "/portfolio_react/static/css/2.ab965b1f.chunk.css.map",
-    "static/css/main.2ef20653.chunk.css.map": "/portfolio_react/static/css/main.2ef20653.chunk.css.map",
+    "static/css/main.9357555a.chunk.css.map": "/portfolio_react/static/css/main.9357555a.chunk.css.map",
     "static/js/2.d75f8780.chunk.js.LICENSE.txt": "/portfolio_react/static/js/2.d75f8780.chunk.js.LICENSE.txt",
     "static/media/about.075413cc.jpg": "/portfolio_react/static/media/about.075413cc.jpg",
     "static/media/App.module.scss": "/portfolio_react/static/media/bg-app.04e9efb0.jpg",
@@ -25,6 +25,8 @@
     "static/media/experiense.481252a0.jpg": "/portfolio_react/static/media/experiense.481252a0.jpg",
     "static/media/jquery.fancybox.css": "/portfolio_react/static/media/fancybox_loading@2x.d8f0a972.gif",
     "static/media/home.5588182a.jpg": "/portfolio_react/static/media/home.5588182a.jpg",
+    "static/media/homeMedium.7558ec87.jpg": "/portfolio_react/static/media/homeMedium.7558ec87.jpg",
+    "static/media/homeMobile.44f82780.jpg": "/portfolio_react/static/media/homeMobile.44f82780.jpg",
     "static/media/it-incubator.edec47b1.png": "/portfolio_react/static/media/it-incubator.edec47b1.png",
     "static/media/projects.c34105c6.jpg": "/portfolio_react/static/media/projects.c34105c6.jpg",
     "static/media/slick-theme.css": "/portfolio_react/static/media/slick.c94f7671.ttf",
@@ -38,7 +40,7 @@
     "static/js/runtime-main.5ae12aa4.js",
     "static/css/2.ab965b1f.chunk.css",
     "static/js/2.d75f8780.chunk.js",
-    "static/css/main.2ef20653.chunk.css",
-    "static/js/main.64579b98.chunk.js"
+    "static/css/main.9357555a.chunk.css",
+    "static/js/main.61d2c63a.chunk.js"
   ]
 }
