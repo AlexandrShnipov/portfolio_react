@@ -12,7 +12,8 @@ const HeaderLink = (props) => {
                 to={props.to}
                 spy={true}
                 smooth={true}
-                duration={500}>{props.text}
+                duration={500}>
+                {props.text}
             </Link>
         </li>
 

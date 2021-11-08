@@ -34,13 +34,20 @@ export default function SimpleSlider() {
 						title="Learning cards"
 						stack="HTML, CSS, Figma, TypeScript, teamwork with front-end developers"
 					>
-						<LinkColor href={'https://matumba125.github.io/learningApp'} text="view project" />
-						<LinkColor href={'https://github.com/Matumba125/learningApp.git'} text="open sourse code" />
+						<LinkColor
+							href={'https://matumba125.github.io/learningApp'}
+							text="view project" />
+						<LinkColor href={'https://github.com/Matumba125/learningApp.git'}
+							text="open sourse code" />
 					</CaruselProgectsItem>
 
 					{/* 1.2 */}
-					<CaruselProgectsItem img={desire} title="Desire" stack="HTML, CSS, SCSS, JS, Gulp, Figma">
-						<LinkColor href={'https://alexandrshnipov.github.io/desire-gulp'} text="view project" />
+					<CaruselProgectsItem
+						img={desire} title="Desire"
+						stack="HTML, CSS, SCSS, JS, Gulp, Figma">
+						<LinkColor
+							href={'https://alexandrshnipov.github.io/desire-gulp'}
+							text="view project" />
 						<LinkColor
 							href={'https://github.com/AlexandrShnipov/desire-gulp.git'}
 							text="open sourse code"
@@ -53,8 +60,12 @@ export default function SimpleSlider() {
 			<div className={s.slider}>
 				<div className={s.sliderItems}>
 					{/* 2.1 */}
-					<CaruselProgectsItem img={thrivetalk} title="Thrivetalk" stack="HTML, CSS, SCSS, JS, Gulp, Figma">
-						<LinkColor href={'https://alexandrshnipov.github.io/Travetalk_NEW'} text="view project" />
+					<CaruselProgectsItem
+						img={thrivetalk}
+						title="Thrivetalk"
+						stack="HTML, CSS, SCSS, JS, Gulp, Figma">
+						<LinkColor href={'https://alexandrshnipov.github.io/Travetalk_NEW'}
+							text="view project" />
 						<LinkColor
 							href={'https://github.com/AlexandrShnipov/Travetalk_NEW.git'}
 							text="open sourse code"
@@ -83,14 +94,24 @@ export default function SimpleSlider() {
 			<div className={s.slider}>
 				<div className={s.sliderItems}>
 					{/* 3.1 */}
-					<CaruselProgectsItem img={smoothie} title="Smoothie" stack="HTML, CSS, LESS, JS, Fotoshop">
-						<LinkColor href={'https://alexandrshnipov.github.io/smoothie'} text="view project" />
-						<LinkColor href={'https://github.com/AlexandrShnipov/smoothie.git'} text="open sourse code" />
+					<CaruselProgectsItem
+						img={smoothie} title="Smoothie"
+						stack="HTML, CSS, LESS, JS, Fotoshop">
+						<LinkColor href={'https://alexandrshnipov.github.io/smoothie'}
+							text="view project" />
+						<LinkColor
+							href={'https://github.com/AlexandrShnipov/smoothie.git'}
+							text="open sourse code" />
 					</CaruselProgectsItem>
 
 					{/* 3.2 */}
-					<CaruselProgectsItem img={delivery} title="Delivery" stack="HTML, CSS, JS, Figma">
-						<LinkColor href={'https://alexandrshnipov.github.io/Delivery-Food-New'} text="view project" />
+					<CaruselProgectsItem
+						img={delivery}
+						title="Delivery"
+						stack="HTML, CSS, JS, Figma">
+						<LinkColor
+							href={'https://alexandrshnipov.github.io/Delivery-Food-New'}
+							text="view project" />
 						<LinkColor
 							href={'https://github.com/AlexandrShnipov/Delivery-Food-New.git'}
 							text="open sourse code"

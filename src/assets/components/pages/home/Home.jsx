@@ -1,8 +1,9 @@
 // import 'react-fancybox/lib/fancybox.css'
 import { Link } from 'react-router-dom';
 import s from './Home.module.scss';
-import home from '../../../images/background/home.jpg'
-
+import home from '../../../images/background/home.jpg';
+import homeMedium from '../../../images/background/homeMedium.jpg';
+import homeMobile from '../../../images/background/homeMobile.jpg';
 import FancyVideo from 'react-videojs-fancybox';
 
 const Home = () => {
@@ -10,7 +11,12 @@ const Home = () => {
     return (
         <section className={s.section} id="Home">
             <div className={s.sectionBgBox}>
-                <img className={s.sectionBgImg} src={home} alt="images background" />
+                <picture className={s.sectionBgImg}>
+                    <source media='(min-width: 1280px)' srcset={home} />
+                    <source media='(min-width: 768px)' srcset={homeMedium} />
+                    <source media='(min-width: 250px)' srcset={homeMobile} />
+                    <img src={home} alt="images background" />
+                </picture>
             </div>
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
@@ -33,7 +39,7 @@ const Home = () => {
                         data-aos="fade-up"
                         data-aos-delay="100">
                         <span className={s.nameProfession}>
-                        Web developer (HTML, CSS)
+                            Web developer (HTML, CSS)
                         </span>
                         <h1 className={s.name}>
                             Alexander  <span className={s.nameSquare}></span>

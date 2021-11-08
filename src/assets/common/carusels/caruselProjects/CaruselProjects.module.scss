@@ -1,21 +1,20 @@
 @import '../../../../assets/styles/sass/abstracts/variables.scss';
 
 .slider {
-    &Items {
-        display: grid;
-        grid-template-columns: repeat(2 , minmax(10rem, 32rem));
-        gap: 1rem;
-        justify-content: center;
+	&Items {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(10rem, 32rem));
+		gap: 1rem;
+		justify-content: center;
 
-        @media (max-width:767px) {
-            gap: .5rem;
-            // grid-template-columns: 1fr;
-        }
+		@media (max-width: 767px) {
+			gap: .5rem;
+			// grid-template-columns: 1fr;
+		}
 
-        @media (max-width:768px) {
-            grid-template-columns: minmax(min-content, 32rem);
-            align-items: center;
-        }
-    }
+		@media (max-width: 768px) {
+			grid-template-columns: minmax(min-content, 32rem);
+			align-items: center;
+		}
+	}
 }
-

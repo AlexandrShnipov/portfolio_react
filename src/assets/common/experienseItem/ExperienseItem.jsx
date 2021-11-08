@@ -10,7 +10,7 @@ const ExperienseItem = (props) => {
                 {props.function}
             </p>
             <p className={s.institution}>
-               {props.institution}
+                {props.institution}
             </p>
             <p className={s.years}>
                 {props.years}
