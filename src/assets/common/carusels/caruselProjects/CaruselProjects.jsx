@@ -37,7 +37,8 @@ export default function SimpleSlider() {
 						<LinkColor
 							href={'https://matumba125.github.io/learningApp'}
 							text="view project" />
-						<LinkColor href={'https://github.com/Matumba125/learningApp.git'}
+						<LinkColor
+							href={'https://github.com/Matumba125/learningApp.git'}
 							text="open sourse code" />
 					</CaruselProgectsItem>
 

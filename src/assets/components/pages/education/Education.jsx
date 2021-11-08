@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import s from './Education.module.scss';
 import education from '../../../images/background/education.jpg'
 import CaruselEducation from '../../../common/carusels/caruselEducation/CaruselEducation';
+import LinkColor from '../../../common/linkColor/LinkColor'
 
 
 const Education = () => {
@@ -19,7 +20,9 @@ const Education = () => {
                     <div className={s.sectionContent}>
                         <div className={s.sectionHead}>
                             <h3 className={s.sectionTitle}>Education</h3>
-                            <Link className={s.sectionLink} to="/">Download resume</Link>
+                            <LinkColor
+                                href={'https://drive.google.com/file/d/1RjalXa1mR3RDeQMiQ4f6W8cDXrQfYb7u/view?usp=sharing'}
+                                text="Open resume" />
                         </div>
                         <CaruselEducation />
                     </div>
