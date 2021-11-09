@@ -1,7 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import about from '../../../images/background/about.jpg';
 import s from './About.module.scss';
-
+import AboutCount90 from '../../../common/aboutCount/90/AboutCount90';
+import AboutCount80 from '../../../common/aboutCount/80/AboutCount80';
+import AboutCount75 from '../../../common/aboutCount/75/AboutCount75';
 
 const About = () => {
     const [animation, setAnimation] = useState(false);
@@ -73,54 +75,28 @@ const About = () => {
                             <p className={s.bestBlockText}>Fill appear won't may make moveth signs. Fourth. Good own. Green you're moveth us, lesser.</p>
 
                             <div ref={experienceRef} className={s.bestBlockItems}
-                             data-aos="fade-up"
-                             data-aos-delay="50">
+                                data-aos="fade-up"
+                                data-aos-delay="50">
 
-                                <li className={s.bestBlockItem}>
-                                    <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>html / css / scss / bem </p>
-                                        <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
-                                    </div>
-                                    <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "90%" }}></div>
-                                </li>
+                                <AboutCount90
+                                    skils='html / css / scss / bem '
+                                />
 
-                                <li className={s.bestBlockItem}>
-                                    <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>gulp</p>
-                                        <p className={s.bestBlockItemNum}>{`${count90}%`}</p>
-                                    </div>
-                                    <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "90%" }}></div>
-                                </li>
+                                <AboutCount90
+                                    skils='gulp'
+                                />
 
+                                <AboutCount80
+                                    skils='basics of js, and react'
+                                />
 
-                                <li className={s.bestBlockItem}>
-                                    <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>basics of js, and react </p>
-                                        <p className={s.bestBlockItemNum}>80%</p>
-                                    </div>
-                                    <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "80%" }}></div>
-                                </li>
+                                <AboutCount75
+                                    skils='bootstrap'
+                                />
 
-                                <li className={s.bestBlockItem}>
-                                    <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>bootstrap</p>
-                                        <p className={s.bestBlockItemNum}>75%</p>
-                                    </div>
-                                    <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "75%" }}></div>
-                                </li>
-
-                                <li className={s.bestBlockItem}>
-                                    <div className={s.bestBlockItemContent}>
-                                        <p className={s.bestBlockItemText}>git</p>
-                                        <p className={s.bestBlockItemNum} >{`${count90}%`}</p>
-                                    </div>
-                                    <div className={s.bestBlockItemContentBorder}></div>
-                                    <div className={experienceStyle} style={{ width: "90%" }}></div>
-                                </li>
+                                <AboutCount90
+                                    skils='git '
+                                />
                             </div>
 
 

@@ -1,0 +1,56 @@
+@import '../../../../assets/styles/sass/abstracts/variables.scss';
+
+
+
+    .bestBlockItem {
+        margin-bottom: 2.5rem;
+    
+    &Content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: .5rem;
+    }
+
+    &Text {
+        text-transform: uppercase;
+    }
+
+    &ContentBorder {
+        width: 100%;
+        height: 0.5rem;
+        background-color: $light;
+        border-radius: .45rem;
+    }
+
+    &Line {
+        height: .5rem;
+        background-color: $active;
+        margin-top: -.5rem;
+        border-radius: .45rem;
+    }
+
+    &LineAnimation {
+        animation: countOne 2s linear;
+    }
+
+}
+
+// !animation
+
+@keyframes countOne {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 25%;
+    }
+
+    40% {
+        width: 50%;
+    }
+
+    75% {
+        width: 75%;
+    }
+}
