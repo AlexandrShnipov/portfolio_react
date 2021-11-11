@@ -12,7 +12,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import s from './CaruselProjects.module.scss';
 import styles from './CaruselProjects.scss';
 import LinkColor from '../../linkColor/LinkColor';
-import CaruselProgectsItem from '../caruselProjects/caruselProgectsItem/CaruselProgectsItem';
+import CaruselProgectsItem from '../caruselProjects/caruselProjectsItem/CaruselProjectsItem';
 
 export default function SimpleSlider() {
 	var settings = {
@@ -97,7 +97,7 @@ export default function SimpleSlider() {
 					{/* 3.1 */}
 					<CaruselProgectsItem
 						img={smoothie} title="Smoothie"
-						stack="HTML, CSS, LESS, JS, Fotoshop">
+						stack="HTML, CSS, LESS, JS, Photoshop">
 						<LinkColor href={'https://alexandrshnipov.github.io/smoothie'}
 							text="view project" />
 						<LinkColor

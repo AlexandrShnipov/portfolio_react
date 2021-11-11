@@ -1,5 +1,5 @@
 import React from "react";
-import s from './CaruselProgectsItem.module.scss'
+import s from './CaruselProjectsItem.module.scss'
 import LinkColor from '../../../linkColor/LinkColor'
 
 const CaruselProgectsItem = (props) => {

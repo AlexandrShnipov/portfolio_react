@@ -72,14 +72,18 @@ const About = () => {
                         </div>
                         <div className={s.bestBlock}>
                             <h3 className={s.bestBlockTitle}>Great Skills</h3>
-                            <p className={s.bestBlockText}>Fill appear won't may make moveth signs. Fourth. Good own. Green you're moveth us, lesser.</p>
+                            <p className={s.bestBlockText}>The future is bright, the future is digitalization. Let's help each other bring the light closer. Your partner in the world of technology.</p>
 
                             <div ref={experienceRef} className={s.bestBlockItems}
                                 data-aos="fade-up"
                                 data-aos-delay="50">
 
                                 <AboutCount90
-                                    skils='html / css / scss / bem '
+                                    skils='html / css / scss / bem / rem'
+                                />
+
+                                <AboutCount90
+                                    skils='mobile ferst / pixel perfect '
                                 />
 
                                 <AboutCount90

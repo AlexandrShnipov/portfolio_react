@@ -39,13 +39,17 @@ const Home = () => {
                         data-aos="fade-up"
                         data-aos-delay="100">
                         <span className={s.nameProfession}>
-                            Web developer (HTML, CSS)
+                            Web developer (HTML-coder)
                         </span>
                         <h1 className={s.name}>
                             Alexander  <span className={s.nameSquare}></span>
                         </h1>
                         <p className={s.sectionContentText}>
-                            Working with client and community, we deliver masterplans that create vibrant new places and spaces, attract people, and encourage.
+                        Welcome to my portfolio site.<br/>
+        I'm a result oriented, enthusiastic and stress-resistant  Web developer with experience in
+        creating landing pages and SPA with the usage of HTML, CSS, BEM, REM, SCSS, Pixel Perfect, Grid, BOOTSTRAP, GULP, basics of JS, React.<br/>
+        I'm also a positive and sociable person who easily finds a common language with people and has a
+        great desire to improve myself as a developer and learn new technologies.
                         </p>
                     </div>
                 </div>

@@ -28,7 +28,7 @@ const AboutCount90 = (props) => {
             if (count90 < 90) {
                 countUp = setInterval(() => {
                     setCount(state => state + 1)
-                }, 20)
+                }, 10)
             }
         }
         return () => {

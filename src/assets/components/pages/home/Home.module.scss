@@ -75,7 +75,6 @@
         .name {
             font-size: 7.5rem;
             font-weight: 600;
-            margin-bottom: .5rem;
             margin-left: .4rem;
             text-align: end;
 
@@ -91,11 +90,7 @@
                 font-size: 4rem;
             }
 
-            @media (min-width: 680px) {
-                margin-bottom: 1rem;
-            }
-
-            &Square {
+                      &Square {
                 display: inline-block;
                 background-color: $active;
                 width: 1rem;
@@ -112,7 +107,7 @@
 
         &Text {
             @extend %textSection;
-            max-width: 23rem;
+            max-width: 34rem;
             margin-left: auto;
 
             // @media (max-width: 430px) {
