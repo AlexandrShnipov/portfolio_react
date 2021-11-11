@@ -20,7 +20,6 @@ const Contact = () => {
                             data-aos="fade-up"
                             data-aos-delay="100">
                             <h3 className={s.addressBlockTitle}> Contact</h3>
-                            <p className={s.addressBlockText}></p>
                             <p className={s.address}>Vitebsk, Belarus</p>
                             <a className={s.tel} type="tel" href="tel:+375297179741">+375 (29) 717-97-41</a>
                             <a className={s.email} href="mailto:SShnipov@gmail.com">SShnipov@gmail.com</a>
@@ -29,9 +28,9 @@ const Contact = () => {
                             data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-delay="100">
-                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation  
+                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation
                                 <a className={s.formBlockTextLink} href="mailto:SShnipov@gmail.com">
-                                     chat with me.
+                                    chat with me.
                                 </a>
                             </h4>
                             <form className={s.form} action="/">
