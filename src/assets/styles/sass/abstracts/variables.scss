@@ -28,6 +28,10 @@
     line-height: 1.8;
     opacity: .6;
     letter-spacing: .055em;
+
+    @media (max-height: 680px) {
+        line-height: 1.5;
+    }
 }
 
 %title {
