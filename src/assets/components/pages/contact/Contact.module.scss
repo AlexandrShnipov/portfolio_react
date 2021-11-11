@@ -180,7 +180,7 @@
     .inputError {
         color: $active;
         font-size: 1.1rem;
-        padding: .5rem 0;
+        padding: 1rem .5rem;
         position: absolute;
         right: 0;
 
@@ -191,7 +191,7 @@
         width: 100%;
         border: none;
         background-color: transparent;
-        padding: .5rem;
+        padding: 1rem .5rem;
         font-size: 1.1rem;
         color: inherit;
 
@@ -216,7 +216,7 @@
     }
 
     .textarea {
-        min-height: 7.5rem;
+        min-height: 8rem;
         resize: none;
 
         @media (max-height:800px) {
