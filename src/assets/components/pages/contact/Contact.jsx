@@ -1,4 +1,6 @@
 import React from "react";
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useState } from "react";
 import s from './Contact.module.scss';
 import contact from '../../../images/background/contact.jpg';
 
@@ -28,18 +30,101 @@ const Contact = () => {
                             data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-delay="100">
-                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation
+                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation 
                                 <a className={s.formBlockTextLink} href="mailto:SShnipov@gmail.com">
                                     chat with me.
                                 </a>
                             </h4>
-                            <form className={s.form} action="/">
-                                <input className={`${s.inputName} ${s.formItem}`} type="text" placeholder="Your Name" title="Please enter your name" required />
-                                <input className={`${s.inputEmail} ${s.formItem}`} type="email" placeholder="Your Email" title="Please enter email" required />
-                                <textarea className={`${s.textarea} ${s.formItem}`} name="text" placeholder="Message" required />
-                                <button className={s.formButton} type="submit">Contact me</button>
-                            </form>
 
+                            <Formik
+                                initialValues={{ name: '', email: '', message: '' }}
+                                validate={values => {
+                                    const errors = {};
+
+                                    if (!values.name) {
+                                        errors.name = 'Required!';
+                                    }
+
+                                    if (!values.email) {
+                                        errors.email = 'Required!';
+                                    } else if (
+                                        !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                                    ) {
+                                        errors.email = 'Invalid email address';
+                                    }
+
+                                    if (!values.message) {
+                                        errors.message = 'Required!';
+                                    }
+                                    return errors;
+
+                                }}
+                                onSubmit={(values, { setSubmitting }) => {
+                                    setTimeout(() => {
+                                        alert(JSON.stringify(values, null, 2));
+                                        setSubmitting(false);
+                                    }, 400);
+                                }}
+                            >
+                                {({
+                                    values,
+                                    errors,
+                                    touched,
+                                    handleChange,
+                                    handleBlur,
+                                    handleSubmit,
+                                    isSubmitting,
+                                    /* and other goodies */
+                                }) => (
+                                    <form className={s.form} action="/" onSubmit={handleSubmit}>
+
+
+                                        <div className={s.inputBox}>
+                                            <input className={`${s.inputName} ${s.formItem}`}
+                                                type="text"
+                                                placeholder="Your Name*"
+                                                title="Please enter your name"
+                                                name="name"
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                value={values.name}
+                                            />
+                                            <span className={s.inputError}>  {errors.name && touched.name && errors.name} </span>
+                                        </div>
+
+                                        <div className={s.inputBox}>
+                                            <input className={`${s.inputEmail} ${s.formItem}`}
+                                                type="email"
+                                                placeholder="Your Email*"
+                                                title="Please enter email"
+                                                name="email"
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                value={values.email}
+                                            />
+                                            <span className={s.inputError}>  {errors.email && touched.email && errors.email} </span>
+                                        </div>
+
+                                        <div className={s.inputBox}>
+                                            <textarea className={`${s.textarea} ${s.formItem}`}
+                                                name="text"
+                                                placeholder="Message*"
+                                                name="message"
+                                                onChange={handleChange}
+                                                onBlur={handleBlur}
+                                                value={values.message}
+                                            />
+                                            <span className={s.inputError}>  {errors.message && touched.message && errors.message} </span>
+                                        </div>
+
+
+
+                                        <button className={s.formButton}
+                                            type="submit"
+                                            disabled={isSubmitting}>Contact me</button>
+                                    </form>
+                                )}
+                            </Formik>
                         </div>
                     </div>
                 </div>
