@@ -33,13 +33,13 @@ export default function SimpleSlider() {
                         img={itIncubator}
                         years='2021'
                         institution='It-Incubator'
-                        text='HTML, SCSS, BEM, REM, preprocessors, Pixel Perfect, Mobile First, SVG, layout using REACT, basics Java Sсript, Bootstrap, the use of libraries in the layout of sites mobile first, layout of e-mail letters, WordPress, Git Hub, Figma, Photoshop, layout of educational projects, creating an application in a team with front-end developers '
+                        text='HTML, SCSS, BEM, REM, preprocessors, Pixel Perfect, Mobile First, Email letters, SVG, layout using REACT, basics Java Sсript, Bootstrap, the use of libraries in the layout of sites mobile first, layout of e-mail letters, WordPress, Git Hub, Figma, Photoshop, layout of educational projects, creating an application in a team with front-end developers '
                     />
 
                     <CaruselEducationItem
                         img={customs}
                         years='2018 - 2019'
-                        institution='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
+                        institution='State Institute of the Customs Authorities of the Republic of Belarus'
                         text='Retraining in the specialty of customs. Qualification - customs specialist.'
                     />
                 </div>

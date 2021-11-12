@@ -47,7 +47,7 @@ const Home = () => {
                         <p className={s.sectionContentText}>
                         Welcome to my portfolio site.<br/>
         I'm a result oriented, enthusiastic and stress-resistant  Web developer with experience in
-        creating landing pages and SPA with the usage of HTML, CSS, BEM, REM, SCSS, Pixel Perfect, CSS animation, Grid, BOOTSTRAP, GULP, basics of JS, React.<br/>
+        creating landing pages and SPA with the usage of HTML, CSS, BEM, REM, SCSS, Pixel Perfect, email letters, CSS animation, Grid, BOOTSTRAP, GULP, basics of JS, React.<br/>
         I'm also a positive and sociable person who easily finds a common language with people and has a
         great desire to improve myself as a developer and learn new technologies.
                         </p>

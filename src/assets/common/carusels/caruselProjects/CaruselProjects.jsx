@@ -6,6 +6,7 @@ import desire from '../../../images/projects/desire.png';
 import thrivetalk from '../../../images/projects/thrivetalk.png';
 import claenAndSimple from '../../../images/projects/claenAndSimple.png';
 import smoothie from '../../../images/projects/smoothie.png';
+import crelloEmail from '../../../images/projects/crelloEmail.png';
 import delivery from '../../../images/projects/delivery.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -107,6 +108,26 @@ export default function SimpleSlider() {
 
 					{/* 3.2 */}
 					<CaruselProgectsItem
+						img={crelloEmail}
+						title="Crello email letter"
+						stack="HTML, CSS, Email letter, Figma">
+						<LinkColor
+							href={'https://alexandrshnipov.github.io/Crello__E-mail'}
+							text="view project" />
+						<LinkColor
+							href={'https://github.com/AlexandrShnipov/Crello__E-mail.git'}
+							text="open sourse code"
+						/>
+					</CaruselProgectsItem>
+				</div>
+			</div>
+
+			{/* 4 */}
+			<div className={s.slider}>
+				<div className={s.sliderItems}>
+
+					{/* 3.1 */}
+					<CaruselProgectsItem
 						img={delivery}
 						title="Delivery"
 						stack="HTML, CSS, JS, Figma">
@@ -120,9 +141,6 @@ export default function SimpleSlider() {
 					</CaruselProgectsItem>
 				</div>
 			</div>
-			{/* <div>
-                <h3>4</h3>
-            </div> */}
 			{/* <div>
                 <h3>5</h3>
             </div> */}

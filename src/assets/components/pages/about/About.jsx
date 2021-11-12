@@ -83,7 +83,7 @@ const About = () => {
                                 />
 
                                 <AboutCount90
-                                    skils='mobile ferst / pixel perfect '
+                                    skils='mobile ferst / email letters / pixel perfect '
                                 />
 
                                 <AboutCount90
