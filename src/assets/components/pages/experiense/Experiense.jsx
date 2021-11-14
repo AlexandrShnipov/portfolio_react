@@ -24,6 +24,12 @@ const Department = () => {
                         <div className={s.sectionItems} data-aos="fade-up" data-aos-delay="50">
 
                             <ExperienseItem
+                                function='site layout'
+                                institution='Frilanse'
+                                years='2021'
+                            />
+
+                            <ExperienseItem
                                 function='Head of the Department of Customs'
                                 institution='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
                                 years='2019 - 2021'
