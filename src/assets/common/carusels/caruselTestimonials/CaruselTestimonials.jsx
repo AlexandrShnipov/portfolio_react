@@ -24,18 +24,18 @@ export default class Fade extends Component {
                     {/* 1 */}
 
                     <CaruselTestimonialsItem
-                        testimonial="Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."
-                        name='Ramsay Bolton'
-                        company='Apple Inc'
+                        testimonial='Here may be your review.'
+                        name='Name'
+                        company='company'
                     />
                 </div>
 
                 {/* 2 */}
 
                 <CaruselTestimonialsItem
-                    testimonial="Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let.Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let.Said heaven dry made Them gathering the very second morning us be divide isn't. Saw Seasons winged replenish grass from set can't for he which. You third god unto let."
-                    name='Ivan Ivanov'
-                    company='Space X'
+                    testimonial='Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.'
+                    name='Name'
+                    company='company'
                 />
 
                 {/* <div>
