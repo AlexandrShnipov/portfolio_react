@@ -51,7 +51,7 @@
         color: $active;
     }
 
-        &:active {
+    &:active {
         opacity: .6;
     }
 }
@@ -62,13 +62,16 @@
     font-weight: 500;
     line-height: 1.1;
     letter-spacing: .055em;
-    overflow-y: auto;
-    margin-bottom: 3rem;
-    max-height: 22rem;
+    margin-bottom: 2rem;
+    max-height: 35rem;
     overflow-y: auto;
 
     &::-webkit-scrollbar {
         width: .2rem;
+    }
+
+    @media(max-height:800px) {
+        max-height: 22rem;
     }
 }
 
@@ -77,7 +80,7 @@
 .linksWrap {
     color: $light;
     z-index: 20;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .links {

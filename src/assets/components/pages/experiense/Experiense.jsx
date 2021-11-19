@@ -31,7 +31,7 @@ const Department = () => {
 
                             <ExperienseItem
                                 function='Head of the Department of Customs'
-                                institution='State Institute for Advanced Training and Retraining of the Customs Authorities of the Republic of Belarus'
+                                institution='State Institute of the Customs Authorities'
                                 years='2019 - 2021'
                             />
 

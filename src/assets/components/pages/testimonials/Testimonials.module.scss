@@ -55,7 +55,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width:1200px) {
+        @media (max-width:767px) {
             flex-direction: column;
         }
     }
@@ -64,7 +64,7 @@
 .sectionTitleBox {
     max-width: 47%;
 
-    @media (max-width:1200px) {
+    @media (max-width:767px) {
         max-width: 95%;
     }
 
@@ -76,7 +76,7 @@
         height: 4.7rem;
         color: $active;
 
-        @media (max-width:1200px) {
+        @media (max-width:767px) {
             height: 3rem;
         }
 
@@ -94,14 +94,10 @@
         font-family: "Lato", sans-serif;
         padding-top: 10rem;
 
-        @media (max-width:1200px) {
-            padding-top: 3rem;
-        }
-
         @media (max-width:767px) {
+            padding-top: 3rem;
             font-size: 1.5rem;
-            padding-top: 2rem;
-        } 
+        }
 
         @media (max-width:400px) {
             font-size: 1.2rem;
@@ -111,14 +107,10 @@
 }
 
 .sliderWrap {
-    max-width: 40%;
+    max-width: 50%;
     padding-top: 2rem;
 
-    @media (max-width:1200px) {
-        max-width: 55%;
-    }
-
-    @media (max-width:800px) {
+    @media (max-width:767px) {
         max-width: 70%;
     }
 
@@ -147,11 +139,11 @@
         background-color: transparent;
     }
 
-    @media (max-width:1200px) {
+    @media (max-width:767px) {
         margin-bottom: 3rem;
     }
 
-    @media (max-width:1200px) {
+    @media (max-width:767px) {
         margin-bottom: 2rem;
     }
 }

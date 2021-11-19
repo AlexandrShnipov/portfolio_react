@@ -39,7 +39,6 @@
     &YearsBlock {
         display: flex;
         flex-direction: column;
-        flex-basis: 30%;
         flex-grow: 1;
 
         @media (max-width: 700px) {

@@ -9,6 +9,7 @@ import itIncubator from '../../../images/education/it-incubator.png';
 import customs from '../../../images/education/customs.png';
 import vstu from '../../../images/education/vstu.png';
 import vgavm from '../../../images/education/vgavm.png';
+import gloAcademy from '../../../images/education/glo_a.png'
 import CaruselEducationItem from './caruselEducationItem/CaruselEducationItem';
 
 export default function SimpleSlider() {
@@ -30,17 +31,16 @@ export default function SimpleSlider() {
                     data-aos-delay="50">
 
                     <CaruselEducationItem
+                        img={gloAcademy}
+                        years='2021 - 2022'
+                        institution='Glo-Academy'
+                        text='WordPress developer course'
+                    />
+                    <CaruselEducationItem
                         img={itIncubator}
                         years='2021'
                         institution='It-Incubator'
                         text='HTML, SCSS, BEM, REM, preprocessors, Pixel Perfect, Mobile First, Email letters, SVG, layout using REACT, basics Java Sсript, Bootstrap, the use of libraries in the layout of sites mobile first, layout of e-mail letters, WordPress, Git Hub, Figma, Photoshop, layout of educational projects, creating an application in a team with front-end developers '
-                    />
-
-                    <CaruselEducationItem
-                        img={customs}
-                        years='2018 - 2019'
-                        institution='State Institute of the Customs Authorities of the Republic of Belarus'
-                        text='Retraining in the specialty of customs. Qualification - customs specialist.'
                     />
                 </div>
             </div>
@@ -51,11 +51,25 @@ export default function SimpleSlider() {
                 data-aos-delay="50">
 
                 <CaruselEducationItem
+                    img={customs}
+                    years='2018 - 2019'
+                    institution='State Institute of the Customs Authorities'
+                    text='Retraining in the specialty of customs. Qualification - customs specialist'
+                />
+
+                <CaruselEducationItem
                     img={vstu}
                     years='2007 - 2008'
                     institution='Vitebsk State University of Technology'
-                    text='Faculty of advanced training and retraining of personnel. Qualification - manager-economist.'
+                    text='Faculty of advanced training and retraining of personnel. Qualification - manager-economist'
                 />
+
+            </div>
+
+            {/* 3 */}
+            <div className={s.sliderItems}
+                data-aos="fade-up"
+                data-aos-delay="50">
 
                 <CaruselEducationItem
                     img={vgavm}
@@ -63,14 +77,8 @@ export default function SimpleSlider() {
                     institution='Vitebsk State Academy of Veterinary Medicine'
                     text='Higher education in veterinary medicine. Qualification - veterinarian.'
                 />
-
             </div>
-            {/* <div>
-                <h3>3</h3>
-            </div> */}
-            {/* <div>
-                <h3>4</h3>
-            </div> */}
+
             {/* <div>
                 <h3>5</h3>
             </div> */}
