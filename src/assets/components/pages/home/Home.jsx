@@ -39,7 +39,7 @@ const Home = () => {
                         data-aos="fade-up"
                         data-aos-delay="100">
                         <span className={s.nameProfession}>
-                            Web developer (HTML-coder)
+                            HTML developer
                         </span>
                         <h1 className={s.name}>
                             Alexander  <span className={s.nameSquare}></span>
