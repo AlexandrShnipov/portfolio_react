@@ -78,6 +78,7 @@
 }
 
 .sliderItemContent {
+    min-height: 8rem;
     font-weight: 600;
     background-color: $dark;
     border-left: 2px solid rgba($light, .4);
@@ -100,6 +101,7 @@
 
     &Text {
         display: flex;
+        align-items: baseline;
         text-transform: uppercase;
     }
 
