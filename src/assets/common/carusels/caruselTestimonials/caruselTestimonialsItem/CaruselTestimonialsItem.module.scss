@@ -1,18 +1,21 @@
 @import '../../../../styles/sass/abstracts/variables.scss';
 
-.sliderItem {         
+.sliderItem {
 
     &Testimonial {
         @extend %textSection;
         margin-bottom: 3rem;
-        max-height: 8rem;
+        height: 8rem;
         overflow-y: auto;
 
-     &::-webkit-scrollbar {
-        width: .2rem;
-        background-color: rgba($dark, 0);
-    }
+        &::-webkit-scrollbar {
+            width: .2rem;
+            background-color: rgba($dark, 0);
+        }
 
+        @media (max-width: 767px) {
+            margin-bottom: 2rem;
+        }
     }
 
     &Name {

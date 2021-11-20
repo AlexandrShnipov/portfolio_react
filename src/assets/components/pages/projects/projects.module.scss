@@ -35,6 +35,10 @@
         @media (max-width:500px) {
             padding-top: 4rem;
         }
+
+        @media (max-height:600px) and (min-width:768px){
+            padding-top: 3.5rem;
+        }
     }
 
     .globalContainer {
@@ -44,6 +48,10 @@
     &Title {
         @extend %title;
         margin-bottom: 1rem;
+
+        @media (max-height:600px) and (min-width:768px){
+            margin-bottom: 0;
+        }
     }
 }
 

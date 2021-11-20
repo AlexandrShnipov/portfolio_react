@@ -29,7 +29,7 @@
         padding-top: 10rem;
         position: relative;
 
-        @media (max-width:1200px) {
+        @media (max-width:1023px) {
             padding-top: 8rem;
         }
 
@@ -41,8 +41,8 @@
             padding-top: 4rem;
         }
 
-        @media (max-height:600px) {
-            padding-top: 3rem;
+        @media (max-height:600px) and (min-width:768px) {
+            padding-top: 4rem;
         }
 
     }
@@ -56,7 +56,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media (max-width:1200px) {
+        @media (max-width:1023px) {
             flex-direction: column;
         }
     }
@@ -64,10 +64,10 @@
 
 
 .addressBlock {
-    max-width: 42%;
+    max-width: 45%;
     margin-right: 6rem;
 
-    @media (max-width:1200px) {
+    @media (max-width:1023px) {
         max-width: 95%;
         margin-bottom: 3rem;
         margin-right: 0;
@@ -131,11 +131,11 @@
 }
 
 .formBlock {
-    max-width: 47%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
 
-    @media (max-width:1200px) {
+    @media (max-width:1023px) {
         max-width: 95%;
     }
 
