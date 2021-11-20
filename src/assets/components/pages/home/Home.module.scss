@@ -38,19 +38,44 @@
     }
 
     &Container {
-        padding-top: 25rem;
+        padding-top: 15rem;
 
-        @media (min-width: 768px) {
+        @media (max-width:767px) {
+            padding-top: 20rem;
+        }
+
+        @media (max-width:450px) {
             padding-top: 17rem;
         }
 
-        @media (max-height: 600px) {
-            padding-top: 9rem;
+        @media (max-width:380px) {
+            padding-top: 15rem;
         }
 
-        @media (max-height:600px) and (min-width:768px){
+        @media (max-width:320px) {
+            padding-top: 8rem;
+        }
+
+
+        @media (max-height:1366px) and (min-width:1024px) {
+            padding-top: 31rem;
+        }
+
+        @media (max-height:1024px) and (min-width:768px) {
+            padding-top: 25rem;
+        }
+
+        @media (max-height:720px) and (min-width:539px) {
+            padding-top: 12rem;
+        }
+
+        @media (max-height:600px) and (min-width:1024px) {
             padding-top: 6rem;
         }
+       
+        @media (max-height:800px) and (min-width:1280px) {
+            padding-top: 14rem;
+        } 
     }
 
     .globalContainer {
@@ -94,7 +119,7 @@
                 font-size: 4rem;
             }
 
-                      &Square {
+            &Square {
                 display: inline-block;
                 background-color: $active;
                 width: 1rem;
