@@ -47,16 +47,9 @@
     &Doted {
         color: $active;
     }
-
-
-
 }
 
-.nav {
-    max-width: 90%;
-}
-
-.NavWrap {
+.navWrap {
     @extend %globalContainer;
     padding-left: 2rem;
 
@@ -66,6 +59,7 @@
 }
 
 .nav {
+     max-width: 90%;
 
     &Items {
         display: flex;

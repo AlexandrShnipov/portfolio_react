@@ -47,7 +47,7 @@ const Header = () => {
                         </Link>
                     </div>
 
-                    <div className={s.NavWrap}>
+                    <div className={s.navWrap}>
                         <nav className={s.nav}>
                             <ul className={s.navItems}>{renderLinks()}   </ul>
                         </nav>

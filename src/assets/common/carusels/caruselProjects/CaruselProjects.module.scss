@@ -5,10 +5,11 @@
 		display: grid;
 		grid-template-columns: repeat(2, minmax(10rem, 32rem));
 		gap: 1rem;
-		justify-content: center;
+		justify-content: space-between;
 
 		@media (max-width: 767px) {
 			gap: .5rem;
+			justify-content: center;
 			// grid-template-columns: 1fr;
 		}
 

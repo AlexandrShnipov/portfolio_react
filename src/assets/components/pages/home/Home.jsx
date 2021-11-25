@@ -21,11 +21,7 @@ const Home = () => {
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.popup}>
-                        {/* <div className={s.popupButton}>
-
-                            <Link className={s.popupLink} data-fancybox href="https://youtu.be/9lO06Zxhu88"></Link>
-                        </div> */}
-
+                    
                         {/* ! fancy */}
 
                         <div className={s.FancyVideo}>
