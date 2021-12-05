@@ -25,7 +25,7 @@ export default function SimpleSlider() {
 	};
 
 	return (
-		<Slider {...settings} className={'sliderWrap'} dotsClass={'dots'}>
+		<Slider {...settings} className={'caruselProject'} dotsClass={'dots'}>
 			<div className={s.slider}>
 				{/* 1 */}
 				<div className={s.sliderItems}>
