@@ -8,6 +8,7 @@ import claenAndSimple from '../../../images/projects/claenAndSimple.png';
 import smoothie from '../../../images/projects/smoothie.png';
 import crelloEmail from '../../../images/projects/crelloEmail.png';
 import delivery from '../../../images/projects/delivery.png';
+import helyfly from '../../../images/projects/helyfly.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import s from './CaruselProjects.module.scss';
@@ -126,7 +127,21 @@ export default function SimpleSlider() {
 			<div className={s.slider}>
 				<div className={s.sliderItems}>
 
-					{/* 3.1 */}
+					{/* 4.1 */}
+					<CaruselProgectsItem
+						img={helyfly}
+						title="HELYFLY"
+						stack="HTML, CSS, SCSS, React, Mobile First, Pixel perfect, Figma">
+						<LinkColor
+							href={'https://alexandrshnipov.github.io/mob-first-start_HELYFLY'}
+							text="view project" />
+						<LinkColor
+							href={'https://github.com/AlexandrShnipov/mob-first-start_HELYFLY.git'}
+							text="open sourse code"
+						/>
+					</CaruselProgectsItem>
+
+					{/* 4.2 */}
 					<CaruselProgectsItem
 						img={delivery}
 						title="Delivery"
