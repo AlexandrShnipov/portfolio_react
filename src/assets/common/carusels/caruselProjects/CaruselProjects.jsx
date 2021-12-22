@@ -78,7 +78,7 @@ export default function SimpleSlider() {
 					{/* 2.2 */}
 					<CaruselProgectsItem
 						img={claenAndSimple}
-						title="ClaenAndSimple"
+						title="Claen And Simple"
 						stack="HTML, CSS, Bootstrap, Figma"
 					>
 						<LinkColor
