@@ -21,7 +21,7 @@ const Home = () => {
             <div className={s.sectionContainer}>
                 <div className={s.globalContainer}>
                     <div className={s.popup}>
-                    
+
                         {/* ! fancy */}
 
                         <div className={s.FancyVideo}>
@@ -34,18 +34,18 @@ const Home = () => {
                     <div className={s.sectionContent}
                         data-aos="fade-up"
                         data-aos-delay="100">
-                        <span className={s.nameProfession}>
-                            HTML developer
-                        </span>
                         <h1 className={s.name}>
-                            Alexander  <span className={s.nameSquare}></span>
+                            <span className={s.nameProfession}>
+                                HTML developer
+                            </span>
+                            Alexander <span className={s.nameSquare}></span>
                         </h1>
                         <p className={s.sectionContentText}>
-                        Welcome to my portfolio site.<br/>
-        I'm a result oriented, enthusiastic and stress-resistant  HTML developer with experience in
-        creating landing pages and SPA with the usage of HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, basics of JS, React.<br/>
-        I'm also a positive and sociable person who easily finds a common language with people and has a
-        great desire to improve myself as a developer and learn new technologies.
+                            Welcome to my portfolio site.<br />
+                            I'm a result oriented, enthusiastic and stress-resistant  HTML developer with experience in
+                            creating landing pages and SPA with the usage of HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, basics of JS, React.<br />
+                            I'm also a positive and sociable person who easily finds a common language with people and has a
+                            great desire to improve myself as a developer and learn new technologies.
                         </p>
                     </div>
                 </div>
