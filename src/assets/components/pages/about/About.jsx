@@ -99,7 +99,11 @@ const About = () => {
                                 />
 
                                 <AboutCount90
-                                    skils='git '
+                                    skils='git'
+                                />
+
+                                <AboutCount80
+                                    skils='wordpress'
                                 />
                             </div>
 
