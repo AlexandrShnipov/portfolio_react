@@ -9,13 +9,13 @@ import { routes } from '../../../App';
 import { Link as RouteLink } from 'react-router-dom';
 
 const links = [
-    { link: 'Home', name: 'Home' },
-    { link: 'About', name: 'About' },
-    { link: 'Projects', name: 'Projects' },
-    { link: 'Education', name: 'Education' },
-    { link: 'Experiense', name: 'Experiense' },
-    { link: 'Testimonials', name: 'Testimonials' },
-    { link: 'Contact', name: 'Contact' },
+    { link: 'Home' },
+    { link: 'About' },
+    { link: 'Projects' },
+    { link: 'Education' },
+    { link: 'Experiense' },
+    { link: 'Testimonials' },
+    { link: 'Contact' },
 ]
 
 const renderLinks = () => {
@@ -23,7 +23,7 @@ const renderLinks = () => {
         <HeaderLink
             key={link.link}
             to={link.link}
-            text={link.name} />
+            text={link.link} />
     ));
 }
 
