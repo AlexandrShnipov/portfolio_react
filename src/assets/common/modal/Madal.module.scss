@@ -1,0 +1,39 @@
+@import '../../../assets/styles/sass/abstracts/variables.scss';
+
+.modalBox {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+
+  &::after {
+    position: absolute;
+    content: ' ';
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 53, 59, .5);
+  }
+
+  &IsLoading {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border-top: 5px solid $light;
+    animation: is-loading .5s linear infinite;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@keyframes is-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
