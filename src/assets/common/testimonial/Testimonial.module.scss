@@ -1,0 +1,145 @@
+@import '../../../assets/styles/sass/abstracts/variables.scss';
+
+.section {
+  background-color: rgb(20, 14, 14);
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  color: rgba($light, .6) ;
+
+  &BgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    // pointer-events: none;
+  }
+
+  &BgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+  &Container {
+    padding-top: 10rem;
+    position: relative;
+  }
+
+  .globalContainer {
+    @extend %globalContainer;
+  }
+
+  &Content {
+
+    @media (max-width:1023px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.formBlock {
+  display: flex;
+  flex-direction: column;
+
+  &Title {
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: .055em;
+    margin-bottom: 1.25rem;
+
+    @media (max-width:600px) {
+      font-size: 1.5rem;
+    }
+
+    @media (max-width:400px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.form {
+  
+  .inputBox {
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, .4);
+
+    &:last-of-type {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .inputError {
+    color: $active;
+    font-size: 1.1rem;
+    padding: 1rem .5rem;
+    position: absolute;
+    right: 0;
+
+  }
+
+  &Item {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 1rem .5rem;
+    font-size: 1.1rem;
+    color: inherit;
+    
+    &::placeholder {
+      @extend %textSection;
+      opacity: 1;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width:1100px) {
+      padding: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width:500px) {
+      margin-bottom: .5rem;
+    }
+
+    // &:focus-visible {
+    //     outline: 1px solid rgba(255, 255, 255, .4);
+    // }
+  }
+
+  .textarea {
+    min-height: 10rem;
+    resize: none;
+
+    @media (max-height:800px) {
+      min-height: 6rem;
+    }
+
+    &::-webkit-scrollbar {
+      width: .2rem;
+    }
+  }
+
+  &Button {
+    font-size: .75rem;
+    line-height: 3.8;
+    font-weight: 500;
+    letter-spacing: .055em;
+    padding: 0 calc(2.8rem - 1px);
+    text-transform: uppercase;
+    background-color: $active;
+    border: 1px solid $active;
+
+    &:hover {
+      border: 1px solid $light;
+      background-color: transparent;
+    }
+  }
+}

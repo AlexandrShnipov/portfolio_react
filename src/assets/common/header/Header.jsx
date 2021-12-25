@@ -5,6 +5,8 @@ import HeaderLink from "../../common/header/headerLink/HeaderLink";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import NavBurger from './burgerMenu/navBurger/NavBurger';
+import { routes } from '../../../App';
+import { Link as RouteLink } from 'react-router-dom';
 
 const links = [
     { link: 'Home', name: 'Home' },
@@ -33,18 +35,14 @@ const Header = () => {
         <header className={s.header}>
             <div className={s.container}>
                 <div className={s.wrap}>
+
                     <div className={s.logo}>
-
-
-                        <Link className={s.logoLink}
-                            to="Home"
-                            spy={true}
-                            smooth={true}
-                            duration={500}>
+                        <RouteLink className={s.logoLink}
+                            to={routes.MAIN}>
                             <h3 className={s.logoText}>
                                 Alexander <span className={s.logoDoted}>.</span>
                             </h3>
-                        </Link>
+                        </RouteLink>
                     </div>
 
                     <div className={s.navWrap}>

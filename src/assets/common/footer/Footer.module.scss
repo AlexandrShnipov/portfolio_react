@@ -9,20 +9,11 @@
     bottom: 0;
     z-index: 1;
 
-    &Link {
-        cursor: pointer;
-    }
-
     &Copyright {
         font-family: 'Lato', sans-serif;
         font-size: 1rem;
         color: $light;
         opacity: .5;
-
-        &:hover {
-            color: $active;
-            opacity: 1;
-        }
     }
 }
 
@@ -32,8 +23,8 @@
     @media (max-width: 400px) {
         padding: .5rem 2rem;
     }
-        
-    }
+
+}
 
 .wrap {
     @extend %wrapSection;

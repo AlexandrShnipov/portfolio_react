@@ -6,57 +6,12 @@ import { Link } from 'react-router-dom';
 import s from './Testimonials.module.scss';
 import testimonials from '../../../images/background/testimonials.jpg';
 import CaruselTestimonials from '../../../common/carusels/caruselTestimonials/CaruselTestimonials';
-
-// const FadeInDoun = styled.div`animation: 2s ${keyframes`${fadeInDown}`}`;
-
+import { routes } from './../../../../App';
 
 const Testimonials = () => {
-
-
-    // const animItems = document.querySelectorAll(".active");
-    // console.log('animItems', animItems);
-
-    // if (animItems.lenght > 0) {
-    //     window.addEventListener("scroll", animOnScroll);
-
-    //     const animOnScroll = () => {
-    //         for (let index = 0; index < animItems.length; index++) {
-    //             const animItem = animItems[index];
-    //             const animItemHeight = animItem.offsetHeight;
-    //             const animItemOffset = offset(animItem).top;
-    //             const animStart = 4;
-
-    //             let animItemPoint = window.innerHeight - animItemHeight / animStart;
-    //             if (animItemHeight > window.innerHeight) {
-    //                 animItemPoint = window.innerHeight - window.innerHeight / animStart;
-    //             }
-
-    //             if ((window.scrollY > animItemOffset - animItemPoint) && window.scrollY < (animItemOffset + animItemHeight)) {
-    //                 animItem.classList.add(".active");
-    //             }
-    //             else {
-    //                 animItem.classList.remove(".active");
-    //             }
-    //         }
-    //     }
-
-    //     const offset = (el) => {
-    //         const rect = el.getBoundingClientRect(),
-    //             scrollLeft = window.scrollX || document.documentElement.scrollLeft,
-    //             scrollTop = window.scrollY || document.documentElement.scrollTop;
-    //         return {
-    //             top: rect.top + scrollTop, left: rect.left + scrollLeft
-    //         }
-    //     }
-
-    //     setTimeout(() => {
-    //         animOnScroll();
-    //     }, 300);
-    // }
-
-
+    
     return (
-        <section className={s.section} id="Testimonials">
+        <div className={s.section} id="Testimonials">
             <div className={s.sectionBgBox}>
                 <img className={s.sectionBgImg} src={testimonials} alt="images background"
                     data-aos="zoom-out"
@@ -75,7 +30,7 @@ const Testimonials = () => {
                             </h3>
                         </div>
                         <div className={s.sliderWrap}>
-                            <Link className={s.link} to="/">add testimonial</Link>
+                            <Link className={s.link} to={routes.TESTIMONIAL}>add testimonial</Link>
                             <CaruselTestimonials />
                         </div>
                     </div>
@@ -83,7 +38,7 @@ const Testimonials = () => {
             </div>
             <div>
             </div>
-        </section>
+        </div>
 
     )
 }

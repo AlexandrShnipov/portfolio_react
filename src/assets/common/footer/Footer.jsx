@@ -12,14 +12,7 @@ const Footer = () => {
     return (
         <footer className={s.footer}>
             <div className={s.container}>
-                <Link className={s.footerLink}
-                    to="Home"
-                    spy={true}
-                    smooth={true}
-                    // offset={-70}
-                    duration={500}>
-                    <span className={s.footerCopyright}>&copy; Alexandr Shnipov. 2021</span>
-                </Link>
+                <span className={s.footerCopyright}>&copy; Alexandr Shnipov. 2021</span>
 
                 <Link className={s.linkUp}
                     aria-label='to go up'

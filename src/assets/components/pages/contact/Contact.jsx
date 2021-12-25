@@ -8,7 +8,7 @@ import contact from '../../../images/background/contact.jpg';
 const Contact = () => {
 
     return (
-        <section className={s.section} id="Contact">
+        <div className={s.section} id="Contact">
             <div className={s.sectionBgBox}>
                 <img className={s.sectionBgImg} src={contact} alt="images background"
                     data-aos="zoom-out"
@@ -107,7 +107,7 @@ const Contact = () => {
 
                                         <div className={s.inputBox}>
                                             <textarea className={`${s.textarea} ${s.formItem}`}
-                                                name="text"
+                                                type="text"
                                                 placeholder="Message*"
                                                 name="message"
                                                 onChange={handleChange}
@@ -129,7 +129,7 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

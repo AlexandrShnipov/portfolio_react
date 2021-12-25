@@ -1,23 +1,13 @@
 import React, { useRef, useEffect, useState } from "react";
 import about from '../../../images/background/about.jpg';
 import s from './About.module.scss';
-import AboutCount90 from '../../../common/aboutCount/90/AboutCount90';
-import AboutCount80 from '../../../common/aboutCount/80/AboutCount80';
-import AboutCount75 from '../../../common/aboutCount/75/AboutCount75';
+import AboutCount from '../../../common/aboutCount/AboutCount'
 
 const About = () => {
     const [animation, setAnimation] = useState(false);
-    const [count90, setCount] = useState(0);
     const experienceRef = useRef();
-    console.log(count90)
-    const handleCount = () => {
-        setCount(state => state + 1)
-    }
 
     const windowHeignt = window.innerHeight;
-    let countUp = setInterval(() => {
-        //    handleCount()
-    }, 3)
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
@@ -26,37 +16,16 @@ const About = () => {
         }
     }, [])
 
-    useEffect(() => {
-        if (animation) {
-            if (count90 < 90) {
-                countUp = setInterval(() => {
-                    setCount(state => state + 1)
-                }, 20)
-            }
-        }
-        return () => {
-            clearInterval(countUp)
-        }
-    }, [count90, animation])
-
     const handleScroll = () => {
-        console.log(experienceRef.current.getBoundingClientRect())
-        console.log(windowHeignt);
-        const rect = experienceRef.current.getBoundingClientRect();
-        const topEdge = rect.top > -rect.height && rect.top < windowHeignt;
-        if (topEdge) {
-            setAnimation(() => true)
-        } else {
-            setAnimation(() => false)
-            setCount(0)
+        if (experienceRef && experienceRef.current) {
+            const rect = experienceRef.current.getBoundingClientRect();
+            const topEdge = rect.top > -rect.height && rect.top < windowHeignt;
+            setAnimation(topEdge);
         }
     }
-    const experienceStyle = animation ? `${s.bestBlockItemLine} ${s.bestBlockItemLineAnimation}` : s.bestBlockItemLine;
-
-
 
     return (
-        <section className={s.section} id="About">
+        <div className={s.section} id="About">
             <div className={s.sectionBgBox}
                 data-aos="zoom-out"
                 data-aos-duration="3000"
@@ -78,33 +47,49 @@ const About = () => {
                                 data-aos="fade-up"
                                 data-aos-delay="50">
 
-                                <AboutCount90
-                                    skils='html / css / scss / bem / rem'
+
+                                <AboutCount
+                                    skills='html / css / scss / bem / rem'
+                                    isAnimation={animation}
+                                    limit={70}
                                 />
 
-                                <AboutCount90
-                                    skils='mobile first / email letters / pixel perfect '
+                                <AboutCount
+                                    skills='mobile first / email letters / pixel perfect'
+                                    isAnimation={animation}
+                                    limit={70}
                                 />
 
-                                <AboutCount90
-                                    skils='gulp'
+                                <AboutCount
+                                    skills='gulp'
+                                    isAnimation={animation}
+                                    limit={60}
                                 />
 
-                                <AboutCount80
-                                    skils='basics of js, and react'
+                                <AboutCount
+                                    skills='JavaScript / React'
+                                    isAnimation={animation}
+                                    limit={40}
                                 />
 
-                                <AboutCount75
-                                    skils='bootstrap'
+                                <AboutCount
+                                    skills='bootstrap'
+                                    isAnimation={animation}
+                                    limit={60}
                                 />
 
-                                <AboutCount90
-                                    skils='git'
+                                <AboutCount
+                                    skills='git'
+                                    isAnimation={animation}
+                                    limit={60}
                                 />
 
-                                <AboutCount80
-                                    skils='wordpress'
+                                <AboutCount
+                                    skills='wordpress'
+                                    isAnimation={animation}
+                                    limit={60}
                                 />
+
                             </div>
 
 
@@ -112,7 +97,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 
