@@ -75,7 +75,7 @@ const About = () => {
                                 <AboutCount
                                     skills='bootstrap'
                                     isAnimation={animation}
-                                    limit={60}
+                                    limit={50}
                                 />
 
                                 <AboutCount
@@ -87,7 +87,7 @@ const About = () => {
                                 <AboutCount
                                     skills='wordpress'
                                     isAnimation={animation}
-                                    limit={60}
+                                    limit={40}
                                 />
 
                             </div>

@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useState } from "react";
 import s from './Contact.module.scss';
 import contact from '../../../images/background/contact.jpg';
+import axios from 'axios';
 
 
 const Contact = () => {
@@ -30,9 +31,9 @@ const Contact = () => {
                             data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-delay="100">
-                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation 
+                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation&nbsp; 
                                 <a className={s.formBlockTextLink} href="mailto:SShnipov@gmail.com">
-                                    chat with me.
+                                     chat with me.
                                 </a>
                             </h4>
 
@@ -76,7 +77,7 @@ const Contact = () => {
                                     isSubmitting,
                                     /* and other goodies */
                                 }) => (
-                                    <form className={s.form} action="/" onSubmit={handleSubmit}>
+                                    <form className={s.form} id="contactForm" action="/" onSubmit={handleSubmit}>
 
 
                                         <div className={s.inputBox}>
