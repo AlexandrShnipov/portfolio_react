@@ -242,9 +242,15 @@
         background-color: $active;
         border: 1px solid $active;
 
+        &Disabled {
+            background-color: $disabled;
+            border: 1px solid $disabled;
+        }
+
         &:hover {
             border: 1px solid $light;
             background-color: transparent;
         }
+        
     }
 }

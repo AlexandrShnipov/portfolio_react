@@ -7,6 +7,7 @@ import axios from 'axios';
 
 
 const Contact = () => {
+    const [isDisabled, setIsDisabled] = useState(false);
 
     return (
         <div className={s.section} id="Contact">
@@ -59,13 +60,22 @@ const Contact = () => {
                                     }
                                     return errors;
 
+                                    //! server
                                 }}
-                                onSubmit={(values, { setSubmitting }) => {
-                                    setTimeout(() => {
-                                        alert(JSON.stringify(values, null, 2));
-                                        setSubmitting(false);
-                                    }, 400);
+                                onSubmit={(values, { resetForm, setSubmitting }) => {
+                                    setSubmitting(true);
+                                axios.post('https://smtp-nodejs-my-server.herokuapp.com/sendMessage',{
+                                    name: values.name,
+                                    email: values.email,
+                                    message: values.message
+                                })
+                                .then(() => {
+                                    setSubmitting(false);
+                                    resetForm({ values: { name: '', email: '', message: '' } })
+                                })
+                                .catch((err) => { throw new Error(err) })
                                 }}
+                                //! server
                             >
                                 {({
                                     values,
@@ -77,7 +87,7 @@ const Contact = () => {
                                     isSubmitting,
                                     /* and other goodies */
                                 }) => (
-                                    <form className={s.form} id="contactForm" action="/" onSubmit={handleSubmit}>
+                                    <form className={s.form} id="contactForm" onSubmit={handleSubmit}>
 
 
                                         <div className={s.inputBox}>
@@ -120,9 +130,11 @@ const Contact = () => {
 
 
 
-                                        <button className={s.formButton}
+                                        <button className={isSubmitting ? `${s.formButton} ${s.formButtonDisabled}` : s.formButton}
                                             type="submit"
-                                            disabled={isSubmitting}>Contact me</button>
+                                            disabled={isSubmitting}>
+                                                Contact me
+                                                </button>
                                     </form>
                                 )}
                             </Formik>
