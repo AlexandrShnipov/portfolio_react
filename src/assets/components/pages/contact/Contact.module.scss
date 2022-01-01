@@ -251,6 +251,14 @@
             border: 1px solid $light;
             background-color: transparent;
         }
-        
+
+    }
+
+    &>p {
+        background-color: #d5f5e3;
+        border-left-color: #2ecc71;
+        color: #2ecc71 !important;
+        margin-bottom: 2rem;
+        padding: 0.5em 1rem;
     }
 }

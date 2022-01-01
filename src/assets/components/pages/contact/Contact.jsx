@@ -81,6 +81,13 @@ const Contact = () => {
                                                 })
                                             }
                                         })
+                                        .catch(err => {
+                                            resetForm()
+                                            setStatus({
+                                                sent: false,
+                                                msg: `Error! Please try again later.`
+                                            })
+                                        })
                                         .catch((err) => { throw new Error(err) })
                                 }}
                             //! server
@@ -137,14 +144,16 @@ const Contact = () => {
                                             <span className={s.inputError}>  {errors.message && touched.message && errors.message} </span>
                                         </div>
 
+                                        {/* successful form submission message */}
                                         {status && status.msg && (
                                             <p
-                                                className={`alert ${status.sent ? "alert-success" : "alert-error"
+                                                className={`s.alert ${status.sent ? "alertSuccess" : "alertError"
                                                     }`}
                                             >
                                                 {status.msg}
                                             </p>
                                         )}
+                                        {/* successful form submission message */}
 
                                         <button className={isSubmitting ? `${s.formButton} ${s.formButtonDisabled}` : s.formButton}
                                             type="submit"
