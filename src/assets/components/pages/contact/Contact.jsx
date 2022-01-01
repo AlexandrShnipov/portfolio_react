@@ -1,5 +1,5 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage, FormikHelpers as FormikActions } from 'formik';
 import { useState } from "react";
 import s from './Contact.module.scss';
 import contact from '../../../images/background/contact.jpg';
@@ -32,9 +32,9 @@ const Contact = () => {
                             data-aos="fade-up"
                             data-aos-duration="1500"
                             data-aos-delay="100">
-                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation&nbsp; 
+                            <h4 className={s.formBlockText}>Let's grab a coffee and jump on conversation&nbsp;
                                 <a className={s.formBlockTextLink} href="mailto:SShnipov@gmail.com">
-                                     chat with me.
+                                    chat with me.
                                 </a>
                             </h4>
 
@@ -62,22 +62,31 @@ const Contact = () => {
 
                                     //! server
                                 }}
-                                onSubmit={(values, { resetForm, setSubmitting }) => {
+                                onSubmit={(values, { resetForm, setSubmitting, setStatus }) => {
                                     setSubmitting(true);
-                                axios.post('https://smtp-nodejs-my-server.herokuapp.com/sendMessage',{
-                                    name: values.name,
-                                    email: values.email,
-                                    message: values.message
-                                })
-                                .then(() => {
-                                    setSubmitting(false);
-                                    resetForm({ values: { name: '', email: '', message: '' } })
-                                })
-                                .catch((err) => { throw new Error(err) })
+                                    axios.post('https://smtp-nodejs-my-server.herokuapp.com/sendMessage', {
+                                        name: values.name,
+                                        email: values.email,
+                                        message: values.message
+                                    })
+                                        .then((res) => {
+                                            setSubmitting(false);
+                                            resetForm({ values: { name: '', email: '', message: '' } })
+                                            setStatus(res.status)
+                                            if (res.status === 200) {
+                                                resetForm()
+                                                setStatus({
+                                                    sent: true,
+                                                    msg: "Message has been sent! Thanks!"
+                                                })
+                                            }
+                                        })
+                                        .catch((err) => { throw new Error(err) })
                                 }}
-                                //! server
+                            //! server
                             >
                                 {({
+                                    status,
                                     values,
                                     errors,
                                     touched,
@@ -128,13 +137,20 @@ const Contact = () => {
                                             <span className={s.inputError}>  {errors.message && touched.message && errors.message} </span>
                                         </div>
 
-
+                                        {status && status.msg && (
+                                            <p
+                                                className={`alert ${status.sent ? "alert-success" : "alert-error"
+                                                    }`}
+                                            >
+                                                {status.msg}
+                                            </p>
+                                        )}
 
                                         <button className={isSubmitting ? `${s.formButton} ${s.formButtonDisabled}` : s.formButton}
                                             type="submit"
                                             disabled={isSubmitting}>
-                                                Contact me
-                                                </button>
+                                            Contact me
+                                        </button>
                                     </form>
                                 )}
                             </Formik>
