@@ -147,7 +147,7 @@ const Contact = () => {
                                         {/* successful form submission message */}
                                         {status && status.msg && (
                                             <p
-                                                className={`s.alert ${status.sent ? "alertSuccess" : "alertError"
+                                                className={`${s.alert} ${status.sent ? s.alertSuccess : s.alertError
                                                     }`}
                                             >
                                                 {status.msg}

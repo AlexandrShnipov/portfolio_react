@@ -254,11 +254,23 @@
 
     }
 
-    &>p {
-        background-color: #d5f5e3;
-        border-left-color: #2ecc71;
-        color: #2ecc71 !important;
+    .alertSuccess {
+        background-color: $bgsuccess;
+        border-left-color: $success;
+        border-left: 10px solid;
+        color: $success;
         margin-bottom: 2rem;
-        padding: 0.5em 1rem;
+        padding: 1.5em 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .alertError {
+        background-color: $bgerror;
+        border-left-color: $active;
+        border-left: 10px solid;
+        color: $active;
+        margin-bottom: 2rem;
+        padding: 1.5em 1.5rem;
+        font-size: 1.1rem;
     }
 }
