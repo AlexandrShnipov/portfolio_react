@@ -72,6 +72,7 @@ const Contact = () => {
                                         .then((res) => {
                                             setSubmitting(false);
                                             resetForm({ values: { name: '', email: '', message: '' } })
+                                            // console.log(res.status)
                                             setStatus(res.status)
                                             if (res.status === 200) {
                                                 resetForm()
@@ -79,6 +80,12 @@ const Contact = () => {
                                                     sent: true,
                                                     msg: "Message has been sent! Thanks!"
                                                 })
+                                                setTimeout(() => {
+                                                    setStatus({
+                                                        sent: false,
+                                                        msg: ""
+                                                    })
+                                                }, 3000)
                                             }
                                         })
                                         .catch(err => {
@@ -88,7 +95,6 @@ const Contact = () => {
                                                 msg: `Error! Please try again later.`
                                             })
                                         })
-                                        .catch((err) => { throw new Error(err) })
                                 }}
                             //! server
                             >

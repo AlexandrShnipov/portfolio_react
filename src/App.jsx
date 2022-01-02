@@ -6,7 +6,7 @@ import Testimonial from './assets/common/testimonial/Testimonial';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import MainPage from './assets/components/pages/mainPage/MainPage';
 import Header from '../src/assets/common/header/Header';
 import Footer from '../src/assets/common/footer/Footer';
@@ -21,6 +21,7 @@ export const routes = {
 config({ ssrFadeout: true });
 
 const App = () => {
+  const history = useHistory();
 
   useEffect(() => {
     AOS.init({

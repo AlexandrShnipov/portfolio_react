@@ -5,7 +5,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  color: rgba($light, .6) ;
+  color: rgba($light, .6);
 
   &BgBox {
     position: absolute;
@@ -44,6 +44,25 @@
   }
 }
 
+.linkToMain {
+  font-size: .75rem;
+  line-height: 3.8;
+  font-weight: 500;
+  letter-spacing: .055em;
+  padding: 0 calc(2.8rem - 1px);
+  text-transform: uppercase;
+  background-color: $active;
+  border: 1px solid $active;
+  position: absolute;
+  top: -8rem;
+  right: 1%;
+
+  &:hover {
+    border: 1px solid $light;
+    background-color: transparent;
+  }
+}
+
 .formBlock {
   display: flex;
   flex-direction: column;
@@ -66,7 +85,7 @@
 }
 
 .form {
-  
+
   .inputBox {
     margin-bottom: 1.25rem;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
@@ -93,7 +112,7 @@
     padding: 1rem .5rem;
     font-size: 1.1rem;
     color: inherit;
-    
+
     &::placeholder {
       @extend %textSection;
       opacity: 1;
@@ -137,9 +156,35 @@
     background-color: $active;
     border: 1px solid $active;
 
+    &Disabled {
+      background-color: $disabled;
+      border: 1px solid $disabled;
+    }
+
     &:hover {
       border: 1px solid $light;
       background-color: transparent;
     }
+
+  }
+
+  .alertSuccess {
+    background-color: $bgsuccess;
+    border-left-color: $success;
+    border-left: 10px solid;
+    color: $success;
+    margin-bottom: 2rem;
+    padding: 1.5em 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .alertError {
+    background-color: $bgerror;
+    border-left-color: $active;
+    border-left: 10px solid;
+    color: $active;
+    margin-bottom: 2rem;
+    padding: 1.5em 1.5rem;
+    font-size: 1.1rem;
   }
 }
