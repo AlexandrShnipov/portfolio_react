@@ -69,13 +69,13 @@ const About = () => {
                                 <AboutCount
                                     skills='JavaScript / React'
                                     isAnimation={animation}
-                                    limit={40}
+                                    limit={30}
                                 />
 
                                 <AboutCount
                                     skills='bootstrap'
                                     isAnimation={animation}
-                                    limit={50}
+                                    limit={40}
                                 />
 
                                 <AboutCount
