@@ -146,28 +146,6 @@
     }
   }
 
-  &Button {
-    font-size: .75rem;
-    line-height: 3.8;
-    font-weight: 500;
-    letter-spacing: .055em;
-    padding: 0 calc(2.8rem - 1px);
-    text-transform: uppercase;
-    background-color: $active;
-    border: 1px solid $active;
-
-    &Disabled {
-      background-color: $disabled;
-      border: 1px solid $disabled;
-    }
-
-    &:hover {
-      border: 1px solid $light;
-      background-color: transparent;
-    }
-
-  }
-
   .alertSuccess {
     background-color: $bgsuccess;
     border-left-color: $success;

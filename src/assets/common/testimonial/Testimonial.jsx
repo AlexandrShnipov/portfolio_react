@@ -4,6 +4,7 @@ import s from './Testimonial.module.scss';
 import { Formik, Form, Field, ErrorMessage, FormikHelpers as FormikActions } from 'formik';
 import testimonial from '../../images/background/testimonial.jpg';
 import axios from 'axios';
+import Button from '../../common/button/Button';
 
 const TestimonialForm = () => {
 
@@ -34,7 +35,7 @@ const TestimonialForm = () => {
               </h4>
 
               <Formik
-                initialValues={{ name: '', position: '', company:'', testimonial: '' }}
+                initialValues={{ name: '', position: '', company: '', testimonial: '' }}
                 validate={values => {
                   const errors = {};
 
@@ -172,11 +173,10 @@ const TestimonialForm = () => {
                     )}
                     {/* successful form submission message */}
 
-                    <button className={isSubmitting ? `${s.formButton} ${s.formButtonDisabled}` : s.formButton}
-                      type="submit"
-                      disabled={isSubmitting}>
-                      submit
-                    </button>
+                    <Button
+                      text='Submit'
+                      isSubmitting={isSubmitting}
+                    />
                   </form>
                 )}
               </Formik>

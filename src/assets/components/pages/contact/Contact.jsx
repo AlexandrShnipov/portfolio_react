@@ -4,7 +4,7 @@ import { useState } from "react";
 import s from './Contact.module.scss';
 import contact from '../../../images/background/contact.jpg';
 import axios from 'axios';
-
+import Button from '../../../common/button/Button';
 
 const Contact = () => {
     const [isDisabled, setIsDisabled] = useState(false);
@@ -161,11 +161,16 @@ const Contact = () => {
                                         )}
                                         {/* successful form submission message */}
 
-                                        <button className={isSubmitting ? `${s.formButton} ${s.formButtonDisabled}` : s.formButton}
+                                        {/* <button className={isSubmitting ? `${s.formButton} ${s.formButtonDisabled}` : s.formButton}
                                             type="submit"
                                             disabled={isSubmitting}>
                                             Contact me
-                                        </button>
+                                        </button> */}
+                                        
+                                        <Button
+                                            text='Contact me'
+                                            isSubmitting={isSubmitting}
+                                        />
                                     </form>
                                 )}
                             </Formik>
