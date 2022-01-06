@@ -1,9 +1,7 @@
 import React, { useEffect, useState, Component } from 'react';
 import config from 'react-reveal/globals';
 import s from './App.module.scss';
-
 import Testimonial from './assets/common/testimonial/Testimonial';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Route, Switch, useHistory } from 'react-router-dom';
