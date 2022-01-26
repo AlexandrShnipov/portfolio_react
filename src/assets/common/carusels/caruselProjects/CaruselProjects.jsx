@@ -9,6 +9,7 @@ import smoothie from '../../../images/projects/smoothie.png';
 import crelloEmail from '../../../images/projects/crelloEmail.png';
 import delivery from '../../../images/projects/delivery.png';
 import helyfly from '../../../images/projects/helyfly.png';
+import sensive from '../../../images/projects/sensive.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import s from './CaruselProjects.module.scss';
@@ -143,6 +144,25 @@ export default function SimpleSlider() {
 
 					{/* 4.2 */}
 					<CaruselProgectsItem
+						img={sensive}
+						title="SENSIVE"
+						stack="WordPress , Hosting">
+						<LinkColor
+							href={'https://alexander-shnipov.ru/Sensive/'}
+							text="view project" />
+						<LinkColor
+							href={'https://github.com/AlexandrShnipov/sensive-WP.git'}
+							text="open sourse code"
+						/>
+					</CaruselProgectsItem>
+				</div>
+			</div>
+
+			<div className={s.slider}>
+				<div className={s.sliderItems}>
+
+					{/* 5.1 */}
+					<CaruselProgectsItem
 						img={delivery}
 						title="Delivery"
 						stack="HTML, CSS, JS, Figma">
@@ -154,6 +174,9 @@ export default function SimpleSlider() {
 							text="open sourse code"
 						/>
 					</CaruselProgectsItem>
+
+					{/* 5.2 */}
+				
 				</div>
 			</div>
 			{/* <div>
