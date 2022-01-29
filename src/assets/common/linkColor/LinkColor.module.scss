@@ -9,7 +9,7 @@
 	background-color: $active;
 	border: 1px solid $active;
 	text-transform: uppercase;
-
+	
 	&:hover {
 		border: 1px solid $light;
 		background-color: $dark;
@@ -18,6 +18,15 @@
 	@media (max-width: 400px) {
 		margin-bottom: 1rem;
 	}
+
+	@media (max-width: 365px) {
+		padding: 0 1.5rem;
+	}
+
+	@media (max-width: 320px) {
+		padding: 0 .5rem;
+	}
+
 
 	& + .link {
 		margin-left: 1rem;

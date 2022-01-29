@@ -16,7 +16,10 @@ const CaruselEducationItem = (props) => {
                 <p className={s.years}>{props.years}</p>
                 <p className={s.institution}>{props.institution}</p>
             </div>
-            <p className={s.sliderItemText}>{props.text}</p>
+            <p className={s.sliderItemText}>{props.text}
+            <span className={s.sliderItemLink}> {props.link && props.link} </span>
+            </p>
+           
         </div>
 
     )

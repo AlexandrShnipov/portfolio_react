@@ -11,6 +11,7 @@ import vstu from '../../../images/education/vstu.png';
 import vgavm from '../../../images/education/vgavm.png';
 import gloAcademy from '../../../images/education/glo_a.png'
 import CaruselEducationItem from './caruselEducationItem/CaruselEducationItem';
+import LinkColor from '../../linkColor/LinkColor';
 
 export default function SimpleSlider() {
     var settings = {
@@ -20,6 +21,10 @@ export default function SimpleSlider() {
         slidesToShow: 1,
         slidesToScroll: 1
     };
+
+    const renderLink = () => {
+        return <LinkColor text={'Open Certificate'} href={'https://drive.google.com/file/d/1mO3aGi_rWn59IlyPrOLVdMQU3GkPVWhI/view?usp=sharing'}/>
+    }
 
     return (
         <Slider {...settings} className={"sliderEducation"} dotsClass={"dots"}>
@@ -31,11 +36,16 @@ export default function SimpleSlider() {
                     data-aos-delay="50">
 
                     <CaruselEducationItem
+                 
+                    
                         img={gloAcademy}
                         years='2021 - 2022'
                         institution='Glo-Academy'
                         text='WordPress developer course'
+                        link={renderLink()}
+                    
                     />
+
                     <CaruselEducationItem
                         img={itIncubator}
                         years='2021'

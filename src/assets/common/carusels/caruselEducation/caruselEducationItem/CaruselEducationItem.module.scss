@@ -64,6 +64,11 @@
         letter-spacing: .055em;
         flex-basis: 30%;
         flex-grow: 2;
-        margin-left: 2rem;
+        margin-left: 2rem; 
+        display: flex;
+        align-items:center;  
+        justify-content: space-between;
+        flex-wrap: wrap;     
     }
+  
 }

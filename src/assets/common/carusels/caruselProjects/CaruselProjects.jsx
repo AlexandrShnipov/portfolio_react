@@ -47,13 +47,14 @@ export default function SimpleSlider() {
 
 					{/* 1.2 */}
 					<CaruselProgectsItem
-						img={desire} title="Desire"
-						stack="HTML, CSS, SCSS, JS, Gulp, Figma">
+						img={sensive}
+						title="SENSIVE"
+						stack="WordPress, HTML, CSS, Bootstrap, PHP, Hosting">
 						<LinkColor
-							href={'https://alexandrshnipov.github.io/desire-gulp'}
+							href={'https://alexander-shnipov.ru/Sensive/'}
 							text="view project" />
 						<LinkColor
-							href={'https://github.com/AlexandrShnipov/desire-gulp.git'}
+							href={'https://github.com/AlexandrShnipov/sensive-WP.git'}
 							text="open sourse code"
 						/>
 					</CaruselProgectsItem>
@@ -144,14 +145,13 @@ export default function SimpleSlider() {
 
 					{/* 4.2 */}
 					<CaruselProgectsItem
-						img={sensive}
-						title="SENSIVE"
-						stack="WordPress , Hosting">
+						img={desire} title="Desire"
+						stack="HTML, CSS, SCSS, JS, Gulp, Figma">
 						<LinkColor
-							href={'https://alexander-shnipov.ru/Sensive/'}
+							href={'https://alexandrshnipov.github.io/desire-gulp'}
 							text="view project" />
 						<LinkColor
-							href={'https://github.com/AlexandrShnipov/sensive-WP.git'}
+							href={'https://github.com/AlexandrShnipov/desire-gulp.git'}
 							text="open sourse code"
 						/>
 					</CaruselProgectsItem>
@@ -174,9 +174,8 @@ export default function SimpleSlider() {
 							text="open sourse code"
 						/>
 					</CaruselProgectsItem>
-
 					{/* 5.2 */}
-				
+
 				</div>
 			</div>
 			{/* <div>
