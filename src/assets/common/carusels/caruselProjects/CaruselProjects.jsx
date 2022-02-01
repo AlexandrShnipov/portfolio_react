@@ -50,9 +50,9 @@ export default function SimpleSlider() {
 						img={sensive}
 						title="SENSIVE"
 						stack="WordPress, HTML, CSS, Bootstrap, PHP, Hosting">
-						{/* <LinkColor
+						<LinkColor
 							href={'https://alexander-shnipov.ru/Sensive/'}
-							text="view project" /> */}
+							text="view project" />
 						<LinkColor
 							href={'https://github.com/AlexandrShnipov/sensive-WP.git'}
 							text="open sourse code"
