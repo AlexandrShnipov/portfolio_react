@@ -37,9 +37,9 @@ export default function SimpleSlider() {
 						title="Learning cards"
 						stack="HTML, CSS, Figma, TypeScript, teamwork with front-end developers"
 					>
-						{/* <LinkColor
+						<LinkColor
 							href={'https://matumba125.github.io/learningApp'}
-							text="view project" /> */}
+							text="view project" />
 						<LinkColor
 							href={'https://github.com/Matumba125/learningApp.git'}
 							text="open sourse code" />
@@ -50,9 +50,9 @@ export default function SimpleSlider() {
 						img={sensive}
 						title="SENSIVE"
 						stack="WordPress, HTML, CSS, Bootstrap, PHP, Hosting">
-						<LinkColor
+						{/* <LinkColor
 							href={'https://alexander-shnipov.ru/Sensive/'}
-							text="view project" />
+							text="view project" /> */}
 						<LinkColor
 							href={'https://github.com/AlexandrShnipov/sensive-WP.git'}
 							text="open sourse code"
