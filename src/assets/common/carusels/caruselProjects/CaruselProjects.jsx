@@ -37,9 +37,9 @@ export default function SimpleSlider() {
 						title="Learning cards"
 						stack="HTML, CSS, Figma, TypeScript, teamwork with front-end developers"
 					>
-						<LinkColor
+						{/* <LinkColor
 							href={'https://matumba125.github.io/learningApp'}
-							text="view project" />
+							text="view project" /> */}
 						<LinkColor
 							href={'https://github.com/Matumba125/learningApp.git'}
 							text="open sourse code" />
