@@ -26,7 +26,7 @@ const Department = () => {
                             <ExperienseItem
                                 function='site layout'
                                 institution='Frilanse'
-                                years='2021'
+                                years='Currently'
                             />
 
                             <ExperienseItem
