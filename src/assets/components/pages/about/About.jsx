@@ -49,7 +49,7 @@ const About = () => {
 
 
                                 <AboutCount
-                                    skills='html / css / scss / bem / rem'
+                                    skills='html / css / scss / bem / rem / pug'
                                     isAnimation={animation}
                                     limit={70}
                                 />
