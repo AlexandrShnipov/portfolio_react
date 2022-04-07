@@ -4,7 +4,7 @@ import Home from '../home/Home';
 import About from '../about/About';
 import Projects from '../projects/Projects';
 import Education from '../education/Education';
-import Experiense from '../experiense/Experiense';
+import Experience from '../experience/Experience';
 import Testimonials from '../testimonials/Testimonials';
 import Contact from '../contact/Contact';
 import SocialBox from '../../../common/socialsBox/SocialBox';
@@ -18,7 +18,7 @@ const MainPage = () => {
       <About />
       <Projects />
       <Education />
-      <Experiense />
+      <Experience />
       <Testimonials />
       <Contact />
     </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import s from './ExperienseItem.module.scss';
+import s from './ExperienceItem.module.scss';
 
-const ExperienseItem = (props) => {
+const ExperienceItem = (props) => {
 
     return (
 
@@ -19,4 +19,4 @@ const ExperienseItem = (props) => {
     )
 }
 
-export default ExperienseItem;
+export default ExperienceItem;

@@ -10,7 +10,7 @@ const links = [
 	{ link: 'About', name: 'About' },
 	{ link: 'Projects', name: 'Projects' },
 	{ link: 'Education', name: 'Education' },
-	{ link: 'Experiense', name: 'Experiense' },
+	{ link: 'Experience', name: 'Experience' },
 	{ link: 'Testimonials', name: 'Testimonials' },
 	{ link: 'Contact', name: 'Contact' }
 ];
