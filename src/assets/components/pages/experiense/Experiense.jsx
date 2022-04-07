@@ -18,14 +18,14 @@ const Department = () => {
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
 
-                        <h3 className={s.sectionTitle}>Experiense</h3>
+                        <h3 className={s.sectionTitle}>Experience</h3>
 
 
                         <div className={s.sectionItems} data-aos="fade-up" data-aos-delay="50">
 
                             <ExperienseItem
                                 function='site layout'
-                                institution='Frilanse'
+                                institution='Freelanse'
                                 years='Currently'
                             />
 

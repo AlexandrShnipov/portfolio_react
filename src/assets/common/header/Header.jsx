@@ -13,7 +13,7 @@ const links = [
     { link: 'About' },
     { link: 'Projects' },
     { link: 'Education' },
-    { link: 'Experiense' },
+    { link: 'Experience' },
     { link: 'Testimonials' },
     { link: 'Contact' },
 ]
