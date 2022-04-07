@@ -23,7 +23,7 @@
 
     &ImgBox {
         width: 5rem;
-        height: 5rem;
+        min-height: 5rem;
         opacity: .6;
     }
 
@@ -39,7 +39,7 @@
     &YearsBlock {
         display: flex;
         flex-direction: column;
-        flex-grow: 1;
+        flex-basis: 30%;
 
         @media (max-width: 700px) {
             padding-left: 1rem;
@@ -63,7 +63,7 @@
         @extend %textSection;
         letter-spacing: .055em;
         flex-basis: 30%;
-        flex-grow: 2;
+        flex-grow: 1;
         margin-left: 2rem; 
         display: flex;
         align-items:center;  

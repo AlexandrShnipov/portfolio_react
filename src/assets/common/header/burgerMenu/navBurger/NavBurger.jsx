@@ -68,7 +68,7 @@ const NavBurger = (props) => {
 				</div>
 
 				<div className={s.footer}>
-					<span className={s.footerCopyrightTop}>&copy; 2021</span>
+					<span className={s.footerCopyrightTop}>&copy; 2022</span>
 					<span className={s.footerCopyrightBottom}> All rights reserved.</span>
 				</div>
 			</div>

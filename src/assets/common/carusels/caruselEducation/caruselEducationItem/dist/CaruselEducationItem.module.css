@@ -1,0 +1,70 @@
+.sliderItemText, .sliderItem .years {
+  line-height: 1.8;
+  opacity: 0.6;
+  letter-spacing: 0.055em;
+}
+@media (max-height: 680px) {
+  .sliderItemText, .sliderItem .years {
+    line-height: 1.5;
+  }
+}
+
+.sliderItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+@media (max-width: 700px) {
+  .sliderItem {
+    padding: 1rem 0;
+  }
+}
+.sliderItem:nth-of-type(odd) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.sliderItemImgWrap {
+  flex-basis: 15%;
+}
+@media (max-width: 400px) {
+  .sliderItemImgWrap {
+    display: none;
+  }
+}
+.sliderItemImgBox {
+  width: 5rem;
+  min-height: 5rem;
+  opacity: 0.6;
+}
+.sliderItemImg {
+  object-fit: cover;
+}
+.sliderItemYearsBlock {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+@media (max-width: 700px) {
+  .sliderItemYearsBlock {
+    padding-left: 1rem;
+  }
+}
+.sliderItem .years {
+  margin-bottom: 0.3rem;
+}
+.sliderItem .institution {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 0.055em;
+  font-weight: 500;
+}
+.sliderItemText {
+  letter-spacing: 0.055em;
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
