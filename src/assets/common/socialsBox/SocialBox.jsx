@@ -19,7 +19,7 @@ const SocialBox = () => {
 
                 <a
                     className={`${s.link} ${s.linkSkype}`}
-                    href="skype:(as04081976)?(chat)"
+                    href="skype:as04081976?chat"
                     target="_blank"
                     aria-label='my Skype'>
                     <FontAwesomeIcon icon={faSkype} />

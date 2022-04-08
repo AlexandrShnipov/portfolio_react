@@ -51,8 +51,8 @@ const NavBurger = (props) => {
 						</a>					
 
 						<a
-							className={`${s.link} ${s.linkLinkedin}`}
-							href="skype:(as04081976)?(chat)"
+							className={`${s.link} ${s.linkSkype}`}
+							href="skype:as04081976?chat"
 							target="_blank"
 							aria-label='my Skype'>
 							<FontAwesomeIcon icon={faSkype} />
