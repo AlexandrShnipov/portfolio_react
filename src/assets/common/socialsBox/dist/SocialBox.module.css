@@ -1,0 +1,53 @@
+.linksWrap {
+  position: fixed;
+  left: 0.5rem;
+  height: 100vh;
+  color: white;
+  z-index: 20;
+}
+@media (max-width: 767px) {
+  .linksWrap {
+    display: none;
+  }
+}
+.linksWrap::before, .linksWrap::after {
+  content: "";
+  position: absolute;
+  right: calc(50% + 1px);
+  width: 1px;
+  height: 20%;
+  background-color: white;
+  opacity: 0.4;
+}
+@media (max-height: 600px) and (min-width: 768px) {
+  .linksWrap::before, .linksWrap::after {
+    height: 20%;
+  }
+}
+.linksWrap::before {
+  top: 12%;
+}
+.linksWrap::after {
+  bottom: 12%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.link {
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+.link:hover {
+  color: #cf000f;
+}
+
+.link + .link {
+  margin-top: 1rem;
+}

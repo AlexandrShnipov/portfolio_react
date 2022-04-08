@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTelegramPlane, faLinkedinIn } from '@fortawesome/fontawesome-free-brands';
+import { faFacebookF, faTelegramPlane, faLinkedinIn, faSkype } from '@fortawesome/fontawesome-free-brands';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import s from './NavBurger.module.scss';
 import HeaderLinkBurger from '../headerLinkBurger/HeaderLinkBurger';
@@ -42,19 +42,20 @@ const NavBurger = (props) => {
 				</nav>
 
 				<div className={s.linksWrap}>
-					<div className={s.links}>
-						<a
-							className={`${s.link} ${s.linkFacebook}`}
-							href="https://www.facebook.com/asnipov/"
-							target="_blank"
-							aria-label='my Facebook'>
-							<FontAwesomeIcon icon={faFacebookF} />
-						</a>
+					<div className={s.links}>					
 
 						<a className={`${s.link} ${s.linkTelegram}`}
 							href="https://t.me/S_Shnipov" target="_blank"
 							aria-label='my Telegram'>
 							<FontAwesomeIcon icon={faTelegramPlane} />
+						</a>					
+
+						<a
+							className={`${s.link} ${s.linkLinkedin}`}
+							href="skype:(as04081976)?(chat)"
+							target="_blank"
+							aria-label='my Skype'>
+							<FontAwesomeIcon icon={faSkype} />
 						</a>
 
 						<a
@@ -63,6 +64,14 @@ const NavBurger = (props) => {
 							target="_blank"
 							aria-label='my Linkedin'>
 							<FontAwesomeIcon icon={faLinkedinIn} />
+						</a>
+
+						<a
+							className={`${s.link} ${s.linkFacebook}`}
+							href="https://www.facebook.com/asnipov/"
+							target="_blank"
+							aria-label='my Facebook'>
+							<FontAwesomeIcon icon={faFacebookF} />
 						</a>
 					</div>
 				</div>
