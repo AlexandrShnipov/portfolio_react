@@ -36,7 +36,7 @@ const About = () => {
                 <div className={s.globalContainer}>
                     <div className={s.sectionContent}>
                         <div className={s.experience}>
-                            <h1 className={s.experienceYears}> .5  <span className={s.experienceYearsSquare}></span> </h1>
+                            <h1 className={s.experienceYears}> 1.5  <span className={s.experienceYearsSquare}></span> </h1>
                             <h3 className={s.experienceText}>Years <br /> Experience <br /> Working</h3>
                         </div>
                         <div className={s.bestBlock}>
