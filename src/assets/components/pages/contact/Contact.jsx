@@ -64,7 +64,7 @@ const Contact = () => {
                                 }}
                                 onSubmit={(values, { resetForm, setSubmitting, setStatus }) => {
                                     setSubmitting(true);
-                                    axios.post('https://cors-anywhere.herokuapp.com/https://smtp-nodejs-my-server.herokuapp.com/sendMessage', {
+                                    axios.post('https://smtp-nodejs-my-server.herokuapp.com/sendMessage', {
                                         name: values.name,
                                         email: values.email,
                                         message: values.message
