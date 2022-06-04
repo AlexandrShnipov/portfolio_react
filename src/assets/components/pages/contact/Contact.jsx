@@ -56,7 +56,7 @@ const Contact = () => {
                                     }
 
                                     if (!values.message) {
-                                        errors.message = 'Required!';
+                                        errors.message = 'Required!!';
                                     }
                                     return errors;
 
