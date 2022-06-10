@@ -23,7 +23,7 @@ const TestimonialForm = () => {
             <RouteLink className={s.linkToMain}
               to={routes.MAIN}>
               <p className={s.linkText}>
-                back to houme
+                back to home
               </p>
             </RouteLink>
 
