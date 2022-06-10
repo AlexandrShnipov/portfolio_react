@@ -24,7 +24,7 @@ const Department = () => {
                         <div className={s.sectionItems} data-aos="fade-up" data-aos-delay="50">
 
                             <ExperienceItem
-                                function='site layout'
+                                function='Site layout'
                                 institution='Freelanse'
                                 years='Currently'
                             />
