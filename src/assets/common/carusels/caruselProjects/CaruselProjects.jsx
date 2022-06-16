@@ -10,6 +10,7 @@ import crelloEmail from '../../../images/projects/crelloEmail.png';
 import delivery from '../../../images/projects/delivery.png';
 import helyfly from '../../../images/projects/helyfly.png';
 import sensive from '../../../images/projects/sensive.png';
+import bgfBank from '../../../images/projects/bgfBank.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import s from './CaruselProjects.module.scss';
@@ -100,15 +101,17 @@ export default function SimpleSlider() {
 				<div className={s.sliderItems}>
 					{/* 3.1 */}
 					<CaruselProgectsItem
-						img={smoothie} title="Smoothie"
-						stack="HTML, CSS, LESS, JS, Photoshop">
-						<LinkColor href={'https://alexandrshnipov.github.io/smoothie'}
+						img={bgfBank}
+						title="BGF Bank"
+						stack="HTML, CSS, JS, PHP, Figma">
+						<LinkColor
+							href={'https://alexandrshnipov.github.io/bgfBankIP/'}
 							text="view project" />
 						<LinkColor
-							href={'https://github.com/AlexandrShnipov/smoothie.git'}
-							text="open sourse code" />
+							href={'https://github.com/AlexandrShnipov/bgfBankIP.git'}
+							text="open sourse code"
+						/>
 					</CaruselProgectsItem>
-
 					{/* 3.2 */}
 					<CaruselProgectsItem
 						img={crelloEmail}
@@ -163,6 +166,16 @@ export default function SimpleSlider() {
 
 					{/* 5.1 */}
 					<CaruselProgectsItem
+						img={smoothie} title="Smoothie"
+						stack="HTML, CSS, LESS, JS, Photoshop">
+						<LinkColor href={'https://alexandrshnipov.github.io/smoothie'}
+								   text="view project" />
+						<LinkColor
+							href={'https://github.com/AlexandrShnipov/smoothie.git'}
+							text="open sourse code" />
+					</CaruselProgectsItem>
+					{/* 5.2 */}
+					<CaruselProgectsItem
 						img={delivery}
 						title="Delivery"
 						stack="HTML, CSS, JS, Figma">
@@ -174,8 +187,6 @@ export default function SimpleSlider() {
 							text="open sourse code"
 						/>
 					</CaruselProgectsItem>
-					{/* 5.2 */}
-
 				</div>
 			</div>
 			{/* <div>
