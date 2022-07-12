@@ -19,7 +19,6 @@
     "axios": "^0.24.0",
     "formik": "^2.2.9",
     "jquery": "^3.6.0",
-    "node-sass": "^4.14.1",
     "normalize-url": "^7.0.2",
     "react": "^17.0.2",
     "react-animations": "^1.0.0",
@@ -31,6 +30,7 @@
     "react-scroll-progress-bar": "^1.1.13",
     "react-slick": "^0.28.1",
     "react-videojs-fancybox": "0.0.7",
+    "sass": "^1.53.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.0.1"
@@ -42,7 +42,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [
