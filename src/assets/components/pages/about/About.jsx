@@ -67,7 +67,7 @@ const About = () => {
                                 />
 
                                 <AboutCount
-                                    skills='JavaScript / React / Svelte'
+                                    skills='JavaScript / React / Svelte / Ajax / Redux'
                                     isAnimation={animation}
                                     limit={40}
                                 />
