@@ -21,7 +21,7 @@ const Education = () => {
                         <div className={s.sectionHead}>
                             <h3 className={s.sectionTitle}>Education</h3>
                             <LinkColor
-                                href={'https://drive.google.com/file/d/1zaPjstMyGS-I-Xn976hYl9l94NGTNB6X/view?usp=sharing'}
+                                href={'https://drive.google.com/file/d/158AUpFDatmWeX6kvwiG66Vq99dxgc9Vg/view?usp=sharing'}
                                 text="Open resume" />
                         </div>
                         <CaruselEducation />
