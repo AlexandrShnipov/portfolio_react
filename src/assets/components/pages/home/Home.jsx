@@ -36,14 +36,14 @@ const Home = () => {
                         data-aos-delay="100">
                         <h1 className={s.name}>
                             <span className={s.nameProfession}>
-                                HTML developer
+                                Frontend developer
                             </span>
                             Alexander <span className={s.nameSquare}></span>
                         </h1>
                         <p className={s.sectionContentText}>
                             Welcome to my portfolio site.<br />
-                            I'm a result oriented, enthusiastic and stress-resistant  HTML developer with experience in
-                            creating landing pages and SPA with the usage of HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, WordPress, basics of Java Script, React.<br />
+                            I'm a result oriented, enthusiastic and stress-resistant  frontend developer with experience in
+                            creating landing pages and SPA with the usage basics of Java Script and React, HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, WordPress.<br />
                             I'm also a positive and sociable person who easily finds a common language with people and has a
                             great desire to improve myself as a developer and learn new technologies.
                         </p>
