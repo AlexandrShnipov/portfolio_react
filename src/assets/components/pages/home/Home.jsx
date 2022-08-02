@@ -42,10 +42,10 @@ const Home = () => {
                         </h1>
                         <p className={s.sectionContentText}>
                             Welcome to my portfolio site.<br />
-                            I'm a result oriented, enthusiastic and stress-resistant  frontend developer with experience in
-                            creating landing pages and SPA with the usage basics of Java Script and React, HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, WordPress.<br />
-                            I'm also a positive and sociable person who easily finds a common language with people and has a
-                            great desire to improve myself as a developer and learn new technologies.
+                          I'm a result oriented, enthusiastic and stress-resistant  frontend developer with experience in
+                          creating landing pages and SPA with the usage  Java Script, React, TypeScript, HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, WordPress.<br />
+                          I'm also a positive and sociable person who easily finds a common language with people and has a
+                          great desire to improve myself as a developer and learn new technologies.
                         </p>
                     </div>
                 </div>
