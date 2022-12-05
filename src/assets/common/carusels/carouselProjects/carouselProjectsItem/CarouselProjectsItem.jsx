@@ -1,14 +1,14 @@
 import React from "react";
-import s from './CaruselProjectsItem.module.scss'
+import s from './CarouselProjectsItem.module.scss'
 import LinkColor from '../../../linkColor/LinkColor'
 
-const CaruselProgectsItem = (props) => {
+const CarouselProjectsItem = (props) => {
 
     return (
         <div className={s.sliderItem}>
             <div className={s.imgBox}>
                 <div className={s.imgBoxSquare}>
-                    <img className={s.imgBoxImg} src={props.img} alt="images progect" />
+                    <img className={s.imgBoxImg} src={props.img} alt="images project" />
                     <div className={s.imgBoxLinks}>
 
                         {props.children}
@@ -26,6 +26,12 @@ const CaruselProgectsItem = (props) => {
                     </p>
                     <span>{props.stack}</span>
                 </div>
+              <div className={s.sliderItemContentText}>
+                  <p className={s.sliderItemContentStack}>
+                    {props.logInToTheSystem}
+                    </p>
+                    <span>{props.email}</span>
+              </div>
             </div>
             
         </div>
@@ -33,4 +39,4 @@ const CaruselProgectsItem = (props) => {
     )
 }
 
-export default CaruselProgectsItem;
+export default CarouselProjectsItem;

@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import React, { Component } from "react";
 import Slider from "react-slick";
-import s from './CaruselTestimonials.module.scss';
-import styles from './CaruselTestimonials.scss';
-import CaruselTestimonialsItem from './caruselTestimonialsItem/CaruselTestimonialsItem'
+import s from './CarouselTestimonials.module.scss';
+import styles from './CarouselTestimonials.scss';
+import CarouselTestimonialsItem from './carouselTestimonialsItem/CarouselTestimonialsItem'
 
 
 export default class Fade extends Component {
@@ -23,7 +23,7 @@ export default class Fade extends Component {
 
                     {/* 1 */}
 
-                    <CaruselTestimonialsItem
+                    <CarouselTestimonialsItem
                         testimonial='Here may be your review.'
                         name='Name'
                         company='company'
@@ -32,7 +32,7 @@ export default class Fade extends Component {
 
                 {/* 2 */}
 
-                <CaruselTestimonialsItem
+                <CarouselTestimonialsItem
                     testimonial='Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.Here may be your review.'
                     name='Name'
                     company='company'

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 // import Fade from 'react-reveal/Fade';
 import s from './Testimonials.module.scss';
 import testimonials from '../../../images/background/testimonials.jpg';
-import CaruselTestimonials from '../../../common/carusels/caruselTestimonials/CaruselTestimonials';
+import CaruselTestimonials from '../../../common/carusels/carouselTestimonials/CarouselTestimonials';
 import { routes } from './../../../../App';
 
 const Testimonials = () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import s from './CaruselEducationItem.module.scss';
+import s from './CarouselEducationItem.module.scss';
 
-const CaruselEducationItem = (props) => {
+const CarouselEducationItem = (props) => {
 
     return (
 
@@ -25,4 +25,4 @@ const CaruselEducationItem = (props) => {
     )
 }
 
-export default CaruselEducationItem;
+export default CarouselEducationItem;

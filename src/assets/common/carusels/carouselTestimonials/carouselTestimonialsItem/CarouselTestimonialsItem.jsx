@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import s from './CaruselTestimonialsItem.module.scss';
+import s from './CarouselTestimonialsItem.module.scss';
 
 
-const CaruselTestimonialsItem = (props) => {
+const CarouselTestimonialsItem = (props) => {
 
     return (
        
@@ -19,4 +19,4 @@ const CaruselTestimonialsItem = (props) => {
     )
 }
 
- export default CaruselTestimonialsItem;
+ export default CarouselTestimonialsItem;

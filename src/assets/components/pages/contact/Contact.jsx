@@ -24,8 +24,8 @@ const Contact = () => {
                             data-aos="fade-up"
                             data-aos-delay="100">
                             <h3 className={s.addressBlockTitle}> Contact</h3>
-                            <p className={s.address}>Georgia</p>
-                            <a className={s.tel} type="tel" href='tel:+995511200049'>+(995)-511-2000-49</a>
+                            <p className={s.address}>Poland, Wroclaw</p>
+                            <a className={s.tel} type='tel' href='tel:+48516364062'>+(48) 516-364-062</a>
                             <a className={s.email} href="mailto:SShnipov@gmail.com">SShnipov@gmail.com</a>
                         </div>
                         <div className={s.formBlock}

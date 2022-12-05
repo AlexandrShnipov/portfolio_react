@@ -55,7 +55,7 @@ const Header = ({ history: { location: { pathname } } }) => {
                     {pathname !== routes.TESTIMONIAL
                         &&
                         <div className={s.linkWrap}>
-                            <a className={s.linkTypeTel} type='tel' href='tel:+995511200049'>+(995)-511-2000-49</a>
+                            <a className={s.linkTypeTel} type='tel' href='tel:+48516364062'>+(48) 516-364-062</a>
                         </div>
                     }
                 </div>
