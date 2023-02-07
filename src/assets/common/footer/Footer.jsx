@@ -9,10 +9,12 @@ import { faAngleDoubleUp } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
 
+  const year = new Date().getFullYear()
+
     return (
         <footer className={s.footer}>
             <div className={s.container}>
-                <span className={s.footerCopyright}>&copy; Alexander Shnipov. 2022</span>
+                <span className={s.footerCopyright}>&copy; Alexander Shnipov. {year}</span>
 
                 <Link className={s.linkUp}
                     aria-label='to go up'
