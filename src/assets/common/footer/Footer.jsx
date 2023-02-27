@@ -14,7 +14,7 @@ const Footer = () => {
     return (
         <footer className={s.footer}>
             <div className={s.container}>
-                <span className={s.footerCopyright}>&copy; Alexander Shnipov. {year}</span>
+                <span className={s.footerCopyright}>&copy; Aliaksander Shnipau. {year}</span>
 
                 <Link className={s.linkUp}
                     aria-label='to go up'

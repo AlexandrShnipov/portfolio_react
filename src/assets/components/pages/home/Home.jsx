@@ -38,14 +38,11 @@ const Home = () => {
                             <span className={s.nameProfession}>
                                 Frontend developer
                             </span>
-                            Alexander <span className={s.nameSquare}></span>
+                            Aliaksander <span className={s.nameSquare}></span>
                         </h1>
                         <p className={s.sectionContentText}>
                             Welcome to my portfolio site.<br />
-                          I'm a result oriented, enthusiastic and stress-resistant  frontend developer with experience in
-                          creating landing pages and SPA with the usage  Java Script, React, TypeScript, HTML, CSS, SCSS/LESS, Grid, BOOTSTRAP, GULP, WordPress.<br />
-                          I'm also a positive and sociable person who easily finds a common language with people and has a
-                          great desire to improve myself as a developer and learn new technologies.
+                          I am a result-oriented, enthusiastic, and stress-resistant frontend developer with experience in creating landing pages and SPAs using Java Script, React, TypeScript, Svelte, HTML, CSS, SCSS/LESS, Grid, Bootstrap, Gulp, and WordPress. In addition to my technical skills, I am a positive and sociable person who can easily find a common language with people. I have a strong desire to continuously improve myself as a developer and learn new technologies.
                         </p>
                     </div>
                 </div>
