@@ -60,7 +60,7 @@ const NavBurger = (props) => {
 
 						<a
 							className={`${s.link} ${s.linkLinkedin}`}
-							href="https://www.linkedin.com/in/alexander-shnipov-717101204/"
+							href="https://linkedin.com/in/aliaksander-shnipau-717101204"
 							target="_blank"
 							aria-label='my Linkedin'>
 							<FontAwesomeIcon icon={faLinkedinIn} />

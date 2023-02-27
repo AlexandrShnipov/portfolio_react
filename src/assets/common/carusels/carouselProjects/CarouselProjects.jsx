@@ -13,6 +13,7 @@ import bgfBank from '../../../images/projects/bgfBank.png';
 import moviesDB from '../../../images/projects/moviesDB.png';
 import onlineStore from '../../../images/projects/onlineStore.png'
 import socialNetwork from '../../../images/projects/socialNetwork.png'
+import calculator from '../../../images/projects/calculator.png'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import s from './CarouselProjects.module.scss';
@@ -102,20 +103,17 @@ export default function SimpleSlider() {
         <div className={s.sliderItems}>
           {/* 3.1 */}
           <CarouselProjectsItem
-            img={cleanAndSimple}
-            title="Clean And Simple"
-            stack="HTML, CSS, Bootstrap, Figma"
-          >
+            img={calculator}
+            title="Calculator-Svelte"
+            stack="Svelte">
             <LinkColor
-              href={'https://alexandrshnipov.github.io/clean_and_simple_website'}
-              text="view project"
-            />
+              href={'https://calculator-sveltekit-dgml3da0y-alexandrshnipov.vercel.app/'}
+              text="view project"/>
             <LinkColor
-              href={'https://github.com/AlexandrShnipov/clean_and_simple_website.git'}
+              href={'https://github.com/AlexandrShnipov/calculator-sveltekitNew.git'}
               text="open source code"
             />
           </CarouselProjectsItem>
-
           {/* 3.2 */}
           <CarouselProjectsItem
             img={bgfBank}
@@ -237,6 +235,21 @@ export default function SimpleSlider() {
             stack="WordPress, HTML, CSS, Bootstrap, PHP, Hosting">
             <LinkColor
               href={'https://github.com/AlexandrShnipov/sensive-WP.git'}
+              text="open source code"
+            />
+          </CarouselProjectsItem>
+          {7.2}
+          <CarouselProjectsItem
+            img={cleanAndSimple}
+            title="Clean And Simple"
+            stack="HTML, CSS, Bootstrap, Figma"
+          >
+            <LinkColor
+              href={'https://alexandrshnipov.github.io/clean_and_simple_website'}
+              text="view project"
+            />
+            <LinkColor
+              href={'https://github.com/AlexandrShnipov/clean_and_simple_website.git'}
               text="open source code"
             />
           </CarouselProjectsItem>

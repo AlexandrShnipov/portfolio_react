@@ -55,7 +55,7 @@ const About = () => {
                 />
 
                 <AboutCount
-                  skills='/ Ajax / Redux/ GraphQL'
+                  skills='Ajax / Redux/ GraphQL'
                   isAnimation={animation}
                   limit={60}
                 />
