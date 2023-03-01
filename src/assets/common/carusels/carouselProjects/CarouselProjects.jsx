@@ -11,9 +11,9 @@ import helyfly from '../../../images/projects/helyfly.png';
 import sensive from '../../../images/projects/sensive.png';
 import bgfBank from '../../../images/projects/bgfBank.png';
 import moviesDB from '../../../images/projects/moviesDB.png';
-import onlineStore from '../../../images/projects/onlineStore.png'
-import socialNetwork from '../../../images/projects/socialNetwork.png'
-import calculator from '../../../images/projects/calculator.png'
+import onlineStore from '../../../images/projects/onlineStore.png';
+import socialNetwork from '../../../images/projects/socialNetwork.png';
+import calculator from '../../../images/projects/calculator.png';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import s from './CarouselProjects.module.scss';
@@ -42,8 +42,8 @@ export default function SimpleSlider() {
             img={socialNetwork}
             title="Social network"
             stack="React, Redux, React Hooks, Ajax, HTML, CSS"
-            logInToTheSystem='Log in:'
-            email='free@samuraijs.com, Password: free'>
+            logInToTheSystem="Log in:"
+            email="free@samuraijs.com, Password: free">
             <LinkColor
               href={'https://alexandrshnipov.github.io/social-React/'}
               text="view project"/>
@@ -86,7 +86,7 @@ export default function SimpleSlider() {
           <CarouselProjectsItem
             img={moviesDB}
             title="MoviesDB"
-            stack="SvelteKit, JS, HTML, CSS">
+            stack="SvelteKit, HTML, CSS">
             <LinkColor
               href={'https://movies-db-svelte-kit.vercel.app/'}
               text="view project"/>
@@ -227,8 +227,7 @@ export default function SimpleSlider() {
 
       <div className={s.slider}>
         <div className={s.sliderItems}>
-
-          {/*7.1*/}
+          {/*{7.1}*/}
           <CarouselProjectsItem
             img={sensive}
             title="SENSIVE"
@@ -238,7 +237,8 @@ export default function SimpleSlider() {
               text="open source code"
             />
           </CarouselProjectsItem>
-          {7.2}
+
+          {/*7.2*/}
           <CarouselProjectsItem
             img={cleanAndSimple}
             title="Clean And Simple"
@@ -255,6 +255,7 @@ export default function SimpleSlider() {
           </CarouselProjectsItem>
         </div>
       </div>
+
     </Slider>
   );
 }
