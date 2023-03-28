@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import s from './Education.module.scss';
 import education from '../../../images/background/education.jpg'
 import CaruselEducation from '../../../common/carusels/carouselEducation/CarouselEducation';
